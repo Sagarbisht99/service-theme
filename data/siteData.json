@@ -1,0 +1,2587 @@
+{
+  "templates": [
+    {
+      "id": "service",
+      "title": "AquaFix",
+      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+      "variables": {
+        "--header-bg": "#0b1f3a",
+        "--header-text": "#ffffff",
+        "--hero-bg": "#f4f7fb",
+        "--hero-title": "#0b1f3a",
+        "--primary-link-bg": "#9fd40b",
+        "--primary-link-color": "#0b1f3a",
+        "--service-navy": "#0b1f3a",
+        "--service-lime": "#9fd40b",
+        "--service-page": "#f4f7fb"
+      }
+    },
+    {
+      "id": "template-1",
+      "title": "AquaFix Template 1",
+      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+      "variables": {
+        "--header-bg": "#0b1f3a",
+        "--header-text": "#ffffff",
+        "--hero-bg": "#f4f7fb",
+        "--hero-title": "#0b1f3a",
+        "--primary-link-bg": "#9fd40b",
+        "--primary-link-color": "#0b1f3a",
+        "--service-navy": "#0b1f3a",
+        "--service-lime": "#9fd40b",
+        "--service-page": "#f4f7fb"
+      }
+    }
+  ],
+  "common": {
+    "Topbar": {
+      "text": [
+        "24/7 emergency service · Licensed & insured technicians · Upfront pricing"
+      ],
+      "phone": "(111) 222-333-444",
+      "email": "hello@aquafix.in",
+      "location": "Gurugram, Haryana",
+      "socialLinks": [
+        {
+          "label": "facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "label": "instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "label": "linkedin",
+          "href": "https://linkedin.com"
+        }
+      ]
+    },
+    "Footer": {
+      "logoImage": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+      "logoImageTitle": "Aquafix",
+      "desc": "Professional plumbing services you can trust. Available 24/7 for all your plumbing needs.",
+      "footerColumns": [
+        {
+          "title": "Company",
+          "links": [
+            {
+              "label": "About Us",
+              "href": "/about"
+            },
+            {
+              "label": "Our Team",
+              "href": "/team"
+            },
+            {
+              "label": "Careers",
+              "href": "/careers"
+            },
+            {
+              "label": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        {
+          "title": "Services",
+          "links": [
+            {
+              "label": "Plumbing",
+              "href": "/services"
+            },
+            {
+              "label": "Faucet Repairs",
+              "href": "/services"
+            },
+            {
+              "label": "Installation",
+              "href": "/services"
+            },
+            {
+              "label": "Maintenance",
+              "href": "/services"
+            }
+          ]
+        }
+      ],
+      "footerContact": {
+        "location": "123 Main Street, New York, NY 10001",
+        "email": "info@aquafix.com",
+        "phone": "(111) 222-333-444"
+      },
+      "footerLegalLinks": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms"
+        }
+      ],
+      "socialLinks": [
+        {
+          "label": "facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "label": "twitter",
+          "href": "https://twitter.com"
+        },
+        {
+          "label": "instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "label": "linkedin",
+          "href": "https://linkedin.com"
+        }
+      ],
+      "whatsappLink": "https://api.whatsapp.com/send?phone=1578365379",
+      "callLink": "tel:+1578365379",
+      "copyrightText": "© 2024 Aquafix. All rights reserved. Designed by Instow",
+      "officeLabel": "Call + (1) 578-365-379",
+      "contactLabel": "Contact",
+      "legalTitle": "Legal",
+      "newsletterTitle": "Stay informed",
+      "newsletterPlaceholder": "Enter email address",
+      "newsletterButtonLabel": "Subscribe",
+      "newsletterConsentPrefix": "By subscribing you agree to our",
+      "newsletterDesc": "Seasonal maintenance tips, offers, and service updates — straight to your inbox.",
+      "disclaimerTitle": "Disclaimer",
+      "disclaimerText": "Service details, pricing, and availability on this website are for general information only and may change without notice. Final pricing is confirmed after an on-site diagnosis. Aquafix provides licensed, insured workmanship and quotes are shared for approval before work begins.",
+      "cookieText": "We use essential cookies to run the site and optional analytics cookies to improve your experience. By continuing to browse, you agree to our use of cookies.",
+      "refundText": "Service fees are confirmed before work starts. If a booked visit is cancelled with reasonable notice, you may be eligible for a reschedule or refund as shared at the time of booking."
+    },
+    "AboutPage": {
+      "pretitle": "About us",
+      "title": "Repairs done with skill, care, and honest pricing.",
+      "desc": "Repairo helps homeowners and businesses fix leaks, clogs, and breakdowns with licensed technicians, upfront quotes, and workmanship that lasts — from your first call to a spotless finish.",
+      "desc2": "Whether it's an emergency or a planned upgrade, our technicians keep visits on time, quotes honest, and clean-up part of every job.",
+      "subtitle": "Our approach",
+      "sideImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+      "sideImageTitle": "Repairo technician at work",
+      "philosophyTitle": "Licensed technicians, clear quotes, reliable results.",
+      "philosophyDesc": "We start by diagnosing the problem properly. Then we share a clear quote, complete the work with quality parts, test everything, and leave your home tidy.",
+      "storyLabel": "Our story",
+      "missionPretitle": "Our mission",
+      "missionTitle": "Make home repairs simple and stress-free.",
+      "missionDesc": "We exist to take the worry out of repairs — with fast response, honest pricing, and technicians who stand behind their work.",
+      "missionPoints": [
+        {
+          "title": "Honesty first",
+          "desc": "Clear quotes and no hidden fees, explained before we start."
+        },
+        {
+          "title": "Skilled technicians",
+          "desc": "Licensed, insured, and trained to fix it right the first time."
+        },
+        {
+          "title": "Tidy finish",
+          "desc": "We test the work and clean up before we leave — every time."
+        }
+      ],
+      "missionButton": {
+        "label": "Learn more",
+        "href": "/mission",
+        "variant": "secondary"
+      },
+      "ctaPretitle": "Next step",
+      "ctaTitle": "Need a repair or an installation?",
+      "ctaDesc": "Tell us the issue, your location, and a preferred time — our team will confirm your appointment and share a clear quote.",
+      "ctaButton": {
+        "label": "Book an appointment",
+        "href": "/contact",
+        "variant": "primary"
+      },
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "About",
+          "href": "/about"
+        }
+      ]
+    },
+    "CustomPage": {
+      "pretitle": "Blog",
+      "title": "Guides, tips, and market notes for your next move.",
+      "desc": "Practical articles on buying, renting, packing, and what buyers look for — written to help you decide with more clarity.",
+      "desc2": "Browse the latest notes from our advisors, then reach out when you are ready to shortlist homes.",
+      "sideImage": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80",
+      "sideImageTitle": "Blog feature image",
+      "searchPlaceholder": "Search articles...",
+      "featuredLabel": "Featured",
+      "listLabel": "All articles",
+      "emptyMessage": "No articles match your search. Try another keyword.",
+      "readMoreLabel": "Read more",
+      "ctaPretitle": "Need advice?",
+      "ctaTitle": "Talk to an advisor about your next home.",
+      "ctaDesc": "Prefer a guided shortlist over browsing alone? Share your budget and areas — we will prepare clear options.",
+      "ctaButton": {
+        "label": "Contact us",
+        "href": "/contact",
+        "variant": "primary"
+      },
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        }
+      ],
+      "detail": {
+        "notFoundTitle": "Article not found",
+        "backLabel": "Back to blog",
+        "secondaryCtaLabel": "All articles",
+        "breadcrumbParentLabel": "Blog",
+        "eyebrow": "Blog"
+      }
+    },
+    "ServicePage": {
+      "pretitle": "Services",
+      "title": "Plumbing & home repair services you can trust.",
+      "desc": "From leaks and blocked drains to water heaters and emergencies, our licensed technicians handle it with upfront pricing and a workmanship guarantee.",
+      "desc2": "Not sure what you need? Book a diagnosis and we'll recommend the right fix with a clear quote before any work begins.",
+      "subtitle": "What we provide",
+      "productSectionTitle": "Core service options",
+      "sideImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+      "sideImageTitle": "Repairo technician on a service call",
+      "productSlides": [
+        {
+          "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=900&q=80",
+          "alt": "Leak repair service",
+          "productTitle": "Leak Repair",
+          "productSubtitle": "Plumbing",
+          "productInfoTitle": "Leak Detection & Repair",
+          "productInfoDesc": "Find and fix hidden and visible leaks in taps, pipes, and joints before they cause damage.",
+          "productFeatures": [
+            {
+              "label": "Same day",
+              "price": "01"
+            },
+            {
+              "label": "6-mo warranty",
+              "price": "02"
+            }
+          ],
+          "productTotalPrice": "From ₹599",
+          "productShippingText": "Free quote"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=900&q=80",
+          "alt": "Drain cleaning service",
+          "productTitle": "Drain Cleaning",
+          "productSubtitle": "Drainage",
+          "productInfoTitle": "Drain Cleaning & Unclogging",
+          "productInfoDesc": "Fast clearing of blocked sinks, showers, and main lines using augers and jetting.",
+          "productFeatures": [
+            {
+              "label": "Same day",
+              "price": "01"
+            },
+            {
+              "label": "Auger / jet",
+              "price": "02"
+            }
+          ],
+          "productTotalPrice": "From ₹499",
+          "productShippingText": "Free quote"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
+          "alt": "Water heater service",
+          "productTitle": "Water Heaters",
+          "productSubtitle": "Water Heating",
+          "productInfoTitle": "Water Heater Repair & Install",
+          "productInfoDesc": "Repair, service, or replace electric and gas water heaters, installed to code.",
+          "productFeatures": [
+            {
+              "label": "Repair / install",
+              "price": "01"
+            },
+            {
+              "label": "1-yr warranty",
+              "price": "02"
+            }
+          ],
+          "productTotalPrice": "From ₹899",
+          "productShippingText": "Free quote"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=900&q=80",
+          "alt": "Emergency plumbing service",
+          "productTitle": "Emergency",
+          "productSubtitle": "Emergency",
+          "productInfoTitle": "24/7 Emergency Plumbing",
+          "productInfoDesc": "Burst pipes, major leaks, and overflows handled fast by our round-the-clock crew.",
+          "productFeatures": [
+            {
+              "label": "24/7",
+              "price": "01"
+            },
+            {
+              "label": "Priority",
+              "price": "02"
+            }
+          ],
+          "productTotalPrice": "From ₹999",
+          "productShippingText": "Available now"
+        }
+      ],
+      "productItems": [
+        {
+          "title": "Leak Detection & Repair",
+          "category": "Plumbing",
+          "desc": "Find and fix hidden and visible leaks in taps, pipes, and joints before they cause damage.",
+          "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=900&q=80",
+          "alt": "Leak repair service"
+        },
+        {
+          "title": "Drain Cleaning & Unclogging",
+          "category": "Drainage",
+          "desc": "Fast clearing of blocked sinks, showers, and main lines using augers and jetting.",
+          "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=900&q=80",
+          "alt": "Drain cleaning service"
+        },
+        {
+          "title": "Water Heater Repair & Install",
+          "category": "Water Heating",
+          "desc": "Repair, service, or replace electric and gas water heaters, installed to code.",
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
+          "alt": "Water heater service"
+        },
+        {
+          "title": "24/7 Emergency Plumbing",
+          "category": "Emergency",
+          "desc": "Burst pipes, major leaks, and overflows handled fast by our round-the-clock crew.",
+          "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=900&q=80",
+          "alt": "Emergency plumbing service"
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Services",
+          "href": "/services"
+        }
+      ],
+      "viewAllLabel": "All services"
+    },
+    "ContactPage": {
+      "pretitle": "Contact us",
+      "title": "Book a Repairo technician",
+      "desc": "Need a repair, installation, or emergency callout across Delhi NCR? Share a few details and our team will call you back to confirm your appointment.",
+      "sideImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+      "sideImageTitle": "Repairo technician on a service call",
+      "footerContact": {
+        "location": "Unit 7, Service Hub, Sector 44, Gurugram, Haryana 122003",
+        "email": "hello@repairo.in",
+        "phone": "+91 98110 22345"
+      },
+      "formSubmitLabel": "Request a callback",
+      "formFields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "placeholder": "e.g. Arjun Mehta"
+        },
+        {
+          "label": "Email",
+          "type": "email",
+          "placeholder": "e.g. arjun.mehta@gmail.com"
+        },
+        {
+          "label": "Phone",
+          "type": "tel",
+          "placeholder": "e.g. +91 98765 43210"
+        },
+        {
+          "label": "Message",
+          "type": "textarea",
+          "placeholder": "e.g. Leaking kitchen tap in Sector 65, Gurugram — need a technician today"
+        }
+      ],
+      "reachPretitle": "Reach us",
+      "reachTitle": "Repairo · Gurugram office",
+      "reachDesc": "Prefer a call, WhatsApp, or email? We're available 24/7 for emergencies — or send a message and we'll reply shortly.",
+      "formPretitle": "Write us",
+      "formTitle": "Book a service",
+      "formDesc": "Tell us the issue, your area (Gurugram, Noida, Delhi, Faridabad, Ghaziabad), and a preferred time.",
+      "successTitle": "Request received",
+      "successDesc": "Thank you — your request reached Repairo. A technician will contact you shortly to confirm.",
+      "consentPrefix": "By checking this box, you agree to our",
+      "officeLabel": "Office",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "PrivacyPage": {
+      "pretitle": "Legal",
+      "title": "Privacy Policy",
+      "desc": "This policy explains how Repairo collects, uses, and protects personal information when you browse listings, book visits, or contact our advisors.",
+      "updatedAt": "July 22, 2026",
+      "sections": [
+        {
+          "title": "Information we collect",
+          "desc": "We may collect your name, email, phone number, preferred locations, budget, and messages you submit through enquiry or visit-request forms. We may also collect basic technical data such as browser type and pages viewed to improve the website."
+        },
+        {
+          "title": "How we use your information",
+          "desc": "We use your details to respond to property enquiries, schedule site visits, share relevant listings, coordinate documentation support, and send updates you request. We do not sell your personal data to third parties."
+        },
+        {
+          "title": "Property enquiries and site visits",
+          "desc": "When you request a visit or shortlist, your information may be shared with assigned Repairo advisors and, where needed, with property owners or partners solely to arrange viewings and follow-ups."
+        },
+        {
+          "title": "Cookies and analytics",
+          "desc": "We may use cookies or similar tools to understand how visitors use the site, remember preferences, and improve performance. You can control cookies through your browser settings."
+        },
+        {
+          "title": "Data retention and security",
+          "desc": "We keep enquiry information only as long as needed for follow-up, legal, or service purposes. We take reasonable administrative and technical measures to protect your data from unauthorized access."
+        },
+        {
+          "title": "Your choices",
+          "desc": "You may ask to review, update, or delete your contact details, or unsubscribe from marketing emails. Contact our team using the details in the footer or on the Contact page."
+        },
+        {
+          "title": "Contact for privacy questions",
+          "desc": "For privacy-related requests, email our office or call the number listed in the footer. We will respond as promptly as possible."
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        }
+      ]
+    },
+    "TermsPage": {
+      "pretitle": "Legal",
+      "title": "Terms & Conditions",
+      "desc": "These terms govern your use of the Repairo website and related property enquiry services. By using this site, you agree to the conditions below.",
+      "updatedAt": "July 22, 2026",
+      "sections": [
+        {
+          "title": "Using this website",
+          "desc": "Content on this site is provided for general service information and booking purposes. Service scope, prices, and availability may change without notice and are confirmed by a technician after an on-site diagnosis."
+        },
+        {
+          "title": "Property information",
+          "desc": "We work to present accurate listing details, but measurements, amenities, ownership documents, and pricing may vary. Always verify key facts during site visits and through formal documentation before purchase, rental, or investment."
+        },
+        {
+          "title": "Enquiries and appointments",
+          "desc": "Submitting a form does not create a service contract. Appointments and follow-ups are coordinated based on technician availability. Repairo may decline or reschedule requests when needed."
+        },
+        {
+          "title": "No financial or legal advice",
+          "desc": "Nothing on this website is legal, tax, or mortgage advice. Buyers, renters, and sellers should seek independent professional advice for financing, contracts, and registration."
+        },
+        {
+          "title": "User responsibilities",
+          "desc": "You agree to provide accurate contact details in forms and not to misuse the site, attempt unauthorized access, or submit harmful or misleading content."
+        },
+        {
+          "title": "Intellectual property",
+          "desc": "Text, branding, layout, and media on this site belong to Repairo or its licensors. You may not copy or reuse them for commercial purposes without permission."
+        },
+        {
+          "title": "Limitation of liability",
+          "desc": "To the fullest extent permitted by law, Repairo is not liable for decisions made solely based on website content, third-party delays, or temporary service interruptions."
+        },
+        {
+          "title": "Changes to these terms",
+          "desc": "We may update these terms from time to time. Continued use of the website after changes means you accept the revised terms. The updated date above shows the latest revision."
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms"
+        }
+      ]
+    },
+    "Testimonial": {
+      "pretitle": "TESTIMONIALS",
+      "title": "What Our Clients Say",
+      "desc": "Real feedback from customers who called Repairo for repairs, installations, and emergencies.",
+      "testimonialItems": [
+        {
+          "name": "Aarav Mehta",
+          "role": "Homeowner, South Delhi",
+          "quote": "Booked a technician in the morning and my leaking tap was fixed by afternoon — clear price, clean work.",
+          "image": "https://i.pinimg.com/1200x/44/4e/8e/444e8ee62b093f4e48312a627b91486b.jpg",
+          "rating": "5.0"
+        },
+        {
+          "name": "Neha Kapoor",
+          "role": "Apartment resident",
+          "quote": "Honest pricing and no upselling. The technician explained the issue and fixed the blocked drain quickly.",
+          "image": "https://i.pinimg.com/1200x/16/93/de/1693de5f7a785c4ba56af61eca60aed3.jpg",
+          "rating": "4.9"
+        },
+        {
+          "name": "Rahul Verma",
+          "role": "Villa owner",
+          "quote": "Our water heater died on a Sunday and Repairo still turned up. New unit installed and tested same day.",
+          "image": "https://i.pinimg.com/1200x/d0/18/d3/d018d3646a7d320d800a428b66d7c768.jpg",
+          "rating": "5.0"
+        },
+        {
+          "name": "Isha Malhotra",
+          "role": "Cafe owner",
+          "quote": "They handle maintenance for our cafe now. Priority response and one simple invoice — exactly what we needed.",
+          "image": "https://i.pinimg.com/1200x/c1/c2/51/c1c2516462d7050a0db5ee42e9ea6ef5.jpg",
+          "rating": "4.8"
+        },
+        {
+          "name": "Kabir Anand",
+          "role": "Emergency callout",
+          "quote": "A burst pipe at midnight — the crew arrived fast, stopped the flooding, and saved us from real damage.",
+          "image": "https://i.pinimg.com/1200x/af/e7/23/afe723e9b040978dd864edcd02c5b641.jpg",
+          "rating": "4.7"
+        },
+        {
+          "name": "Sara Khan",
+          "role": "Landlord",
+          "quote": "Reliable across all my rentals. Technicians are tidy, on time, and the workmanship guarantee is real.",
+          "image": "https://i.pinimg.com/736x/72/ff/ce/72ffce7dd84957cf5c5bfe270db6afe1.jpg",
+          "rating": "5.0"
+        }
+      ]
+    },
+    "Team": {
+      "pretitle": "OUR TEAM",
+      "title": "Meet Our Skilled Plumbers",
+      "desc": "The licensed specialists behind every repair and installation.",
+      "teamItems": [
+        {
+          "name": "David Smith",
+          "role": "Senior Plumber",
+          "image": "https://i.pinimg.com/1200x/37/1a/57/371a573a64ba1dbdf7403e5f90226ce2.jpg",
+          "bio": "Leads complex repairs and re-pipes with hands-on precision."
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Plumbing Specialist",
+          "image": "https://i.pinimg.com/736x/f6/47/f1/f647f16dd549987a9eda380e29265497.jpg",
+          "bio": "Handles residential and commercial plumbing with care."
+        },
+        {
+          "name": "James Wilson",
+          "role": "Drainage Expert",
+          "image": "https://i.pinimg.com/736x/3b/f4/61/3bf46125441791eeaafa38baac8a2265.jpg",
+          "bio": "Clears the toughest blockages with jetting and camera surveys."
+        },
+        {
+          "name": "Robert Johnson",
+          "role": "Installation Expert",
+          "image": "https://i.pinimg.com/1200x/0c/f7/be/0cf7be568e95b3ba392d9fe6fd54e9e2.jpg",
+          "bio": "Fits heaters, fixtures, and fittings cleanly and to code."
+        }
+      ],
+      "departments": [
+        {
+          "name": "Plumbing",
+          "desc": "Leaks, taps, toilets, and pipe repairs for homes and offices."
+        },
+        {
+          "name": "Emergency",
+          "desc": "24/7 rapid response for burst pipes and major leaks."
+        },
+        {
+          "name": "Installations",
+          "desc": "Water heaters, fixtures, and fittings installed to code."
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Team",
+          "href": "/team"
+        }
+      ],
+      "departmentsTitle": "Departments",
+      "ctaButton": {
+        "label": "Talk to our team",
+        "href": "/contact",
+        "variant": "primary"
+      }
+    },
+    "GalleryPage": {
+      "pretitle": "GALLERY",
+      "title": "Work that speaks for itself.",
+      "desc": "A look at repairs, installations, and finishes from recent AquaFix jobs across homes and businesses.",
+      "categories": [
+        "All",
+        "Bathroom",
+        "Kitchen",
+        "Emergency",
+        "Installation"
+      ],
+      "galleryItems": [
+        {
+          "image": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=1200&q=80",
+          "alt": "Modern kitchen with island",
+          "title": "Warm kitchen refresh",
+          "category": "Bathroom"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+          "alt": "Bright bathroom remodel",
+          "title": "Spa bathroom",
+          "category": "Kitchen"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80",
+          "alt": "Living room interiors",
+          "title": "Living room light",
+          "category": "Emergency"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Open concept living space",
+          "title": "Open-plan upgrade",
+          "category": "Installation"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Outdoor patio seating",
+          "title": "Patio evening set",
+          "category": "Bathroom"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1400&q=80",
+          "alt": "Kitchen dining nook",
+          "title": "Dining nook",
+          "category": "Kitchen"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
+          "alt": "Minimal bathroom vanity",
+          "title": "Quiet vanity wall",
+          "category": "Emergency"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80",
+          "alt": "Garden pathway",
+          "title": "Garden path",
+          "category": "Installation"
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Gallery",
+          "href": "/gallery"
+        }
+      ]
+    },
+    "AwardsPage": {
+      "pretitle": "AWARDS & CERTIFICATIONS",
+      "title": "Our Achievements",
+      "desc": "Industry recognition for quality workmanship, safety, and customer trust.",
+      "awardItems": [
+        {
+          "year": "2023",
+          "title": "Best Plumbing",
+          "org": "Service 2023",
+          "desc": "Recognized for outstanding plumbing service excellence.",
+          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(4).png?updatedAt=1784972366550"
+        },
+        {
+          "year": "2024",
+          "title": "Certified Plumbing",
+          "org": "Professionals",
+          "desc": "Certified professionals delivering trusted repairs.",
+          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(2).png?updatedAt=1784971948329"
+        },
+        {
+          "year": "2015",
+          "title": "ISO 9001:2015",
+          "org": "Certified",
+          "desc": "ISO quality management certification.",
+          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(2).png?updatedAt=1784971948329"
+        },
+        {
+          "year": "2022",
+          "title": "Customer Choice",
+          "org": "Award 2022",
+          "desc": "Chosen by customers for reliable service.",
+          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview.png?updatedAt=1784971860123"
+        },
+        {
+          "year": "2024",
+          "title": "Top Rated Service",
+          "org": "Provider",
+          "desc": "Top-rated service provider across the region.",
+          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(3).png?updatedAt=1784971991891"
+        },
+        {
+          "year": "2023",
+          "title": "Safety Excellence",
+          "org": "Award",
+          "desc": "Awarded for safety excellence on every job.",
+          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(4).png?updatedAt=1784972366550"
+        }
+      ]
+    },
+    "CareerPage": {
+      "pretitle": "Careers",
+      "title": "Build meaningful spaces with us.",
+      "desc": "Join a team that values craft, clarity, and respect on every site.",
+      "desc2": "We hire designers, site leads, and coordinators who care about the homeowner experience.",
+      "sideImage": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80",
+      "sideImageTitle": "Team collaborating on a renovation site",
+      "applyLabel": "Apply now",
+      "benefits": [
+        {
+          "title": "Growth paths",
+          "desc": "Mentorship and role progression across design, build, and client care."
+        },
+        {
+          "title": "Fair schedules",
+          "desc": "Predictable planning so field and studio teams can work sustainably."
+        },
+        {
+          "title": "Tools that help",
+          "desc": "Clear briefs, shared checklists, and support from procurement to handover."
+        },
+        {
+          "title": "Community focus",
+          "desc": "Paid volunteer days tied to our community and neighborhood programs."
+        }
+      ],
+      "jobs": [
+        {
+          "title": "Interior Designer",
+          "location": "San Francisco, CA",
+          "type": "Full-time",
+          "desc": "Lead concepts, material boards, and client presentations for residential remodels.",
+          "href": "/contact"
+        },
+        {
+          "title": "Site Supervisor",
+          "location": "Bay Area",
+          "type": "Full-time",
+          "desc": "Coordinate trades, quality checks, and daily progress updates on active sites.",
+          "href": "/contact"
+        },
+        {
+          "title": "Client Coordinator",
+          "location": "Hybrid",
+          "type": "Full-time",
+          "desc": "Own timelines, budgets communication, and smooth handovers for assigned projects.",
+          "href": "/contact"
+        },
+        {
+          "title": "Junior Estimator",
+          "location": "San Francisco, CA",
+          "type": "Full-time",
+          "desc": "Support takeoffs, vendor quotes, and transparent proposal packages.",
+          "href": "/contact"
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Careers",
+          "href": "/careers"
+        }
+      ]
+    },
+    "CsrPage": {
+      "pretitle": "Community",
+      "title": "How we give back.",
+      "desc": "A share of every project supports safer homes, skills training, and neighborhood care.",
+      "desc2": "We partner with local nonprofits and track impact so donations stay practical and transparent.",
+      "sideImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&q=80",
+      "sideImageTitle": "Community volunteers painting a home",
+      "impactStats": [
+        {
+          "stat": "120+",
+          "label": "Homes supported"
+        },
+        {
+          "stat": "8%",
+          "label": "Of profits donated"
+        },
+        {
+          "stat": "45",
+          "label": "Volunteer days yearly"
+        },
+        {
+          "stat": "12",
+          "label": "Nonprofit partners"
+        }
+      ],
+      "programs": [
+        {
+          "title": "Safe Homes Fund",
+          "desc": "Helps families with urgent repairs — railings, lighting, and accessibility basics.",
+          "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1000&q=80",
+          "amount": "Part of every project fee"
+        },
+        {
+          "title": "Trade Skills Scholarships",
+          "desc": "Supports apprentices entering carpentry, tiling, and finishing trades.",
+          "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=80",
+          "amount": "Annual scholarship pool"
+        },
+        {
+          "title": "Neighborhood Refresh",
+          "desc": "Volunteer days for shared spaces — parks, entryways, and community rooms.",
+          "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1000&q=80",
+          "amount": "Quarterly build days"
+        }
+      ],
+      "donateCta": {
+        "title": "Want to contribute with us?",
+        "desc": "Reach out to learn about matched donations and volunteer opportunities.",
+        "buttonLabel": "Talk to our community team",
+        "buttonHref": "/contact"
+      },
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Community",
+          "href": "/community"
+        }
+      ]
+    },
+    "MissionPage": {
+      "pretitle": "Our mission",
+      "title": "Help every family move with confidence.",
+      "desc": "We exist to make buying, renting, and listing simpler — with verified options, honest numbers, and advisors who stay present from first call to keys in hand.",
+      "desc2": "Mission is not a slogan for us. It is how we shortlist homes, explain trade-offs, and stay available when paperwork and handover feel overwhelming.",
+      "sideImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+      "sideImageTitle": "Repairo advisors reviewing a residence",
+      "pillarsPretitle": "How we work",
+      "pillarsTitle": "Three promises behind every shortlist.",
+      "pillars": [
+        {
+          "title": "Clarity first",
+          "desc": "Budgets, timelines, and trade-offs explained without pressure — so every decision feels informed."
+        },
+        {
+          "title": "Local judgment",
+          "desc": "Neighborhood insight that goes beyond listing photos: schools, commute, amenities, and long-term fit."
+        },
+        {
+          "title": "Guided next steps",
+          "desc": "Visits, paperwork, and follow-ups handled with care from first enquiry to keys in hand."
+        }
+      ],
+      "valuesPretitle": "What we stand for",
+      "valuesTitle": "Principles that shape every conversation.",
+      "values": [
+        {
+          "title": "Honest numbers",
+          "desc": "Pricing context and availability stay transparent — no inflated claims, no hidden surprises."
+        },
+        {
+          "title": "Verified options",
+          "desc": "We check documentation and listing status before we recommend a home for your shortlist."
+        },
+        {
+          "title": "Present advisors",
+          "desc": "You get a real person who answers questions, books visits, and stays through handover."
+        },
+        {
+          "title": "Family-first pace",
+          "desc": "We match your timeline — whether you need a quick rental or a careful purchase."
+        }
+      ],
+      "ctaPretitle": "Next step",
+      "ctaTitle": "Ready to shortlist with confidence?",
+      "ctaDesc": "Share your budget, preferred areas, and timeline — our advisors will prepare a clear shortlist.",
+      "ctaButton": {
+        "label": "Contact our team",
+        "href": "/contact",
+        "variant": "primary"
+      },
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "About",
+          "href": "/about"
+        },
+        {
+          "label": "Mission",
+          "href": "/mission"
+        }
+      ]
+    },
+    "DisclaimerPage": {
+      "pretitle": "Legal",
+      "title": "Disclaimer",
+      "desc": "Important limits on how listing information and website content should be used when researching properties with Repairo.",
+      "updatedAt": "July 25, 2026",
+      "sections": [
+        {
+          "title": "General information only",
+          "desc": "Content on this website — including listings, prices, availability, project details, calculators, and articles — is for general information. It is not a formal offer, valuation, or guarantee."
+        },
+        {
+          "title": "Accuracy and updates",
+          "desc": "Property details may change without notice. Measurements, amenities, documents, and pricing should be confirmed with an advisor and through formal paperwork before any decision."
+        },
+        {
+          "title": "No professional advice",
+          "desc": "Nothing on this site is legal, tax, financial, or mortgage advice. Seek independent professionals for contracts, financing, registration, and investment decisions."
+        },
+        {
+          "title": "Third-party content",
+          "desc": "Links, maps, developer materials, and partner references are provided for convenience. Repairo is not responsible for third-party sites or materials beyond our control."
+        },
+        {
+          "title": "Contact",
+          "desc": "For questions about this disclaimer, email hello@repairo.in or call +91 98100 45210."
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Disclaimer",
+          "href": "/disclaimer"
+        }
+      ]
+    },
+    "CookiePolicyPage": {
+      "pretitle": "Legal",
+      "title": "Cookie Policy",
+      "desc": "How Repairo uses cookies and similar technologies on this website.",
+      "updatedAt": "July 25, 2026",
+      "sections": [
+        {
+          "title": "What are cookies?",
+          "desc": "Cookies are small text files stored on your device when you visit a website. They help the site remember preferences, understand usage, and improve performance."
+        },
+        {
+          "title": "How we use cookies",
+          "desc": "We may use cookies to keep basic preferences, measure page performance, understand which listings are viewed most often, and improve navigation across the Repairo site."
+        },
+        {
+          "title": "Types of cookies",
+          "desc": "Essential cookies support core site functions. Analytics cookies help us see aggregated traffic patterns. Preference cookies remember choices such as language or recently viewed filters when available."
+        },
+        {
+          "title": "Managing cookies",
+          "desc": "You can block or delete cookies through your browser settings. Disabling some cookies may affect how certain features work, including remembering search preferences."
+        },
+        {
+          "title": "Updates and contact",
+          "desc": "We may update this policy as tools or regulations change. For cookie-related questions, email hello@repairo.in or call +91 98100 45210."
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookie-policy"
+        }
+      ]
+    },
+    "SitemapPage": {
+      "pretitle": "Explore",
+      "title": "Sitemap",
+      "desc": "Quick links to every major page on the Repairo website.",
+      "groups": [
+        {
+          "title": "Main",
+          "links": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "Buy Properties",
+              "href": "/properties?intent=buy"
+            },
+            {
+              "label": "Rent Properties",
+              "href": "/properties?intent=rent"
+            },
+            {
+              "label": "All Properties",
+              "href": "/properties"
+            },
+            {
+              "label": "New Projects",
+              "href": "/projects"
+            },
+            {
+              "label": "Book with Repairo",
+              "href": "/sell"
+            },
+            {
+              "label": "Services",
+              "href": "/services"
+            },
+            {
+              "label": "Contact",
+              "href": "/contact"
+            },
+            {
+              "label": "Gallery",
+              "href": "/gallery"
+            }
+          ]
+        },
+        {
+          "title": "Company",
+          "links": [
+            {
+              "label": "About Us",
+              "href": "/about"
+            },
+            {
+              "label": "Our Team",
+              "href": "/team"
+            },
+            {
+              "label": "Why Choose Us",
+              "href": "/why-choose-us"
+            },
+            {
+              "label": "Mission & Vision",
+              "href": "/mission"
+            },
+            {
+              "label": "Awards",
+              "href": "/awards"
+            },
+            {
+              "label": "CSR Initiatives",
+              "href": "/csr"
+            },
+            {
+              "label": "Careers",
+              "href": "/careers"
+            },
+            {
+              "label": "Community",
+              "href": "/community"
+            }
+          ]
+        },
+        {
+          "title": "Explore & Tools",
+          "links": [
+            {
+              "label": "Blog & Insights",
+              "href": "/blog"
+            },
+            {
+              "label": "Investment Tips",
+              "href": "/investment-tips"
+            },
+            {
+              "label": "Gallery",
+              "href": "/gallery"
+            },
+            {
+              "label": "EMI Calculator",
+              "href": "/emi-calculator"
+            },
+            {
+              "label": "Area Converter",
+              "href": "/area-converter"
+            },
+            {
+              "label": "Portfolio",
+              "href": "/projects"
+            }
+          ]
+        },
+        {
+          "title": "Legal",
+          "links": [
+            {
+              "label": "Privacy Policy",
+              "href": "/privacy"
+            },
+            {
+              "label": "Terms & Conditions",
+              "href": "/terms"
+            },
+            {
+              "label": "Sitemap",
+              "href": "/sitemap"
+            }
+          ]
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Sitemap",
+          "href": "/sitemap"
+        }
+      ]
+    },
+    "WhyChooseUsPage": {
+      "pretitle": "Why Repairo",
+      "title": "Why families and investors choose us.",
+      "desc": "Verified listings, local advisors, and a clear process from first call to keys.",
+      "items": [
+        {
+          "title": "Verified shortlists",
+          "desc": "Every option is checked for ownership clarity and visit readiness.",
+          "stat": "01"
+        },
+        {
+          "title": "Local market depth",
+          "desc": "Advisors who know commute patterns, schools, and micro-markets.",
+          "stat": "02"
+        },
+        {
+          "title": "Transparent next steps",
+          "desc": "You always know what happens after a visit.",
+          "stat": "03"
+        },
+        {
+          "title": "End-to-end support",
+          "desc": "From enquiry to registration guidance and handover.",
+          "stat": "04"
+        }
+      ],
+      "ctaTitle": "Ready to shortlist with clarity?",
+      "ctaDesc": "Book a discovery call and we will map homes that match your budget.",
+      "ctaButton": {
+        "label": "Talk to an advisor",
+        "href": "/contact",
+        "variant": "primary"
+      },
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Why Choose Us",
+          "href": "/why-choose-us"
+        }
+      ]
+    },
+    "RefundPolicyPage": {
+      "pretitle": "Legal",
+      "title": "Refund Policy",
+      "desc": "How Repairo handles fees, cancellations, and refunds for advisory and visit-related services.",
+      "updatedAt": "July 25, 2026",
+      "sections": [
+        {
+          "title": "Overview",
+          "desc": "Repairo is a real estate advisory service. Property purchase amounts are paid to sellers, developers, or owners — not to Repairo — and are governed by those contracts."
+        },
+        {
+          "title": "Advisory and visit fees",
+          "desc": "Shortlists and guided site visits for buyers and renters are typically free. If any paid advisory package is booked, the scope and fee are confirmed in writing before work starts."
+        },
+        {
+          "title": "Cancellations",
+          "desc": "You may cancel a paid advisory booking before the agreed service begins. Once visits, documentation review, or negotiation support has started, fees for completed work are non-refundable."
+        },
+        {
+          "title": "How to request a refund",
+          "desc": "Email hello@repairo.in or call +91 98100 45210 with your booking details. Eligible refunds are processed within 7–10 business days to the original payment method."
+        },
+        {
+          "title": "Contact",
+          "desc": "For refund questions, contact Repairo at Unit 7, Service Hub, Sector 44, Gurugram, or hello@repairo.in."
+        }
+      ],
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Refund Policy",
+          "href": "/refund-policy"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "Service": {
+      "sections": {
+        "Header": {
+          "logo": "AquaFix",
+          "menu": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "About",
+              "href": "/about"
+            },
+            {
+              "label": "Services",
+              "href": "/services",
+              "children": [
+                {
+                  "label": "All services",
+                  "href": "/services"
+                },
+                {
+                  "label": "Plumbing repair",
+                  "href": "/properties?type=Plumbing"
+                },
+                {
+                  "label": "Drain cleaning",
+                  "href": "/properties?type=Drain"
+                },
+                {
+                  "label": "Water heater",
+                  "href": "/properties?type=Water%20Heater"
+                },
+                {
+                  "label": "Emergency repair",
+                  "href": "/properties?type=Emergency"
+                }
+              ]
+            },
+            {
+              "label": "Work",
+              "href": "/projects"
+            },
+            {
+              "label": "Blogs",
+              "href": "/blog"
+            },
+            {
+              "label": "Pages",
+              "href": "/about",
+              "children": [
+                {
+                  "label": "Our team",
+                  "href": "/team"
+                },
+                {
+                  "label": "Portfolio",
+                  "href": "/projects"
+                },
+                {
+                  "label": "Why choose us",
+                  "href": "/why-choose-us"
+                },
+                {
+                  "label": "Gallery",
+                  "href": "/gallery"
+                },
+                {
+                  "label": "Contact",
+                  "href": "/contact"
+                }
+              ]
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Conatct Us",
+              "href": "/contact",
+              "variant": "primary"
+            }
+          ]
+        },
+        "Banner": {
+          "backgroundImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+          "backgroundImageTitle": "Professional plumber fixing a sink",
+          "pretitle": "Trusted Plumbing Experts",
+          "title": "Top-Notch Plumbing & Repair Solutions, Quality Work.",
+          "desc": "We take pride in providing exceptional plumbing services with a focus on quality and reliability. From routine maintenance to emergency repairs and comprehensive installations, we've got you covered.",
+          "buttons": [
+            {
+              "label": "Get A Quote",
+              "href": "/contact",
+              "variant": "primary"
+            },
+            {
+              "label": "See All Services",
+              "href": "/services",
+              "variant": "secondary"
+            }
+          ],
+          "bannerSlides": [
+            {
+              "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+              "video": "",
+              "alt": "Plumber repairing a sink",
+              "title": "Fast, reliable repairs — done right the first time",
+              "desc": "Same-day service for leaks, clogs, and breakdowns with verified, background-checked technicians.",
+              "button": {
+                "label": "Book a visit",
+                "href": "/contact",
+                "variant": "primary"
+              }
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "video": "",
+              "alt": "Water heater installation",
+              "title": "Installations and upgrades that last",
+              "desc": "Water heaters, fixtures, and fittings installed to code with clear warranties.",
+              "button": {
+                "label": "Get a quote",
+                "href": "/services",
+                "variant": "primary"
+              }
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+              "video": "",
+              "alt": "Plumbing tools and equipment",
+              "title": "24/7 emergency plumbing support",
+              "desc": "Burst pipe or major leak? Our emergency crew responds quickly, any day of the week.",
+              "button": {
+                "label": "Call now",
+                "href": "/contact",
+                "variant": "primary"
+              }
+            }
+          ],
+          "smartSearch": {
+            "enabled": false
+          }
+        },
+        "About": {
+          "pretitle": "Who We Are",
+          "title": "Trusted Plumbing Experts Since 1996",
+          "desc": "For over two decades, we have been providing exceptional plumbing services to homes and businesses. Our commitment to quality workmanship and customer satisfaction sets us apart.",
+          "features": [
+            {
+              "title": "Experienced Professionals",
+              "desc": "Our team consists of licensed, insured, and highly trained plumbers with years of experience."
+            },
+            {
+              "title": "Comprehensive Solutions",
+              "desc": "From minor repairs to major installations, we handle all plumbing needs efficiently."
+            }
+          ],
+          "phone": "+1 (578)-365-379",
+          "mainImage": "https://i.pinimg.com/736x/ff/7d/6d/ff7d6d6a0ccb9e778e2b3b5aefaab723.jpg",
+          "subImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
+        },
+        "WhyChooseUs": {
+          "pretitle": "WHY CHOOSE US",
+          "title": "Reliable Plumbing Solutions You Can Count On",
+          "desc": "We are committed to providing high-quality plumbing services with honesty, integrity, and unmatched professionalism.",
+          "whyChooseUsItems": [
+            {
+              "title": "EXPERIENCED PLUMBERS",
+              "desc": "Our licensed plumbers bring years of experience to every job."
+            },
+            {
+              "title": "QUALITY WORKMANSHIP",
+              "desc": "We use advanced tools and techniques to ensure long-lasting results."
+            },
+            {
+              "title": "24/7 EMERGENCY SERVICE",
+              "desc": "We are available around the clock to handle your plumbing emergencies."
+            },
+            {
+              "title": "CUSTOMER SATISFACTION",
+              "desc": "Our priority is your satisfaction and peace of mind."
+            },
+            {
+              "title": "TRANSPARENT PRICING",
+              "desc": "No hidden costs - just honest and affordable pricing."
+            },
+            {
+              "title": "WIDE RANGE OF SERVICES",
+              "desc": "From minor leaks to major installations, we do it all."
+            }
+          ]
+        },
+        "Gallery": {
+          "pretitle": "LATEST BLOGS",
+          "title": "Plumbing Tips & Insights",
+          "desc": "Practical advice to help you prevent leaks, maintain fixtures, and know when to call a pro.",
+          "buttons": [
+            {
+              "label": "View all",
+              "href": "/blog",
+              "variant": "primary"
+            },
+            {
+              "label": "Read More",
+              "href": "/blog",
+              "variant": "secondary"
+            }
+          ],
+          "galleryItems": [
+            {
+              "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+              "alt": "Plumber working on a sink",
+              "title": "5 Signs You Need Professional Plumbing Help",
+              "date": "May 20, 2024",
+              "href": "/blog/5-signs-you-need-professional-plumbing-help",
+              "slug": "5-signs-you-need-professional-plumbing-help",
+              "body": "Strange noises, low water pressure, recurring clogs, unexplained damp spots, and rising bills are clear signals it is time to call a licensed plumber."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+              "alt": "Plumbing tools on the floor",
+              "title": "How to Prevent Common Drain Blockages",
+              "date": "May 15, 2024",
+              "href": "/blog/how-to-prevent-common-drain-blockages",
+              "slug": "how-to-prevent-common-drain-blockages",
+              "body": "Simple habits like using drain screens, avoiding grease down the sink, and monthly hot-water flushes help keep pipes clear and smell-free."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80",
+              "alt": "Technician working under a sink",
+              "title": "Benefits of Regular Plumbing Maintenance",
+              "date": "May 10, 2024",
+              "href": "/blog/benefits-of-regular-plumbing-maintenance",
+              "slug": "benefits-of-regular-plumbing-maintenance",
+              "body": "Scheduled checks catch small leaks early, extend fixture life, and keep your water system running efficiently year-round."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "alt": "Water heater installation",
+              "title": "Choosing the Right Water Heater for Your Home",
+              "date": "May 05, 2024",
+              "href": "/blog/choosing-the-right-water-heater-for-your-home",
+              "slug": "choosing-the-right-water-heater-for-your-home",
+              "body": "Compare tank and tankless units by household size, recovery rate, and energy efficiency before you replace your old heater."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+              "alt": "A modern kitchen sink and faucet.",
+              "title": "Low water pressure? Here's what to check",
+              "date": "May 02, 2024",
+              "href": "/blog/low-water-pressure-what-to-check",
+              "slug": "low-water-pressure-what-to-check",
+              "body": "Clean the faucet aerator, check the shut-off valves are fully open, and look for leaks. If pressure is low across the whole house, the issue may be the main line or pressure regulator — that's a job for a pro."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
+              "alt": "A technician inspecting bathroom plumbing.",
+              "title": "A seasonal home plumbing checklist",
+              "date": "Apr 28, 2024",
+              "href": "/blog/seasonal-home-plumbing-checklist",
+              "slug": "seasonal-home-plumbing-checklist",
+              "body": "Inspect visible pipes for corrosion, test shut-off valves, flush the water heater, and check for slow drains. A short seasonal check-up catches small problems before they become emergencies."
+            }
+          ]
+        },
+        "FormDetail": {
+          "pretitle": "Book an appointment",
+          "title": "Tell us what needs fixing.",
+          "desc": "Share the issue, your location, and preferred time — a technician will confirm shortly.",
+          "backgroundImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+          "backgroundImageTitle": "Technician ready for a service call",
+          "formSubmitLabel": "Request a callback",
+          "formFields": [
+            {
+              "label": "Name",
+              "type": "text",
+              "placeholder": "Your name"
+            },
+            {
+              "label": "Phone",
+              "type": "tel",
+              "placeholder": "Your phone number"
+            },
+            {
+              "label": "Issue",
+              "type": "textarea",
+              "placeholder": "e.g. Leaking kitchen tap, blocked drain, no hot water"
+            }
+          ],
+          "successMessage": "Thank you — we received your request. A technician will call you back shortly."
+        },
+        "FAQ": {
+          "pretitle": "FAQS",
+          "title": "Frequently Asked Questions",
+          "faqItems": [
+            {
+              "question": "Do you provide 24/7 emergency plumbing services?",
+              "answer": "Yes, we provide 24/7 emergency plumbing services for all types of plumbing issues, including leaks, clogs, pipe bursts, and more."
+            },
+            {
+              "question": "Are your plumbers licensed and insured?",
+              "answer": "All our technicians are licensed, background-checked, and fully insured, so your home is protected during every visit."
+            },
+            {
+              "question": "How much do your plumbing services cost?",
+              "answer": "We share a clear, upfront quote after diagnosing the issue — no hidden charges. Pricing depends on the job type and parts required."
+            },
+            {
+              "question": "Do you offer free estimates?",
+              "answer": "Yes. We diagnose the issue and share a free estimate for your approval before any work begins."
+            },
+            {
+              "question": "How quickly can a technician reach my home?",
+              "answer": "For emergencies we aim to arrive within 60–90 minutes. For scheduled jobs, same-day or next-day slots are usually available across Delhi NCR."
+            }
+          ],
+          "sideImage": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview_Smi4TfObl.png",
+          "sideImageTitle": "Pipe wrench"
+        },
+        "CitiesWeServe": {
+          "pretitle": "Areas we serve",
+          "title": "Reliable repairs across the city.",
+          "desc": "Local technicians ready for leaks, drains, and installations in your neighborhood.",
+          "categories": [
+            "All",
+            "Delhi",
+            "Gurugram",
+            "Noida",
+            "Faridabad",
+            "Ghaziabad"
+          ],
+          "cities": [
+            {
+              "name": "Gurugram",
+              "desc": "Same-day plumbing and repair across DLF, Sohna Road, and Golf Course Ext.",
+              "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
+              "alt": "Gurugram service area",
+              "listingsLabel": "24/7 available",
+              "href": "/contact",
+              "region": "Gurugram"
+            },
+            {
+              "name": "Noida",
+              "desc": "Leak, drain, and water-heater specialists across all sectors.",
+              "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80",
+              "alt": "Noida service area",
+              "listingsLabel": "Same-day slots",
+              "href": "/contact",
+              "region": "Noida"
+            },
+            {
+              "name": "Delhi",
+              "desc": "Trusted technicians for homes and offices across South & Central Delhi.",
+              "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
+              "alt": "Delhi service area",
+              "listingsLabel": "24/7 available",
+              "href": "/contact",
+              "region": "Delhi"
+            },
+            {
+              "name": "Faridabad",
+              "desc": "Fast repairs and installations across NIT and greater Faridabad.",
+              "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
+              "alt": "Faridabad service area",
+              "listingsLabel": "Same-day slots",
+              "href": "/contact",
+              "region": "Faridabad"
+            },
+            {
+              "name": "Ghaziabad",
+              "desc": "Emergency plumbing and drain cleaning across Raj Nagar and Indirapuram.",
+              "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80",
+              "alt": "Ghaziabad service area",
+              "listingsLabel": "24/7 available",
+              "href": "/contact",
+              "region": "Ghaziabad"
+            }
+          ],
+          "button": {
+            "label": "Book in your area",
+            "href": "/contact",
+            "variant": "primary"
+          }
+        },
+        "LatestProjects": {
+          "pretitle": "Featured completed works",
+          "title": "Recent jobs we're proud of.",
+          "desc": "A look at repairs and installations we recently completed for homes and businesses.",
+          "projectItems": [
+            {
+              "title": "Full bathroom re-pipe",
+              "desc": "Replaced corroded pipes and fixtures for a leak-free bathroom in DLF Phase 4.",
+              "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
+              "alt": "Renovated bathroom after re-pipe",
+              "location": "Gurugram · DLF Phase 4",
+              "status": "Completed",
+              "href": "/projects/full-bathroom-re-pipe",
+              "slug": "full-bathroom-re-pipe",
+              "body": "A full re-pipe for a home with recurring leaks and low pressure. We replaced aging supply lines, upgraded fixtures, and pressure-tested the system. The map below shows the approximate service area — book a visit for similar work."
+            },
+            {
+              "title": "Kitchen sink & drain overhaul",
+              "desc": "New faucet, trap, and cleared main drain line for a busy family kitchen.",
+              "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+              "alt": "Modern kitchen sink after overhaul",
+              "location": "Noida · Sector 78",
+              "status": "Completed",
+              "href": "/projects/kitchen-sink-drain-overhaul",
+              "slug": "kitchen-sink-drain-overhaul",
+              "body": "Replaced a leaking faucet and P-trap, then cleared a slow main drain with a power auger. The map below shows the approximate service area — book a visit for similar work."
+            },
+            {
+              "title": "Water heater replacement",
+              "desc": "Removed an aging unit and installed a new energy-efficient water heater.",
+              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "alt": "New water heater installation",
+              "location": "Delhi · Vasant Kunj",
+              "status": "Completed",
+              "href": "/projects/water-heater-replacement",
+              "slug": "water-heater-replacement",
+              "body": "Swapped a failing 10-year-old heater for a new efficient model, installed to code with a fresh pressure valve. The map below shows the approximate service area — book a visit for similar work."
+            },
+            {
+              "title": "Emergency burst pipe repair",
+              "desc": "Late-night response to stop a burst supply line and prevent water damage.",
+              "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80",
+              "alt": "Repaired burst pipe",
+              "location": "Faridabad · Sector 15",
+              "status": "Completed",
+              "href": "/projects/emergency-burst-pipe-repair",
+              "slug": "emergency-burst-pipe-repair",
+              "body": "Our 24/7 crew stopped a burst line, dried the area, and replaced the damaged section the same night. The map below shows the approximate service area — book a visit for similar work."
+            },
+            {
+              "title": "Whole-home fixture upgrade",
+              "desc": "Replaced taps, showers, and valves across a three-bedroom apartment.",
+              "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
+              "alt": "Upgraded bathroom fixtures",
+              "location": "Gurugram · Sector 65",
+              "status": "Completed",
+              "href": "/projects/whole-home-fixture-upgrade",
+              "slug": "whole-home-fixture-upgrade",
+              "body": "Modernized every tap, shower, and valve in the home for better flow and a clean look. The map below shows the approximate service area — book a visit for similar work."
+            },
+            {
+              "title": "Office washroom maintenance",
+              "desc": "Scheduled maintenance and leak fixes for a commercial office floor.",
+              "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
+              "alt": "Serviced office washroom",
+              "location": "Noida · Sector 62",
+              "status": "Completed",
+              "href": "/projects/office-washroom-maintenance",
+              "slug": "office-washroom-maintenance",
+              "body": "A maintenance visit for a commercial client — fixed leaks, cleared drains, and serviced flush systems across the floor. The map below shows the approximate service area — book a visit for similar work."
+            }
+          ],
+          "button": {
+            "label": "View all works",
+            "href": "/projects",
+            "variant": "primary"
+          },
+          "detail": {
+            "notFoundTitle": "Project not found",
+            "backLabel": "Back to works",
+            "primaryCtaLabel": "Book similar work",
+            "secondaryCtaLabel": "All works",
+            "breadcrumbParentLabel": "Completed Works"
+          }
+        },
+        "FeaturedDevelopers": {
+          "pretitle": "Trusted partners",
+          "title": "Brands and suppliers we work with.",
+          "desc": "We fit and service quality parts from brands homeowners already trust.",
+          "items": [
+            {
+              "name": "Kohler",
+              "desc": "Premium faucets, sinks, and bathroom fittings.",
+              "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
+              "alt": "Kohler fittings",
+              "projectsLabel": "Authorized fitter",
+              "href": "/services"
+            },
+            {
+              "name": "Jaquar",
+              "desc": "Bathroom fixtures and complete plumbing solutions.",
+              "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+              "alt": "Jaquar fixtures",
+              "projectsLabel": "Service partner",
+              "href": "/services"
+            },
+            {
+              "name": "Havells",
+              "desc": "Water heaters and electrical-plumbing appliances.",
+              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "alt": "Havells water heater",
+              "projectsLabel": "Installed & serviced",
+              "href": "/services"
+            },
+            {
+              "name": "Ashirvad",
+              "desc": "Durable pipes and fittings for reliable supply lines.",
+              "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80",
+              "alt": "Ashirvad pipes",
+              "projectsLabel": "Trusted supplier",
+              "href": "/services"
+            },
+            {
+              "name": "Grohe",
+              "desc": "German-engineered taps and shower systems.",
+              "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
+              "alt": "Grohe shower system",
+              "projectsLabel": "Authorized fitter",
+              "href": "/services"
+            },
+            {
+              "name": "V-Guard",
+              "desc": "Reliable water heaters and home appliances.",
+              "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+              "alt": "V-Guard appliances",
+              "projectsLabel": "Installed & serviced",
+              "href": "/services"
+            }
+          ],
+          "button": {
+            "label": "See our services",
+            "href": "/services",
+            "variant": "primary"
+          }
+        },
+        "PropertyProcess": {
+          "pretitle": "WHO TO WORK",
+          "title": "Standard Working Process",
+          "desc": "From your first call to a spotless finish — every job follows the same clear steps.",
+          "steps": [
+            {
+              "step": "01",
+              "title": "Inspect & Analyse",
+              "desc": "It is a long establish be distracted by looking at its layout.",
+              "icon": "search"
+            },
+            {
+              "step": "02",
+              "title": "Quote & Supply",
+              "desc": "It is a long establish be distracted by looking at its layout.",
+              "icon": "quote"
+            },
+            {
+              "step": "03",
+              "title": "Clean Up & Finish",
+              "desc": "It is a long establish be distracted by looking at its layout.",
+              "icon": "clean"
+            },
+            {
+              "step": "04",
+              "title": "Quality Improve",
+              "desc": "It is a long establish be distracted by looking at its layout.",
+              "icon": "quality"
+            }
+          ],
+          "button": {
+            "label": "Book an appointment",
+            "href": "/contact",
+            "variant": "primary"
+          }
+        },
+        "CompanyStatistics": {
+          "pretitle": "By the numbers",
+          "title": "Trusted by homeowners across the city.",
+          "desc": "Proof points from families and businesses who called AquaFix when it mattered.",
+          "stats": [
+            {
+              "stat": "4.3k+",
+              "label": "Satisfied Clients",
+              "desc": "Homeowners who trust our technicians."
+            },
+            {
+              "stat": "24/7",
+              "label": "Emergency support",
+              "desc": "Round-the-clock response for urgent leaks."
+            },
+            {
+              "stat": "50+",
+              "label": "Licensed technicians",
+              "desc": "Background-checked and insured."
+            },
+            {
+              "stat": "4.9/5",
+              "label": "Customer rating",
+              "desc": "From thousands of verified reviews."
+            }
+          ]
+        },
+        "ContactInfo": {
+          "pretitle": "Book & talk",
+          "title": "Contact information",
+          "desc": "Call, WhatsApp, or book online for repairs, installations, or emergencies — we respond fast.",
+          "items": [
+            {
+              "label": "Visit us",
+              "value": "Unit 7, Service Hub, Sector 44, Gurugram, Haryana 122003",
+              "href": "https://maps.google.com/?q=Sector+44+Gurugram"
+            },
+            {
+              "label": "Call / WhatsApp",
+              "value": "+91 98110 22345",
+              "href": "tel:+919811022345"
+            },
+            {
+              "label": "Email",
+              "value": "hello@repairo.in",
+              "href": "mailto:hello@repairo.in"
+            },
+            {
+              "label": "Hours",
+              "value": "Open 24/7 · Emergency service available"
+            }
+          ],
+          "button": {
+            "label": "Book an appointment",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          "mapEmbedUrl": "https://www.google.com/maps?q=Sector+44+Gurugram&output=embed",
+          "cta": {
+            "title": "Need Emergency Plumbing Service?",
+            "desc": "We're available 24/7 to solve your plumbing problems.",
+            "phone": "+91 98765 432210",
+            "phoneHref": "tel:+9198765432210",
+            "buttonLabel": "Call Now"
+          }
+        },
+        "Properties": {
+          "sectionTitle": "Featured Services",
+          "title": "Professional Plumbing Services You Can Trust",
+          "subtitle": "Reliable Plumbing Solutions",
+          "infoTitle": "Popular Home Services",
+          "description": "From small repairs to complete installations, we provide reliable, affordable and long-lasting plumbing solutions for your home and business.",
+          "highlights": [
+            {
+              "label": "Licensed & Insured",
+              "value": ""
+            },
+            {
+              "label": "24/7 Emergency Support",
+              "value": ""
+            },
+            {
+              "label": "Experienced Plumbers",
+              "value": ""
+            },
+            {
+              "label": "Satisfaction Guaranteed",
+              "value": ""
+            }
+          ],
+          "startingPrice": "From ₹499",
+          "statusText": "Same-day appointments available",
+          "listings": [
+            {
+              "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80",
+              "alt": "Leak repair under a sink",
+              "title": "Leak Detection & Repair",
+              "subtitle": "Plumbing",
+              "infoTitle": "Stop leaks fast",
+              "description": "Detect and fix leaks quickly to prevent water damage.",
+              "features": [
+                {
+                  "label": "Response",
+                  "value": "Same day"
+                },
+                {
+                  "label": "Warranty",
+                  "value": "6 months"
+                },
+                {
+                  "label": "Callout",
+                  "value": "Free quote"
+                }
+              ],
+              "price": "From ₹599",
+              "statusText": "Same-day available",
+              "category": "Plumbing",
+              "propertyType": "Plumbing",
+              "button": {
+                "label": "Book now",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "leak-detection-repair",
+              "body": "Our leak specialists locate hidden and visible leaks using proven techniques, then repair taps, pipes, and joints with quality parts. Every job includes an upfront quote and a workmanship guarantee."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+              "alt": "Drain cleaning equipment",
+              "title": "Drain Cleaning Services",
+              "subtitle": "Drainage",
+              "infoTitle": "Clear blocked drains",
+              "description": "Remove clogs and blockages for smooth water flow.",
+              "features": [
+                {
+                  "label": "Response",
+                  "value": "Same day"
+                },
+                {
+                  "label": "Method",
+                  "value": "Auger / jet"
+                },
+                {
+                  "label": "Callout",
+                  "value": "Free quote"
+                }
+              ],
+              "price": "From ₹499",
+              "statusText": "Same-day available",
+              "category": "Drainage",
+              "propertyType": "Drain",
+              "button": {
+                "label": "Book now",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "drain-cleaning-services",
+              "body": "We clear blocked sinks, showers, toilets, and main drain lines using hand augers and high-pressure jetting. We also advise on habits to keep your drains flowing freely."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "alt": "Water heater service",
+              "title": "Water Heater Services",
+              "subtitle": "Water Heating",
+              "infoTitle": "Hot water restored",
+              "description": "Installation, repair and maintenance of all types of water heaters.",
+              "features": [
+                {
+                  "label": "Service",
+                  "value": "Repair / install"
+                },
+                {
+                  "label": "Warranty",
+                  "value": "1 year"
+                },
+                {
+                  "label": "Callout",
+                  "value": "Free quote"
+                }
+              ],
+              "price": "From ₹899",
+              "statusText": "Booking this week",
+              "category": "Water Heating",
+              "propertyType": "Water Heater",
+              "button": {
+                "label": "Book now",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "water-heater-services",
+              "body": "From no-hot-water faults to full replacements, our technicians service electric and gas water heaters and install new energy-efficient units to code with a warranty."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+              "alt": "Emergency plumber at work",
+              "title": "Toilet Installation & Repair",
+              "subtitle": "Emergency",
+              "infoTitle": "Any hour, any day",
+              "description": "Professional toilet installation and quick repair services.",
+              "features": [
+                {
+                  "label": "Response",
+                  "value": "24/7"
+                },
+                {
+                  "label": "Arrival",
+                  "value": "Priority"
+                },
+                {
+                  "label": "Callout",
+                  "value": "On request"
+                }
+              ],
+              "price": "From ₹999",
+              "statusText": "Available now",
+              "category": "Emergency",
+              "propertyType": "Emergency",
+              "button": {
+                "label": "Call now",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "toilet-installation-repair",
+              "body": "Plumbing emergencies can't wait. Our 24/7 crew responds to burst pipes, major leaks, and overflows quickly to limit damage and restore your home."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+              "alt": "Faucet and fixture installation",
+              "title": "Pipe Installation & Replacement",
+              "subtitle": "Fixtures",
+              "infoTitle": "Upgrade your fittings",
+              "description": "High-quality pipe installation and replacement.",
+              "features": [
+                {
+                  "label": "Service",
+                  "value": "Supply & fit"
+                },
+                {
+                  "label": "Warranty",
+                  "value": "1 year"
+                },
+                {
+                  "label": "Callout",
+                  "value": "Free quote"
+                }
+              ],
+              "price": "From ₹699",
+              "statusText": "Booking this week",
+              "category": "Fixtures",
+              "propertyType": "Fixtures",
+              "button": {
+                "label": "Book now",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "pipe-installation-replacement",
+              "body": "We supply and fit taps, showers, sinks, and shut-off valves from trusted brands, with a clean install and tidy finish every time."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
+              "alt": "Bathroom plumbing renovation",
+              "title": "General Plumbing Services",
+              "subtitle": "Bathroom",
+              "infoTitle": "Full bathroom work",
+              "description": "All types of plumbing solutions for homes and businesses.",
+              "features": [
+                {
+                  "label": "Scope",
+                  "value": "Full room"
+                },
+                {
+                  "label": "Warranty",
+                  "value": "1 year"
+                },
+                {
+                  "label": "Callout",
+                  "value": "Free quote"
+                }
+              ],
+              "price": "Custom quote",
+              "statusText": "By appointment",
+              "category": "Bathroom",
+              "propertyType": "Bathroom",
+              "button": {
+                "label": "Get a quote",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "general-plumbing-services",
+              "body": "Planning a bathroom refresh? We handle re-pipes, fixture upgrades, and all plumbing for renovations — coordinated cleanly and finished to code."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
+              "alt": "Toilet repair service",
+              "title": "Toilet Repair & Installation",
+              "subtitle": "Plumbing",
+              "infoTitle": "Fix or replace",
+              "description": "Running, leaking, or blocked toilets repaired — plus clean installs of new units.",
+              "features": [
+                {
+                  "label": "Service",
+                  "value": "Repair / install"
+                },
+                {
+                  "label": "Warranty",
+                  "value": "6 months"
+                },
+                {
+                  "label": "Callout",
+                  "value": "Free quote"
+                }
+              ],
+              "price": "From ₹549",
+              "statusText": "Same-day available",
+              "category": "Plumbing",
+              "propertyType": "Plumbing",
+              "button": {
+                "label": "Book now",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "toilet-repair-installation",
+              "body": "We fix running, leaking, and blocked toilets, replace worn internals, and install new units cleanly with everything tested before we leave."
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
+              "alt": "Commercial plumbing maintenance",
+              "title": "Commercial Plumbing & Maintenance",
+              "subtitle": "Commercial",
+              "infoTitle": "For offices & shops",
+              "description": "Scheduled maintenance and repairs for offices, shops, and rental properties.",
+              "features": [
+                {
+                  "label": "Plan",
+                  "value": "Scheduled"
+                },
+                {
+                  "label": "Priority",
+                  "value": "Included"
+                },
+                {
+                  "label": "Billing",
+                  "value": "Single invoice"
+                }
+              ],
+              "price": "Custom quote",
+              "statusText": "By appointment",
+              "category": "Commercial",
+              "propertyType": "Commercial",
+              "button": {
+                "label": "Get a quote",
+                "href": "/contact",
+                "variant": "primary"
+              },
+              "slug": "commercial-plumbing-maintenance",
+              "body": "We keep offices, shops, and rental properties running with scheduled maintenance, priority emergency response, and simple single-invoice billing."
+            }
+          ],
+          "categories": [
+            {
+              "title": "Plumbing Services",
+              "category": "Plumbing Services",
+              "desc": "Leaks, taps, toilets, and pipe repairs by licensed technicians.",
+              "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80",
+              "alt": "Plumbing repair under a sink",
+              "href": "/services"
+            },
+            {
+              "title": "Emergency Repairs",
+              "category": "Emergency Repairs",
+              "desc": "24/7 response for burst pipes, major leaks, and overflows.",
+              "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+              "alt": "Emergency plumber at work",
+              "href": "/services"
+            },
+            {
+              "title": "Drain Cleaning",
+              "category": "Drain",
+              "desc": "Fast clearing of blocked sinks, showers, and main lines.",
+              "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+              "alt": "Drain cleaning tools",
+              "href": "/properties?type=Drain"
+            },
+            {
+              "title": "Water Heaters",
+              "category": "Water Heater",
+              "desc": "Repair, service, and installation of electric and gas heaters.",
+              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "alt": "Water heater unit",
+              "href": "/properties?type=Water%20Heater"
+            },
+            {
+              "title": "Fixtures & Fittings",
+              "category": "Fixtures",
+              "desc": "Supply and fit taps, showers, sinks, and valves.",
+              "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+              "alt": "Modern kitchen fixtures",
+              "href": "/properties?type=Fixtures"
+            },
+            {
+              "title": "Bathroom Renovation",
+              "category": "Bathroom",
+              "desc": "Re-pipes and plumbing for full bathroom refreshes.",
+              "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
+              "alt": "Renovated bathroom",
+              "href": "/properties?type=Bathroom"
+            }
+          ],
+          "filters": [
+            {
+              "label": "All services",
+              "value": "all",
+              "field": "all"
+            },
+            {
+              "label": "Plumbing",
+              "value": "Plumbing",
+              "field": "propertyType"
+            },
+            {
+              "label": "Drain",
+              "value": "Drain",
+              "field": "propertyType",
+              "aliases": [
+                "Drainage",
+                "drain"
+              ]
+            },
+            {
+              "label": "Water Heater",
+              "value": "Water Heater",
+              "field": "propertyType",
+              "aliases": [
+                "Water Heating",
+                "heater"
+              ]
+            },
+            {
+              "label": "Emergency",
+              "value": "Emergency",
+              "field": "propertyType"
+            },
+            {
+              "label": "Fixtures",
+              "value": "Fixtures",
+              "field": "propertyType"
+            },
+            {
+              "label": "Bathroom",
+              "value": "Bathroom",
+              "field": "propertyType"
+            }
+          ],
+          "intentMap": {},
+          "buttons": [
+            {
+              "label": "Book an appointment",
+              "href": "/contact",
+              "variant": "primary"
+            }
+          ],
+          "breadcrumb": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "Services",
+              "href": "/services"
+            }
+          ],
+          "detail": {
+            "notFoundTitle": "Service not found",
+            "backLabel": "Back to services",
+            "primaryCtaLabel": "Book an appointment",
+            "secondaryCtaLabel": "All services",
+            "breadcrumbParentLabel": "Services"
+          },
+          "trustHighlights": [
+            {
+              "title": "Trusted & Reliable",
+              "desc": "We deliver quality you can trust."
+            },
+            {
+              "title": "Expert Plumbers",
+              "desc": "Skilled and experienced professionals."
+            },
+            {
+              "title": "Quick Response",
+              "desc": "We are always ready to help you."
+            },
+            {
+              "title": "Affordable Pricing",
+              "desc": "Quality services at honest prices."
+            }
+          ]
+        },
+        "InvestmentOpportunities": {
+          "pretitle": "Maintenance plans",
+          "title": "Care plans that prevent costly repairs.",
+          "desc": "Affordable annual plans with priority booking, discounted rates, and scheduled check-ups.",
+          "items": [
+            {
+              "title": "Home Care Basic",
+              "desc": "Annual inspection, priority booking, and 10% off all repairs for one home.",
+              "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
+              "alt": "Home care basic plan",
+              "yieldLabel": "From ₹2,999 / yr",
+              "location": "Single home",
+              "href": "/contact"
+            },
+            {
+              "title": "Home Care Plus",
+              "desc": "Two check-ups a year, free minor fixes, and 15% off all major repairs.",
+              "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+              "alt": "Home care plus plan",
+              "yieldLabel": "From ₹4,999 / yr",
+              "location": "Single home",
+              "href": "/contact"
+            },
+            {
+              "title": "Business Care",
+              "desc": "Scheduled maintenance for offices and shops with priority emergency response.",
+              "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
+              "alt": "Business care plan",
+              "yieldLabel": "Custom pricing",
+              "location": "Commercial",
+              "href": "/contact"
+            },
+            {
+              "title": "Landlord Plan",
+              "desc": "Multi-property coverage with tenant-friendly scheduling and single billing.",
+              "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
+              "alt": "Landlord maintenance plan",
+              "yieldLabel": "From ₹9,999 / yr",
+              "location": "Multiple homes",
+              "href": "/contact"
+            }
+          ],
+          "button": {
+            "label": "Talk to us about a plan",
+            "href": "/contact",
+            "variant": "primary"
+          }
+        }
+      },
+      "pages": {
+        "InvestmentTipsPage": {
+          "pretitle": "Tips",
+          "title": "Smart tips for home care and repairs.",
+          "desc": "Practical notes on maintenance, emergencies, and getting jobs done right the first time.",
+          "tips": [
+            {
+              "title": "Fix small leaks early",
+              "desc": "A drip today can become a ceiling repair tomorrow — call before damage spreads.",
+              "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+              "alt": "Leaking pipe",
+              "tag": "Prevention"
+            },
+            {
+              "title": "Know your shut-off valve",
+              "desc": "In a burst-pipe emergency, shutting the main water saves floors and furniture.",
+              "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+              "alt": "Plumber at work",
+              "tag": "Emergency"
+            },
+            {
+              "title": "Ask for an upfront quote",
+              "desc": "Clear pricing before work starts avoids surprises and builds trust.",
+              "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
+              "alt": "Clear pricing",
+              "tag": "Pricing"
+            },
+            {
+              "title": "Schedule annual check-ups",
+              "desc": "Heaters, drains, and main lines last longer with yearly inspections.",
+              "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80",
+              "alt": "Maintenance check",
+              "tag": "Maintenance"
+            }
+          ],
+          "ctaButton": {
+            "label": "Book a service",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          "breadcrumb": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "Tips",
+              "href": "/investment-tips"
+            }
+          ]
+        },
+        "EmiCalculatorPage": {
+          "pretitle": "Tools",
+          "title": "Plan your service budget.",
+          "desc": "Estimate monthly costs for larger installations and phased repair work.",
+          "defaultAmount": 5000000,
+          "defaultRate": 8.5,
+          "defaultTenureYears": 20,
+          "amountLabel": "Loan amount (₹)",
+          "rateLabel": "Interest rate (% p.a.)",
+          "tenureLabel": "Tenure (years)",
+          "resultLabel": "Estimated EMI",
+          "note": "This estimate is indicative only and not a loan offer.",
+          "breadcrumb": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "EMI Calculator",
+              "href": "/emi-calculator"
+            }
+          ],
+          "monthlyLabel": "per month",
+          "totalInterestLabel": "Total interest",
+          "totalPaymentLabel": "Total payment"
+        },
+        "AreaConverterPage": {
+          "pretitle": "Tools",
+          "title": "Quick unit converter.",
+          "desc": "Convert measurements when planning pipe runs, flooring, or fixture layouts.",
+          "defaultValue": 1000,
+          "fromUnit": "sqft",
+          "toUnit": "sqyd",
+          "units": [
+            {
+              "label": "Square Feet",
+              "value": "sqft",
+              "toSqFt": 1
+            },
+            {
+              "label": "Square Yards",
+              "value": "sqyd",
+              "toSqFt": 9
+            },
+            {
+              "label": "Square Meters",
+              "value": "sqm",
+              "toSqFt": 10.7639
+            },
+            {
+              "label": "Acres",
+              "value": "acre",
+              "toSqFt": 43560
+            },
+            {
+              "label": "Hectares",
+              "value": "hectare",
+              "toSqFt": 107639
+            }
+          ],
+          "note": "Conversions are approximate. Confirm measurements from legal documents.",
+          "breadcrumb": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "Area Converter",
+              "href": "/area-converter"
+            }
+          ],
+          "valueLabel": "Value",
+          "fromLabel": "From",
+          "toLabel": "To",
+          "resultLabel": "Converted area"
+        },
+        "SellPage": {
+          "pretitle": "Book with AquaFix",
+          "title": "Book a repair or installation with confidence.",
+          "desc": "Tell us what needs fixing — licensed technicians, upfront quotes, and tidy workmanship.",
+          "benefits": [
+            {
+              "title": "Market-ready pricing",
+              "desc": "Neighborhood comps so your ask stays competitive."
+            },
+            {
+              "title": "Verified buyer shortlists",
+              "desc": "We qualify interest before visits."
+            },
+            {
+              "title": "Documentation support",
+              "desc": "Clear checklists from listing to registration."
+            }
+          ],
+          "formSubmitLabel": "Request a valuation call",
+          "formFields": [
+            {
+              "label": "Full name",
+              "type": "text",
+              "placeholder": "Your name"
+            },
+            {
+              "label": "Phone",
+              "type": "tel",
+              "placeholder": "+91"
+            },
+            {
+              "label": "Email",
+              "type": "email",
+              "placeholder": "you@email.com"
+            },
+            {
+              "label": "Property type",
+              "type": "text",
+              "placeholder": "Apartment, villa, commercial…"
+            },
+            {
+              "label": "Location",
+              "type": "text",
+              "placeholder": "City / locality"
+            },
+            {
+              "label": "Message",
+              "type": "textarea",
+              "placeholder": "Size, asking price, timeline…"
+            }
+          ],
+          "sideImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=80",
+          "sideImageTitle": "Home for sale",
+          "breadcrumb": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "Sell",
+              "href": "/sell"
+            }
+          ],
+          "formTitle": "Request a valuation",
+          "successMessage": "Thanks — an advisor will contact you shortly about your listing."
+        },
+        "ProjectsPage": {
+          "pretitle": "Completed works",
+          "title": "Recent jobs and installations.",
+          "desc": "Browse repairs and installations we recently completed for homes and businesses.",
+          "filters": [
+            "All",
+            "Completed",
+            "In progress"
+          ],
+          "breadcrumb": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "Work",
+              "href": "/projects"
+            }
+          ],
+          "viewLabel": "View job",
+          "emptyMessage": "No completed works match this filter yet."
+        }
+      }
+    }
+  }
+}

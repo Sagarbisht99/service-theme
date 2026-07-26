@@ -1,0 +1,50 @@
+---
+description: Service-only vertical — plumbing / home repair (no Realestate category)
+alwaysApply: true
+---
+
+# Service category direction
+
+This project is a **Service** industry vertical only (plumbing / home repair, Aquafix-style).
+
+## Active category
+
+- Sole category id: `Service` (`ACTIVE_CATEGORY` in `lib/types.ts`)
+- Do **not** reintroduce a `Realestate` category or Buy/Rent/Sell property flows
+
+## Homepage structure (Service)
+
+Prefer this order (map existing section components; rename via JSON copy first):
+
+1. Header + Hero (appointment CTAs, phone — not property search)
+2. About + value props
+3. Partners (reuse FeaturedDevelopers as partner logos)
+4. Services grid (reuse IntroCategories / FeaturedProperties / ServicePage items as services)
+5. Featured completed works (LatestProjects / Gallery)
+6. Why choose us / benefits
+7. Working process (PropertyProcess)
+8. Testimonials
+9. Team
+10. Stats (CompanyStatistics)
+11. FAQ
+12. Blog
+13. CTA (book appointment)
+14. Contact + map
+15. Footer
+
+## Data rules
+
+- **Category-specific** copy lives under `categories.Service`:
+  - `sections`: Header, Banner, About, WhyChooseUs, Properties, FAQ, LatestProjects, FeaturedDevelopers, PropertyProcess, CompanyStatistics, ContactInfo, CitiesWeServe, InvestmentOpportunities
+  - `pages`: InvestmentTipsPage, EmiCalculatorPage, AreaConverterPage, SellPage, ProjectsPage
+- **Shared chrome** lives under `common`: Footer, Topbar, Testimonial, Team, AwardsPage, GalleryPage, CareerPage, legal pages, ContactPage, AboutPage, ServicePage, WhyChooseUsPage, etc.
+- Do **not** duplicate Team / Testimonials / Awards / Footer under the category — edit `common.*`
+- `Properties.listings` represent **service packages / offerings**, not homes
+- Disable or reconfigure `Banner.smartSearch` for Service (no Buy/Rent defaults)
+- Prefer JSON `buttons[].href` → `/services`, `/contact`, `/projects` over hardcoded `/properties`
+
+## Visual direction
+
+- Service brand palette: deep navy + bright lime accents
+- Prefer CSS variables over hardcoded terracotta/cream when touching template-1
+---
