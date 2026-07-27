@@ -44,7 +44,7 @@ export default function Footer({ data }: { data: ResolvedSiteData }) {
       <div className="mx-auto max-w-[1280px] px-4 pt-14 pb-10 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           {/* Brand column */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-3">
             <Link
               href={withTheme("/", THEME)}
               className="inline-flex items-center gap-2 focus:outline-none"
@@ -94,7 +94,7 @@ export default function Footer({ data }: { data: ResolvedSiteData }) {
           </div>
 
           {/* Link columns */}
-          {columns.slice(0, 2).map((col) => (
+          {columns.slice(0, 3).map((col) => (
             <div key={col.title} className="lg:col-span-2">
               <h4 className="text-[15px] font-extrabold text-white tracking-tight">
                 {col.title}
@@ -115,7 +115,7 @@ export default function Footer({ data }: { data: ResolvedSiteData }) {
           ))}
 
           {/* Contact column */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-3">
             <h4 className="text-[15px] font-extrabold text-white tracking-tight">
               {footer.contactLabel || "Contact"}
             </h4>

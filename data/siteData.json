@@ -73,6 +73,10 @@
               "href": "/team"
             },
             {
+              "label": "Certifications",
+              "href": "/awards"
+            },
+            {
               "label": "Careers",
               "href": "/careers"
             },
@@ -86,20 +90,45 @@
           "title": "Services",
           "links": [
             {
-              "label": "Plumbing",
+              "label": "All Services",
               "href": "/services"
             },
             {
-              "label": "Faucet Repairs",
-              "href": "/services"
+              "label": "Pricing Plans",
+              "href": "/pricing"
             },
             {
-              "label": "Installation",
-              "href": "/services"
+              "label": "Projects",
+              "href": "/projects"
             },
             {
-              "label": "Maintenance",
-              "href": "/services"
+              "label": "Gallery",
+              "href": "/gallery"
+            },
+            {
+              "label": "Why Choose Us",
+              "href": "/why-choose-us"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "links": [
+            {
+              "label": "Blog",
+              "href": "/blog"
+            },
+            {
+              "label": "Sitemap",
+              "href": "/sitemap"
+            },
+            {
+              "label": "Privacy Policy",
+              "href": "/privacy"
+            },
+            {
+              "label": "Terms & Conditions",
+              "href": "/terms"
             }
           ]
         }
@@ -378,13 +407,13 @@
     },
     "ContactPage": {
       "pretitle": "Contact us",
-      "title": "Book a Repairo technician",
-      "desc": "Need a repair, installation, or emergency callout across Delhi NCR? Share a few details and our team will call you back to confirm your appointment.",
+      "title": "Book a technician",
+      "desc": "Need a repair, installation, or emergency callout? Share a few details and our team will call you back to confirm your appointment.",
       "sideImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
-      "sideImageTitle": "Repairo technician on a service call",
+      "sideImageTitle": "Technician on a service call",
       "footerContact": {
         "location": "Unit 7, Service Hub, Sector 44, Gurugram, Haryana 122003",
-        "email": "hello@repairo.in",
+        "email": "hello@aquafix.com",
         "phone": "+91 98110 22345"
       },
       "formSubmitLabel": "Request a callback",
@@ -407,17 +436,17 @@
         {
           "label": "Message",
           "type": "textarea",
-          "placeholder": "e.g. Leaking kitchen tap in Sector 65, Gurugram — need a technician today"
+          "placeholder": "e.g. Leaking kitchen tap — need a technician today"
         }
       ],
       "reachPretitle": "Reach us",
-      "reachTitle": "Repairo · Gurugram office",
+      "reachTitle": "Aquafix office",
       "reachDesc": "Prefer a call, WhatsApp, or email? We're available 24/7 for emergencies — or send a message and we'll reply shortly.",
       "formPretitle": "Write us",
       "formTitle": "Book a service",
-      "formDesc": "Tell us the issue, your area (Gurugram, Noida, Delhi, Faridabad, Ghaziabad), and a preferred time.",
+      "formDesc": "Tell us the issue, your area, and a preferred time.",
       "successTitle": "Request received",
-      "successDesc": "Thank you — your request reached Repairo. A technician will contact you shortly to confirm.",
+      "successDesc": "Thank you — your request reached Aquafix. A technician will contact you shortly to confirm.",
       "consentPrefix": "By checking this box, you agree to our",
       "officeLabel": "Office",
       "phoneLabel": "Phone",
@@ -712,108 +741,110 @@
       ]
     },
     "AwardsPage": {
-      "pretitle": "AWARDS & CERTIFICATIONS",
-      "title": "Our Achievements",
-      "desc": "Industry recognition for quality workmanship, safety, and customer trust.",
+      "pretitle": "RECOGNIZED FOR EXCELLENCE",
+      "title": "Our Certifications & Accreditations",
+      "desc": "Our certifications reflect our dedication to maintaining the highest standards in quality, security, and customer satisfaction.",
+      "sideImage": "https://ik.imagekit.io/0qbkwaf3x/Gemini_Generated_Image_jqxpb1jqxpb1jqxp.png",
+      "sideImageTitle": "Awards and certifications",
       "awardItems": [
-        {
-          "year": "2023",
-          "title": "Best Plumbing",
-          "org": "Service 2023",
-          "desc": "Recognized for outstanding plumbing service excellence.",
-          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(4).png?updatedAt=1784972366550"
-        },
-        {
-          "year": "2024",
-          "title": "Certified Plumbing",
-          "org": "Professionals",
-          "desc": "Certified professionals delivering trusted repairs.",
-          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(2).png?updatedAt=1784971948329"
-        },
         {
           "year": "2015",
           "title": "ISO 9001:2015",
-          "org": "Certified",
+          "org": "Quality Management",
           "desc": "ISO quality management certification.",
-          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(2).png?updatedAt=1784971948329"
+          "image": "https://i.pinimg.com/736x/6b/24/2b/6b242ba1d405e9828ac43a1fe7035401.jpg"
         },
         {
-          "year": "2022",
-          "title": "Customer Choice",
-          "org": "Award 2022",
-          "desc": "Chosen by customers for reliable service.",
-          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview.png?updatedAt=1784971860123"
+          "year": "2015",
+          "title": "ISO 14001:2015",
+          "org": "Environmental Management",
+          "desc": "ISO environmental management certification.",
+          "image": "https://i.pinimg.com/vwebp/736x/3e/55/5d/3e555d13595e2ae7037be6a8473953b7.webp"
+        },
+        {
+          "year": "2013",
+          "title": "ISO 27001:2013",
+          "org": "Information Security",
+          "desc": "ISO information security certification.",
+          "image": "https://i.pinimg.com/1200x/e0/4f/06/e04f06962d231b4241a2b0f65b3ed9da.jpg"
         },
         {
           "year": "2024",
-          "title": "Top Rated Service",
-          "org": "Provider",
-          "desc": "Top-rated service provider across the region.",
-          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(3).png?updatedAt=1784971991891"
+          "title": "Google Partner",
+          "org": "Certified Partner",
+          "desc": "Google Partner certified.",
+          "image": "https://i.pinimg.com/736x/89/60/78/8960781f6ac6167f4f9df4bf66e77eae.jpg"
         },
         {
-          "year": "2023",
-          "title": "Safety Excellence",
-          "org": "Award",
-          "desc": "Awarded for safety excellence on every job.",
-          "image": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview%20(4).png?updatedAt=1784972366550"
+          "year": "2024",
+          "title": "Top Web Developers",
+          "org": "Clutch Certified",
+          "desc": "Recognized among top developers on Clutch.",
+          "image": "https://i.pinimg.com/736x/2d/4c/db/2d4cdb6cd7aee1ab95e220f2337a0691.jpg"
+        },
+        {
+          "year": "2024",
+          "title": "BBB Accredited",
+          "org": "Business",
+          "desc": "Better Business Bureau accredited.",
+          "image": "https://i.pinimg.com/736x/22/c2/20/22c220d7b9b56fa8324b0e3b0bacc84c.jpg"
         }
       ]
     },
     "CareerPage": {
-      "pretitle": "Careers",
-      "title": "Build meaningful spaces with us.",
-      "desc": "Join a team that values craft, clarity, and respect on every site.",
-      "desc2": "We hire designers, site leads, and coordinators who care about the homeowner experience.",
-      "sideImage": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80",
-      "sideImageTitle": "Team collaborating on a renovation site",
-      "applyLabel": "Apply now",
+      "pretitle": "Career",
+      "title": "Join the Aquafix team.",
+      "desc": "Build a career with licensed technicians who take pride in honest work.",
+      "desc2": "We hire reliable people who care about clear communication and quality repairs.",
+      "sideImage": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80",
+      "sideImageTitle": "Technician at work",
+      "applyLabel": "Submit Application",
       "benefits": [
         {
-          "title": "Growth paths",
-          "desc": "Mentorship and role progression across design, build, and client care."
+          "title": "Competitive salary",
+          "desc": "Fair pay with overtime for emergency call-outs."
         },
         {
-          "title": "Fair schedules",
-          "desc": "Predictable planning so field and studio teams can work sustainably."
+          "title": "Health & wellness benefits",
+          "desc": "Coverage options that support you and your family."
         },
         {
-          "title": "Tools that help",
-          "desc": "Clear briefs, shared checklists, and support from procurement to handover."
+          "title": "Career growth opportunities",
+          "desc": "Training, certifications, and clear paths to lead tech roles."
         },
         {
-          "title": "Community focus",
-          "desc": "Paid volunteer days tied to our community and neighborhood programs."
+          "title": "Friendly work environment",
+          "desc": "A supportive crew that backs each other on every job."
         }
       ],
       "jobs": [
         {
-          "title": "Interior Designer",
-          "location": "San Francisco, CA",
+          "title": "Plumbing Technician",
+          "location": "New York, NY",
           "type": "Full-time",
-          "desc": "Lead concepts, material boards, and client presentations for residential remodels.",
-          "href": "/contact"
+          "desc": "Perform residential and commercial plumbing repairs, installs, and maintenance.",
+          "href": "/careers"
         },
         {
-          "title": "Site Supervisor",
-          "location": "Bay Area",
+          "title": "Emergency Service Technician",
+          "location": "New York, NY",
           "type": "Full-time",
-          "desc": "Coordinate trades, quality checks, and daily progress updates on active sites.",
-          "href": "/contact"
+          "desc": "Handle after-hours leaks, clogs, and urgent call-outs with calm, clear service.",
+          "href": "/careers"
         },
         {
-          "title": "Client Coordinator",
+          "title": "Apprentice Plumber",
+          "location": "Brooklyn, NY",
+          "type": "Full-time",
+          "desc": "Learn on the job with licensed mentors while supporting installs and service visits.",
+          "href": "/careers"
+        },
+        {
+          "title": "Dispatch Coordinator",
           "location": "Hybrid",
           "type": "Full-time",
-          "desc": "Own timelines, budgets communication, and smooth handovers for assigned projects.",
-          "href": "/contact"
-        },
-        {
-          "title": "Junior Estimator",
-          "location": "San Francisco, CA",
-          "type": "Full-time",
-          "desc": "Support takeoffs, vendor quotes, and transparent proposal packages.",
-          "href": "/contact"
+          "desc": "Schedule jobs, update customers, and keep technicians moving efficiently.",
+          "href": "/careers"
         }
       ],
       "breadcrumb": [
@@ -822,7 +853,7 @@
           "href": "/"
         },
         {
-          "label": "Careers",
+          "label": "Career",
           "href": "/careers"
         }
       ]
@@ -1070,10 +1101,6 @@
             {
               "label": "Contact",
               "href": "/contact"
-            },
-            {
-              "label": "Gallery",
-              "href": "/gallery"
             }
           ]
         },
@@ -1126,10 +1153,6 @@
               "href": "/investment-tips"
             },
             {
-              "label": "Gallery",
-              "href": "/gallery"
-            },
-            {
               "label": "EMI Calculator",
               "href": "/emi-calculator"
             },
@@ -1173,35 +1196,42 @@
       ]
     },
     "WhyChooseUsPage": {
-      "pretitle": "Why Repairo",
-      "title": "Why families and investors choose us.",
-      "desc": "Verified listings, local advisors, and a clear process from first call to keys.",
+      "pretitle": "WHY CHOOSE US",
+      "title": "We Deliver Value That Matters",
+      "desc": "",
+      "sideImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+      "sideImageTitle": "Team collaborating on a project",
       "items": [
         {
-          "title": "Verified shortlists",
-          "desc": "Every option is checked for ownership clarity and visit readiness.",
+          "title": "Goal-Oriented Approach",
+          "desc": "We focus on your business goals to deliver the right solution.",
           "stat": "01"
         },
         {
-          "title": "Local market depth",
-          "desc": "Advisors who know commute patterns, schools, and micro-markets.",
+          "title": "Expert Team",
+          "desc": "Skilled professionals with years of industry experience.",
           "stat": "02"
         },
         {
-          "title": "Transparent next steps",
-          "desc": "You always know what happens after a visit.",
+          "title": "High Quality",
+          "desc": "Top-notch quality and attention to detail in every project.",
           "stat": "03"
         },
         {
-          "title": "End-to-end support",
-          "desc": "From enquiry to registration guidance and handover.",
+          "title": "On-Time Delivery",
+          "desc": "We respect deadlines and ensure timely delivery every time.",
           "stat": "04"
+        },
+        {
+          "title": "Ongoing Support",
+          "desc": "We're here for you even after the project is completed.",
+          "stat": "05"
         }
       ],
-      "ctaTitle": "Ready to shortlist with clarity?",
-      "ctaDesc": "Book a discovery call and we will map homes that match your budget.",
+      "ctaTitle": "Let's Build Something Great Together",
+      "ctaDesc": "Start your project with us today and take your business to the next level.",
       "ctaButton": {
-        "label": "Talk to an advisor",
+        "label": "Start Your Project",
         "href": "/contact",
         "variant": "primary"
       },
@@ -1300,6 +1330,10 @@
               "href": "/projects"
             },
             {
+              "label": "Pricing",
+              "href": "/pricing"
+            },
+            {
               "label": "Blogs",
               "href": "/blog"
             },
@@ -1320,10 +1354,6 @@
                   "href": "/why-choose-us"
                 },
                 {
-                  "label": "Gallery",
-                  "href": "/gallery"
-                },
-                {
                   "label": "Contact",
                   "href": "/contact"
                 }
@@ -1332,7 +1362,7 @@
           ],
           "buttons": [
             {
-              "label": "Conatct Us",
+              "label": "Contact Us",
               "href": "/contact",
               "variant": "primary"
             }
@@ -1760,7 +1790,7 @@
             {
               "name": "Kohler",
               "desc": "Premium faucets, sinks, and bathroom fittings.",
-              "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
+              "image": "https://i.pinimg.com/736x/c1/49/5c/c1495cd73c38f31f312d2783305c5fde.jpg",
               "alt": "Kohler fittings",
               "projectsLabel": "Authorized fitter",
               "href": "/services"
@@ -1768,7 +1798,7 @@
             {
               "name": "Jaquar",
               "desc": "Bathroom fixtures and complete plumbing solutions.",
-              "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+              "image": "https://i.pinimg.com/736x/c0/44/f9/c044f9abdaf0ab380ddc87d31533636d.jpg",
               "alt": "Jaquar fixtures",
               "projectsLabel": "Service partner",
               "href": "/services"
@@ -1776,7 +1806,7 @@
             {
               "name": "Havells",
               "desc": "Water heaters and electrical-plumbing appliances.",
-              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "image": "https://i.pinimg.com/236x/2a/0b/b1/2a0bb14330066774e43b873d30fc62a7.jpg",
               "alt": "Havells water heater",
               "projectsLabel": "Installed & serviced",
               "href": "/services"
@@ -1784,7 +1814,7 @@
             {
               "name": "Ashirvad",
               "desc": "Durable pipes and fittings for reliable supply lines.",
-              "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80",
+              "image": "https://i.pinimg.com/1200x/ff/26/ba/ff26ba1a840f3321041fca7d63c940be.jpg",
               "alt": "Ashirvad pipes",
               "projectsLabel": "Trusted supplier",
               "href": "/services"
@@ -1792,7 +1822,7 @@
             {
               "name": "Grohe",
               "desc": "German-engineered taps and shower systems.",
-              "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
+              "image": "https://i.pinimg.com/1200x/4d/32/6d/4d326d9c55cf4c57b9ee35d7bc09fc90.jpg",
               "alt": "Grohe shower system",
               "projectsLabel": "Authorized fitter",
               "href": "/services"
@@ -1800,7 +1830,7 @@
             {
               "name": "V-Guard",
               "desc": "Reliable water heaters and home appliances.",
-              "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
+              "image": "https://i.pinimg.com/736x/71/c6/c9/71c6c913480428c65bc1a89d0b272f94.jpg",
               "alt": "V-Guard appliances",
               "projectsLabel": "Installed & serviced",
               "href": "/services"

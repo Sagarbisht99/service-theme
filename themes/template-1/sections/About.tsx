@@ -32,7 +32,7 @@ const stats = [
     value: "18", 
     label: "Year\nExperience", 
     iconBg: "bg-[#e8f0fe]", 
-    iconColor: "text-[#1d6feb]" 
+    iconColor: "text-[#1052E0]" 
   },
   { 
     icon: FaUsers, 
@@ -46,19 +46,19 @@ const stats = [
     value: "25", 
     label: "Qualified\nExperts", 
     iconBg: "bg-[#e8f0fe]", 
-    iconColor: "text-[#1d6feb]" 
+    iconColor: "text-[#1052E0]" 
   },
 ];
 
 const featureIcons = [FaCheck, FaHeadset, FaClock, FaCog];
-const featureBgs = ["bg-[#1d6feb]", "bg-[#e6f7e2]", "bg-[#e8f0fe]", "bg-[#e6f7e2]"];
-const featureIconColors = ["text-white", "text-[#4caf50]", "text-[#1d6feb]", "text-[#4caf50]"];
+const featureBgs = ["bg-[#1052E0]", "bg-[#e8f0fe]", "bg-[#e8f0fe]", "bg-[#e8f0fe]"];
+const featureIconColors = ["text-white", "text-[#1052E0]", "text-[#1052E0]", "text-[#1052E0]"];
 
 export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
   const about = data.about;
   const aboutFeatures = about.features ?? [];
   return (
-    <section className="relative bg-[#f8fafc] py-16 md:py-24">
+    <section className="relative bg-white py-12 md:py-14">
       {/* Background Soft Glow Texture */}
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
@@ -82,7 +82,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
           }}
         >
           <motion.div variants={fadeUp} className="inline-flex flex-col items-center">
-            <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1d6feb]">
+            <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1052E0]">
               {about.pretitle || "About Us"}
             </span>
             <span className="mt-1 h-0.75 w-10 rounded-full bg-[#83c403]" />
@@ -93,7 +93,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
             className="mx-auto mt-5 max-w-237.5 text-[26px] font-extrabold leading-[1.22] tracking-tight sm:text-[34px] md:text-[40px] text-[#0b1938]"
           >
             {about.title || "Professional and Reliable Plumbing Services"}{" "}
-            <span className="text-[#1d6feb]">top-notch solutions.</span>
+            <span className="text-[#1052E0]">top-notch solutions.</span>
           </motion.h2>
         </motion.div>
 
@@ -111,12 +111,12 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
             {/* 1. TOP-LEFT DOT GRID */}
             <div className="absolute -left-2 -top-2 z-0 grid grid-cols-6 gap-2.5 pointer-events-none">
               {[...Array(24)].map((_, i) => (
-                <span key={i} className="h-1.5 w-1.5 rounded-full bg-[#1d6feb]" />
+                <span key={i} className="h-1.5 w-1.5 rounded-full bg-[#1052E0]" />
               ))}
             </div>
 
             {/* 2. BOTTOM-LEFT BLUE BASE ACCENT */}
-            <div className="absolute -bottom-6 -left-2 z-0 h-36 w-36 rounded-2xl rounded-bl-[2.5rem] bg-[#1d6feb]" />
+            <div className="absolute -bottom-6 -left-2 z-0 h-36 w-36 rounded-2xl rounded-bl-[2.5rem] bg-[#1052E0]" />
 
             {/* 3. MAIN IMAGE CONTAINER */}
             <div className="relative z-10 aspect-4/3 w-full overflow-hidden rounded-tr-[2.5rem] rounded-br-[2.5rem] rounded-tl-[5rem] rounded-bl-none shadow-xl bg-slate-200">
@@ -131,7 +131,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
             </div>
 
             {/* 4. FLOATING BADGE (Centered at bottom border of image) */}
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 flex w-[85%] max-w-75 items-center gap-3.5 rounded-2xl bg-[#1d6feb] p-4 text-white shadow-2xl border border-white/10">
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 flex w-[85%] max-w-75 items-center gap-3.5 rounded-2xl bg-[#1052E0] p-4 text-white shadow-2xl border border-white/10">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#83c403] text-white shadow-sm">
                 <FaCheck className="text-base" />
               </div>
@@ -159,7 +159,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
           >
             {/* Sub-heading Tag */}
             <motion.div variants={fadeUp} className="flex items-center gap-2">
-              <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1d6feb]">
+              <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1052E0]">
                 {about.pretitle || "Who We Are"}
               </span>
               <span className="h-0.5 w-8 bg-[#83c403]" />
@@ -194,7 +194,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
                       <Icon className={`text-xl ${stat.iconColor}`} />
                     </div>
                     <div>
-                      <div className="flex items-baseline text-[22px] font-black text-[#1d6feb] leading-none">
+                      <div className="flex items-baseline text-[22px] font-black text-[#1052E0] leading-none">
                         {stat.value}
                         <span className="text-[#83c403] font-bold text-[18px] ml-0.5">+</span>
                       </div>
@@ -214,7 +214,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
             <motion.div variants={fadeUp} className="mt-7">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-3 rounded-full border-2 border-[#1d6feb] px-7 py-3 text-[13.5px] font-bold text-[#1d6feb] transition duration-200 hover:bg-[#1d6feb] hover:text-white"
+                className="inline-flex items-center gap-3 rounded-full border-2 border-[#1052E0] px-7 py-3 text-[13.5px] font-bold text-[#1052E0] transition duration-200 hover:bg-[#1052E0] hover:text-white"
               >
                 About Us
                 <FaArrowRight className="text-[12px]" />

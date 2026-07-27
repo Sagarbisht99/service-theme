@@ -27,7 +27,7 @@ export const themeShellClass: Record<ThemeId, string> = {
   service:
     "theme-service min-h-screen overflow-x-hidden bg-[#f4f7fb] text-[#0b1f3a]",
   "template-1":
-    "theme-template-1 min-h-screen overflow-x-hidden bg-white text-[#0a1f44]",
+    "theme-template-1 min-h-screen overflow-x-clip bg-white text-[#0a1f44]",
 };
 
 export function cssVarsStyle(

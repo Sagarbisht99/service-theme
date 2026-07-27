@@ -9,7 +9,7 @@ export default function StubPage({
   title?: string;
 }) {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 md:py-24">
+    <section className="mx-auto max-w-7xl px-4 py-12 md:py-14">
       <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0a1f44]">
         Coming soon
       </p>

@@ -43,8 +43,8 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
     ) ?? companyStatistics.stats[0];
 
   return (
-    <section className="relative overflow-hidden bg-[#f7f9fc] pt-6 pb-8 border-b border-gray-100">
-      <div className="mx-auto grid max-w-[1280px] items-center gap-8 px-4 pb-20 pt-8 md:px-6 lg:grid-cols-12 lg:gap-8 lg:px-8 lg:pt-8">
+    <section className="relative overflow-hidden border-b border-[#dbe7f6] bg-white py-8 md:py-10">
+      <div className="mx-auto grid max-w-[1280px] items-center gap-6 px-4 pb-8 pt-0 md:px-6 lg:grid-cols-12 lg:gap-6 lg:px-8 lg:pb-10">
         {/* Left column / content */}
         <motion.div
           className="relative z-10 max-w-2xl lg:col-span-6"
@@ -58,21 +58,21 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
           {banner.pretitle && (
             <motion.div
               variants={fadeUp}
-              className="inline-flex items-center gap-2 rounded-full border border-[#9fd40b]/30 bg-[#9fd40b]/10 px-4 py-2 text-xs sm:text-sm font-extrabold text-[#0a1f44]"
+              className="inline-flex items-center gap-2 rounded-full border border-[#1052E0]/15 bg-white/70 px-4 py-2 text-xs sm:text-sm font-extrabold text-[#0a1f44] shadow-[0_6px_18px_rgba(16,82,224,0.08)] backdrop-blur"
             >
-              <FaShieldAlt className="text-xs sm:text-sm text-[#9fd40b]" aria-hidden />
+              <FaShieldAlt className="text-xs sm:text-sm text-[#1052E0]" aria-hidden />
               {banner.pretitle}
             </motion.div>
           )}
 
           <motion.h1
             variants={fadeUp}
-            className="mt-5 font-sans text-[2.5rem] sm:text-5xl md:text-[3.5rem] lg:text-[3.8rem] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#0a1f44]"
+            className="mt-4 font-sans text-[2.1rem] sm:text-4xl md:text-[2.85rem] lg:text-[3.15rem] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#0a1f44]"
           >
             {banner.title.includes("Top-Notch") || banner.title.includes("Quality") ? (
               <>
                 Top-Notch Plumbing & Repair Solutions,
-                <span className="block mt-1.5" style={{ color: LIME }}>
+                <span className="block mt-1.5 text-[#1052E0]">
                   Quality Work.
                 </span>
               </>
@@ -84,7 +84,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
           {banner.desc && (
             <motion.p
               variants={fadeUp}
-              className="mt-6 max-w-xl text-[16px] sm:text-[17px] leading-relaxed text-[#0a1f44]/60"
+              className="mt-4 max-w-xl text-[15px] sm:text-[16px] leading-relaxed text-[#0a1f44]/68"
             >
               {banner.desc}
             </motion.p>
@@ -92,13 +92,13 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
 
           <motion.div
             variants={fadeUp}
-            className="mt-8 flex flex-wrap items-center gap-4"
+            className="mt-6 flex flex-wrap items-center gap-3"
           >
             {primary && (
               <Link
                 href={withTheme(primary.href || "/contact", THEME)}
-                className="inline-flex items-center gap-2 rounded-full px-7 py-4 text-sm font-extrabold text-[#0a1f44] shadow-[0_10px_24px_rgba(159,212,11,0.35)] transition hover:scale-[1.02] hover:brightness-95"
-                style={{ backgroundColor: LIME }}
+                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-extrabold text-white shadow-[0_12px_28px_rgba(16,82,224,0.28)] transition hover:scale-[1.02] hover:brightness-95"
+                style={{ backgroundColor: "#1052E0" }}
               >
                 <FaFileAlt className="text-sm" aria-hidden />
                 {primary.label}
@@ -107,7 +107,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
             {secondary && (
               <Link
                 href={withTheme(secondary.href || "/services", THEME)}
-                className="inline-flex items-center gap-2 rounded-full border border-[#0a1f44]/20 bg-white px-7 py-4 text-sm font-extrabold text-[#0a1f44] transition hover:border-[#0a1f44]/40 hover:bg-[#0a1f44]/[0.02]"
+                className="inline-flex items-center gap-2 rounded-full border border-[#1052E0]/20 bg-white px-6 py-3 text-sm font-extrabold text-[#0a1f44] transition hover:border-[#1052E0]/40 hover:bg-[#1052E0]/[0.04]"
               >
                 {secondary.label}
                 <FaArrowRight className="text-[11px]" aria-hidden />
@@ -118,14 +118,14 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
           {/* Avatar and Clients Section */}
           <motion.div
             variants={fadeUp}
-            className="mt-12 flex items-center gap-6"
+              className="mt-7 flex items-center gap-5"
           >
             <div className="flex items-center">
               {avatars.map((person, i) => (
                 <div
                   key={person.name}
-                  className="relative h-16 w-16 overflow-hidden rounded-full border-[4px] border-white bg-[#0a1f44]"
-                  style={{ marginLeft: i === 0 ? 0 : -22, zIndex: 10 - i }}
+                  className="relative h-12 w-12 overflow-hidden rounded-full border-[3px] border-white bg-[#0a1f44]"
+                  style={{ marginLeft: i === 0 ? 0 : -16, zIndex: 10 - i }}
                 >
                   <MediaImage
                     themeId={data.themeId}
@@ -133,27 +133,27 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
                     alt={person.name}
                     fill
                     className="object-cover"
-                    sizes="64px"
+                    sizes="48px"
                   />
                 </div>
               ))}
               <div
-                className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full border-[4px] border-white text-[13px] font-extrabold text-white"
-                style={{ marginLeft: -22, backgroundColor: NAVY }}
+                className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border-[3px] border-white text-[11px] font-extrabold text-white"
+                style={{ marginLeft: -16, backgroundColor: NAVY }}
               >
                 {clientsStat?.stat?.toLowerCase() || "4.3k+"}
               </div>
             </div>
 
-            <div className="h-12 w-[2px] bg-[#0a1f44]/15" />
+            <div className="h-10 w-[2px] bg-[#0a1f44]/15" />
 
             <div className="flex flex-col justify-center">
-              <p className="text-[24px] font-extrabold text-[#0a1f44] leading-none">
+              <p className="text-[20px] font-extrabold text-[#0a1f44] leading-none">
                 {clientsStat?.stat === "4.3k+"
                   ? "4,300+"
                   : clientsStat?.stat || "4,300+"}
               </p>
-              <p className="text-[13px] font-medium text-[#0a1f44]/55 leading-none mt-1.5">
+              <p className="text-[12px] font-medium text-[#0a1f44]/55 leading-none mt-1">
                 {clientsStat?.label || "Satisfied Clients"}
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
         {/* Right side — curved (non-square) image + feature bar */}
         <div className="relative lg:col-span-6 w-full flex flex-col justify-between">
           <motion.div
-            className="relative z-1 w-full h-[320px] md:h-[420px] lg:h-[500px]"
+            className="relative z-1 w-full h-[240px] md:h-[320px] lg:h-[380px]"
             initial={{ opacity: 0, scale: 1.03 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease }}
@@ -203,9 +203,9 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
 
           {/* Feature bar overlapping bottom */}
           {features.length > 0 && (
-            <div className="relative -translate-y-20 lg:translate-y-12 lg:absolute lg:bottom-0 lg:-left-12 lg:right-0 lg:z-20 px-0">
+            <div className="relative -translate-y-14 lg:translate-y-8 lg:absolute lg:bottom-0 lg:-left-10 lg:right-0 lg:z-20 px-0">
               <motion.div
-                className="mx-auto w-full overflow-hidden rounded-[1.75rem] shadow-[0_20px_50px_rgba(10,31,68,0.28)]"
+                className="mx-auto w-full overflow-hidden rounded-[1.5rem] shadow-[0_20px_50px_rgba(10,31,68,0.28)]"
                 style={{ backgroundColor: NAVY }}
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -218,7 +218,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
                       <div
                         key={item.title}
                         className={[
-                          "flex flex-col items-center text-center px-4 py-6 md:px-5 md:py-7",
+                          "flex flex-col items-center text-center px-3 py-4 md:px-4 md:py-5",
                           i < 2 ? "border-b border-white/10 lg:border-b-0" : "",
                           i % 2 === 0 ? "border-r border-white/10" : "",
                           i < 3 ? "lg:border-r lg:border-white/10" : "lg:border-r-0",
@@ -227,16 +227,16 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
                           .join(" ")}
                       >
                         <span
-                          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full mb-3.5"
+                          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full mb-2.5"
                           style={{ backgroundColor: LIME, color: NAVY }}
                         >
-                          <Icon className="text-sm" aria-hidden />
+                          <Icon className="text-xs" aria-hidden />
                         </span>
                         <div>
-                          <h3 className="text-[14px] font-extrabold text-white leading-tight">
+                          <h3 className="text-[13px] font-extrabold text-white leading-tight">
                             {item.title}
                           </h3>
-                          <p className="mt-1.5 text-[11.5px] leading-snug text-white/50 max-w-[140px] mx-auto">
+                          <p className="mt-1 text-[11px] leading-snug text-white/50 max-w-[130px] mx-auto">
                             {item.desc}
                           </p>
                         </div>

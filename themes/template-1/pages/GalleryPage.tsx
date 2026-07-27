@@ -50,7 +50,7 @@ export default function GalleryPage({ data, theme }: Props) {
         breadcrumb={page?.breadcrumb}
       />
 
-      <section className="bg-white py-12 md:py-16">
+      <section className="bg-white py-12 md:py-14">
         <div className="mx-auto max-w-[1280px] px-4 md:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2.5 mb-10">
             {categories.map((cat) => {

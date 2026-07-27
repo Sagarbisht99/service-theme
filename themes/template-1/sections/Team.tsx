@@ -35,7 +35,7 @@ export default function Team({ data }: { data: ResolvedSiteData }) {
   const members = (team?.teamItems || []).slice(0, 4);
 
   return (
-    <section className="relative bg-white py-16 overflow-hidden border-b border-gray-100">
+    <section className="relative overflow-hidden border-b border-gray-100 bg-white py-12 md:py-14">
       {/* Decorative plumber illustration bottom-left — same SVG as Testimonials */}
       <svg
         className="pointer-events-none absolute bottom-0 left-0 h-36 w-44 text-[#0a1f44]"
@@ -88,7 +88,7 @@ export default function Team({ data }: { data: ResolvedSiteData }) {
               className="overflow-hidden rounded-2xl bg-white border border-gray-100 shadow-[0_12px_35px_rgba(0,27,61,0.06)] transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(0,27,61,0.1)]"
             >
               {/* Photo */}
-              <div className="relative h-[260px] w-full bg-[#eef3fa]">
+              <div className="relative h-[260px] w-full bg-white">
                 <MediaImage
                   themeId={data.themeId}
                   src={member.image}

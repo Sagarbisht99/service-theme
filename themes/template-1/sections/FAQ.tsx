@@ -19,7 +19,7 @@ export default function FAQ({ data }: { data: ResolvedSiteData }) {
   const wrenchAlt = faq?.sideImageTitle || "Pipe wrench";
 
   return (
-    <section className="relative bg-white py-16 overflow-hidden border-b border-gray-100">
+    <section className="relative overflow-hidden border-b border-gray-100 bg-white py-12 md:py-14">
       <div className="mx-auto max-w-[1280px] px-4 md:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-12 items-start">
           
@@ -47,7 +47,7 @@ export default function FAQ({ data }: { data: ResolvedSiteData }) {
                 <div
                   key={item.question}
                   className={`rounded-2xl transition-all duration-300 ${
-                    isOpen ? "bg-[#f3f5f8] px-5 py-4" : "bg-transparent px-5 py-3"
+                    isOpen ? "bg-white px-5 py-4" : "bg-transparent px-5 py-3"
                   }`}
                 >
                   <button

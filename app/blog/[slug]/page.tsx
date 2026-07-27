@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import { resolveSiteData, resolveCategory } from "@/lib/data";
 import { resolveTheme } from "@/lib/theme";
 import { getThemePack } from "@/themes";
-import BlogDetail from "@/themes/service/pages/BlogDetail";
+import Template1BlogDetail from "@/themes/template-1/pages/BlogDetail";
+import ServiceBlogDetail from "@/themes/service/pages/BlogDetail";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -20,11 +21,16 @@ export default async function Page({ params, searchParams }: Props) {
 
   if (!slug) notFound();
 
+  const post = data.gallery?.galleryItems?.find((item) => item.slug === slug);
+  if (!post && theme === "template-1") notFound();
+
+  const Detail = theme === "template-1" ? Template1BlogDetail : ServiceBlogDetail;
+
   return (
     <div id="top" className={pack.shellClass}>
       <Header data={data} variant="solid" />
       <main>
-        <BlogDetail data={data} theme={theme} slug={slug} />
+        <Detail data={data} theme={theme} slug={slug} />
       </main>
       <Footer data={data} />
     </div>

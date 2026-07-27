@@ -2,25 +2,37 @@ import StubPage from "@/themes/template-1/pages/StubPage";
 import LegalPage from "@/themes/template-1/pages/LegalPage";
 import GalleryPage from "@/themes/template-1/pages/GalleryPage";
 import ProjectsPage from "@/themes/template-1/pages/ProjectsPage";
+import ServicesPage from "@/themes/template-1/pages/ServicesPage";
+import BlogPage from "@/themes/template-1/pages/BlogPage";
+import AboutPage from "@/themes/template-1/pages/AboutPage";
 import SitemapPage from "@/themes/template-1/pages/SitemapPage";
+import PricingPage from "@/themes/template-1/pages/PricingPage";
+import AwardsPage from "@/themes/template-1/pages/AwardsPage";
+import CareerPage from "@/themes/template-1/pages/CareerPage";
+import WhyChooseUsPage from "@/themes/template-1/pages/WhyChooseUsPage";
+import ContactPage from "@/themes/template-1/pages/ContactPage";
 import type { ResolvedSiteData, ThemeId } from "@/lib/types";
 
 type Props = { data: ResolvedSiteData; theme: ThemeId };
 
+export function Pricing(p: Props) {
+  return <PricingPage data={p.data} theme={p.theme} />;
+}
+
 export function About(p: Props) {
-  return <StubPage {...p} title="About" />;
+  return <AboutPage data={p.data} theme={p.theme} />;
 }
 export function Contact(p: Props) {
-  return <StubPage {...p} title="Contact" />;
+  return <ContactPage data={p.data} theme={p.theme} />;
 }
 export function Properties(p: Props) {
-  return <StubPage {...p} title="Services" />;
+  return <ServicesPage {...p} />;
 }
 export function Blog(p: Props) {
-  return <StubPage {...p} title="Blog" />;
+  return <BlogPage {...p} />;
 }
 export function Services(p: Props) {
-  return <StubPage {...p} title="Services" />;
+  return <ServicesPage {...p} />;
 }
 
 export function Privacy(p: Props) {
@@ -54,10 +66,10 @@ export function Team(p: Props) {
   return <StubPage {...p} title="Team" />;
 }
 export function Awards(p: Props) {
-  return <StubPage {...p} title="Awards" />;
+  return <AwardsPage data={p.data} theme={p.theme} />;
 }
 export function Career(p: Props) {
-  return <StubPage {...p} title="Careers" />;
+  return <CareerPage data={p.data} theme={p.theme} />;
 }
 export function Csr(p: Props) {
   return <StubPage {...p} title="CSR" />;
@@ -66,7 +78,7 @@ export function Mission(p: Props) {
   return <StubPage {...p} title="Mission" />;
 }
 export function WhyChooseUs(p: Props) {
-  return <StubPage {...p} title="Why Choose Us" />;
+  return <WhyChooseUsPage data={p.data} theme={p.theme} />;
 }
 export function EmiCalculator(p: Props) {
   return <StubPage {...p} title="EMI Calculator" />;

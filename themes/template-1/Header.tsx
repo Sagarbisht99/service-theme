@@ -55,7 +55,27 @@ function NavDropdown({
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const children = item.children ?? [];
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  function clearCloseTimer() {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  }
+
+  function openMenu() {
+    clearCloseTimer();
+    setOpen(true);
+  }
+
+  function scheduleClose() {
+    clearCloseTimer();
+    closeTimer.current = setTimeout(() => setOpen(false), 120);
+  }
 
   useEffect(() => {
     function clickAway(e: MouseEvent) {
@@ -64,41 +84,93 @@ function NavDropdown({
       }
     }
     document.addEventListener("mousedown", clickAway);
-    return () => document.removeEventListener("mousedown", clickAway);
+    return () => {
+      document.removeEventListener("mousedown", clickAway);
+      clearCloseTimer();
+    };
   }, []);
 
   return (
-    <div ref={ref} className="relative">
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={openMenu}
+      onMouseLeave={scheduleClose}
+    >
       <button
         type="button"
-        onClick={() => setOpen(!open)}
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-haspopup="menu"
         className={[
-          "flex items-center gap-1 text-[14px] font-bold tracking-tight transition focus:outline-none",
-          active ? "text-[#9fd40b]" : "text-white hover:text-[#9fd40b]",
+          "flex items-center gap-1.5 text-[14px] font-bold tracking-tight transition focus:outline-none",
+          active || open ? "text-[#9fd40b]" : "text-white hover:text-[#9fd40b]",
         ]
           .filter(Boolean)
           .join(" ")}
       >
         {item.label}
-        <FaChevronDown className="text-[10px] opacity-80" />
+        <FaChevronDown
+          className={[
+            "text-[10px] opacity-80 transition-transform duration-200",
+            open ? "rotate-180" : "",
+          ]
+            .filter(Boolean)
+            .join(" ")}
+        />
       </button>
 
-      {open && (
-        <div className="absolute left-0 mt-4 w-56 origin-top-left rounded-2xl border border-gray-100/90 bg-white p-2.5 shadow-xl ring-1 ring-black/5 z-50">
+      {/* Invisible bridge so hover doesn't break between trigger and panel */}
+      <div
+        className={[
+          "absolute left-0 top-full z-50 pt-3",
+          open ? "pointer-events-auto" : "pointer-events-none",
+        ].join(" ")}
+        aria-hidden={!open}
+      >
+        <div
+          role="menu"
+          className={[
+            "w-[260px] origin-top-left rounded-2xl border border-[#e8edf4] bg-white p-2 shadow-[0_16px_40px_rgba(10,31,68,0.14)] ring-1 ring-black/5 transition duration-150",
+            open
+              ? "visible translate-y-0 scale-100 opacity-100"
+              : "invisible -translate-y-1 scale-95 opacity-0",
+          ].join(" ")}
+        >
           <div className="flex flex-col gap-0.5">
-            {children.map((child) => (
-              <Link
-                key={child.href}
-                href={withTheme(child.href, THEME)}
-                onClick={() => setOpen(false)}
-                className="rounded-xl px-4 py-2.5 text-[13.5px] font-bold text-[#001b3d] hover:bg-gray-50/90 hover:text-[#9fd40b] transition"
-              >
-                {child.label}
-              </Link>
-            ))}
+            {children.map((child) => {
+              const childActive = hrefMatches(child.href, pathname, searchParams);
+              return (
+                <Link
+                  key={child.href}
+                  href={withTheme(child.href, THEME)}
+                  role="menuitem"
+                  onClick={() => setOpen(false)}
+                  className={[
+                    "group flex items-center justify-between gap-2 rounded-xl px-3.5 py-2.5 text-[13px] font-bold transition",
+                    childActive
+                      ? "bg-[#9fd40b]/15 text-[#0a1f44]"
+                      : "text-[#0a1f44]/80 hover:bg-[#f3f6fb] hover:text-[#0a1f44]",
+                  ].join(" ")}
+                >
+                  <span className="leading-snug">{child.label}</span>
+                  <span
+                    className={[
+                      "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[10px] transition",
+                      childActive
+                        ? "bg-[#9fd40b] text-[#0a1f44]"
+                        : "bg-transparent text-[#94a3b8] group-hover:bg-[#9fd40b]/25 group-hover:text-[#0a1f44]",
+                    ].join(" ")}
+                    aria-hidden
+                  >
+                    ›
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
@@ -110,11 +182,23 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menu = header.menu || [];
+  const primaryNav = menu.slice(0, 5);
+  const overflowNav = menu.slice(5);
+  const overflowItem: LinkItem | null = overflowNav.length
+    ? {
+        label: "Pages",
+        href: overflowNav[0]?.href || "/sitemap",
+        children: overflowNav.flatMap((item) => {
+          const base = [{ label: item.label, href: item.href }];
+          return item.children?.length ? [...base, ...item.children] : base;
+        }),
+      }
+    : null;
   const primaryButton = header.buttons?.[0];
 
   return (
-    <header className="sticky top-0 z-40 w-full px-3 sm:px-5 lg:px-6 pt-3 sm:pt-4">
-      <div className="mx-auto flex max-w-[1320px] h-[66px] items-center justify-between rounded-2xl bg-[#0a1f44] px-4 sm:px-6 lg:px-8 shadow-[0_10px_30px_rgba(10,31,68,0.25)]">
+    <header className="fixed top-0 left-0 z-40 w-full pt-0">
+      <div className="flex h-[66px] w-full items-center justify-between bg-[#0a1f44] px-4 sm:px-6 lg:px-8 shadow-[0_10px_30px_rgba(10,31,68,0.25)]">
         
         {/* Brand Logo (green leaf/drop emblem) */}
         <Link
@@ -133,7 +217,7 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-7">
-          {menu.slice(0, 6).map((item) => {
+          {primaryNav.map((item) => {
             const active = isItemActive(item, pathname, searchParams);
             return item.children && item.children.length > 0 ? (
               <NavDropdown key={item.label} item={item} active={active} />
@@ -152,6 +236,12 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
               </Link>
             );
           })}
+          {overflowItem && (
+            <NavDropdown
+              item={overflowItem}
+              active={isItemActive(overflowItem, pathname, searchParams)}
+            />
+          )}
         </nav>
 
         {/* Right CTA Actions */}
@@ -169,7 +259,7 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
                 Call us
               </span>
               <span className="block text-[13px] sm:text-[14px] font-extrabold text-[#9fd40b]">
-                (11) 222-333-444
+                +91 98766 54321
               </span>
             </div>
           </a>
@@ -232,9 +322,10 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
               </div>
 
               {/* Mobile Drawer Menu Links */}
-              <nav className="mt-8 flex flex-col gap-3">
+              <nav className="mt-8 flex flex-col gap-2">
                 {menu.map((item) => {
                   const active = isItemActive(item, pathname, searchParams);
+                  const hasChildren = Boolean(item.children?.length);
                   return (
                     <div key={item.label} className="flex flex-col">
                       <Link
@@ -242,25 +333,39 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
                         onClick={() => setMobileMenuOpen(false)}
                         className={[
                           "rounded-xl px-4 py-3 text-[14.5px] font-extrabold transition",
-                          active ? "bg-[#9fd40b]/10 text-[#9fd40b]" : "text-[#001b3d] hover:bg-gray-50",
+                          active
+                            ? "bg-[#9fd40b]/10 text-[#9fd40b]"
+                            : "text-[#001b3d] hover:bg-gray-50",
                         ]
                           .filter(Boolean)
                           .join(" ")}
                       >
                         {item.label}
                       </Link>
-                      {item.children && item.children.length > 0 && (
-                        <div className="ml-5 mt-1 border-l-2 border-gray-100/80 pl-3 flex flex-col gap-1">
-                          {item.children.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={withTheme(child.href, THEME)}
-                              onClick={() => setMobileMenuOpen(false)}
-                              className="rounded-lg py-2 px-3 text-[13px] font-bold text-[#001b3d]/70 hover:bg-gray-50 hover:text-[#9fd40b]"
-                            >
-                              {child.label}
-                            </Link>
-                          ))}
+                      {hasChildren && (
+                        <div className="ml-3 mt-1 space-y-0.5 border-l-2 border-[#e8edf4] pl-2">
+                          {item.children!.map((child) => {
+                            const childActive = hrefMatches(
+                              child.href,
+                              pathname,
+                              searchParams
+                            );
+                            return (
+                              <Link
+                                key={child.href}
+                                href={withTheme(child.href, THEME)}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className={[
+                                  "block rounded-lg px-3 py-2 text-[13px] font-bold transition",
+                                  childActive
+                                    ? "bg-[#9fd40b]/15 text-[#0a1f44]"
+                                    : "text-[#001b3d]/70 hover:bg-gray-50 hover:text-[#0a1f44]",
+                                ].join(" ")}
+                              >
+                                {child.label}
+                              </Link>
+                            );
+                          })}
                         </div>
                       )}
                     </div>
@@ -310,7 +415,11 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
 export default function Header({ data }: { data: ResolvedSiteData }) {
   return (
     <Suspense>
-      <HeaderContent data={data} />
+      <>
+        <HeaderContent data={data} />
+        {/* Prevent overlap with fixed header */}
+        <div className="h-[66px]" aria-hidden />
+      </>
     </Suspense>
   );
 }

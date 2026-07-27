@@ -82,7 +82,7 @@ const features = [
 
 export default function WhoWeAre() {
   return (
-    <section className="relative overflow-hidden bg-[#f8fafc] py-16 md:py-24">
+    <section className="relative overflow-hidden bg-white py-16 md:py-24">
       {/* Background Soft Glow Texture */}
 
  <h1>Sagar is here</h1>

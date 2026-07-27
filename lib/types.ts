@@ -582,6 +582,8 @@ export type AwardsPageData = {
   pretitle: string;
   title: string;
   desc: string;
+  sideImage?: string;
+  sideImageTitle?: string;
   awardItems: AwardItem[];
   breadcrumb?: LinkItem[];
 };

@@ -1,133 +1,103 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
 import MediaImage from "@/components/MediaImage";
-import ImageLightbox from "@/themes/template-1/components/ImageLightbox";
 import { withTheme } from "@/lib/theme";
 import type { ResolvedSiteData } from "@/lib/types";
 
 const THEME = "template-1" as const;
+const ACCENT = "#1052E0";
+const NAVY = "#0a1f44";
+const LIME = "#9fd40b";
 
 export default function Portfolio({ data }: { data: ResolvedSiteData }) {
   const { latestProjects } = data;
   const projects = (latestProjects?.projectItems || []).slice(0, 3);
-  const [open, setOpen] = useState(false);
-  const [index, setIndex] = useState(0);
 
-  const portfolioPretitle = "OUR PORTFOLIO";
-  const portfolioTitle = "Featured Completed Works";
-  const portfolioDesc =
-    latestProjects?.desc ||
-    "Explore our portfolio to see the high-quality plumbing projects we've completed. From emergency repairs to full-scale installations, our work demonstrates our commitment to excellence and customer satisfaction.";
-
-  const lightboxItems = projects.map((p) => ({
-    image: p.image,
-    title: p.title === "Full bathroom re-pipe" ? "Bathroom Repair" : p.title,
-    alt: p.alt,
-    meta: p.status || p.location,
-    desc: p.desc,
-  }));
-
-  const openAt = (i: number) => {
-    setIndex(i);
-    setOpen(true);
-  };
+  if (!projects.length) return null;
 
   return (
-    <section className="bg-[#0a1f44] text-white py-14 overflow-hidden">
-      <div className="mx-auto max-w-[1280px] px-4 md:px-6 lg:px-8">
-        <div className="grid gap-6 md:grid-cols-12 items-end mb-10">
-          <div className="md:col-span-6">
-            <span className="text-[13px] sm:text-[14px] font-extrabold text-[#9fd40b] tracking-wider uppercase">
-              {portfolioPretitle}
-            </span>
-            <h2 className="mt-2.5 font-sans text-3xl md:text-[2.5rem] font-extrabold leading-tight text-white tracking-tight">
-              {portfolioTitle}
-            </h2>
-          </div>
-          <div className="md:col-span-6 md:pl-6 lg:pl-12">
-            <p className="text-[14.5px] sm:text-[15.5px] leading-relaxed text-white/85">
-              {portfolioDesc}
+    <section className="bg-white py-12 md:py-14">
+      <div className="mx-auto max-w-310 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p
+            className="text-[12px] font-bold uppercase tracking-[0.16em]"
+            style={{ color: ACCENT }}
+          >
+            Featured Projects
+          </p>
+          <h2
+            className="mt-2 text-[1.65rem] font-extrabold tracking-tight sm:text-[2rem]"
+            style={{ color: NAVY }}
+          >
+            {latestProjects?.title || "Recent jobs we're proud of"}
+          </h2>
+          {latestProjects?.desc && (
+            <p className="mx-auto mt-2.5 max-w-xl text-[14px] leading-relaxed text-[#64748b]">
+              {latestProjects.desc}
             </p>
-          </div>
+          )}
         </div>
 
-        <div className="grid gap-6 grid-cols-12">
-          {projects.map((project, i) => {
-            const isFirst = i === 0;
-            return (
-              <button
-                key={project.title}
-                type="button"
-                onClick={() => openAt(i)}
-                className={`group relative overflow-hidden rounded-[2rem] bg-[#001b3d] text-left shadow-lg transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,27,61,0.3)] ${
-                  isFirst
-                    ? "col-span-12 lg:col-span-6 h-[300px] sm:h-[360px]"
-                    : "col-span-12 sm:col-span-6 lg:col-span-3 h-[300px] sm:h-[360px]"
-                }`}
-              >
-                <div className="relative w-full h-full overflow-hidden">
-                  <MediaImage
-                    themeId={data.themeId}
-                    src={project.image}
-                    alt={project.alt || project.title}
-                    fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent transition-all duration-500 group-hover:via-black/45" />
-                </div>
-
-                <div className="absolute top-5 right-5 z-20">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#9fd40b] text-[#0b1f3a] shadow-md transition-all duration-500 scale-90 opacity-0 translate-x-3 -translate-y-3 group-hover:scale-100 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0">
-                    <FaArrowUp className="text-sm rotate-45 transition-transform duration-500 group-hover:rotate-90" />
-                  </span>
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0 p-6 z-10 text-left">
-                  <h3 className="text-[18px] sm:text-[21px] font-extrabold text-white leading-tight tracking-tight">
-                    {project.title === "Full bathroom re-pipe"
-                      ? "Bathroom Repair"
-                      : project.title}
-                  </h3>
-                  <p className="mt-2 text-[12px] sm:text-[13px] text-white/80 leading-relaxed font-medium line-clamp-2 max-w-[420px]">
-                    {project.desc}
+        <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => (
+            <Link
+              key={project.slug || project.title}
+              href={withTheme(
+                project.href || `/projects/${project.slug || ""}`,
+                THEME,
+              )}
+              className="group overflow-hidden rounded-2xl border border-[#eef2f7] bg-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(10,31,68,0.08)]"
+            >
+              <div className="relative h-52 overflow-hidden sm:h-56">
+                <MediaImage
+                  themeId={data.themeId}
+                  src={project.image}
+                  alt={project.alt || project.title}
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <span
+                  className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full opacity-0 transition group-hover:opacity-100"
+                  style={{ backgroundColor: LIME, color: NAVY }}
+                >
+                  <FaArrowUp className="rotate-45 text-xs" aria-hidden />
+                </span>
+              </div>
+              <div className="p-5">
+                {project.location && (
+                  <p className="text-[11px] font-semibold uppercase tracking-wide text-[#94a3b8]">
+                    {project.location}
                   </p>
-                </div>
-              </button>
-            );
-          })}
+                )}
+                <h3
+                  className="mt-1 text-[15px] font-extrabold leading-snug"
+                  style={{ color: NAVY }}
+                >
+                  {project.title}
+                </h3>
+                <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-[#64748b]">
+                  {project.desc}
+                </p>
+              </div>
+            </Link>
+          ))}
         </div>
 
-        <div className="mt-10 flex justify-center">
-          <Link
-            href={withTheme("/projects", THEME)}
-            className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-7 py-3.5 text-[13.5px] font-extrabold text-white transition hover:bg-white hover:text-[#0a1f44]"
-          >
-            View full portfolio
-          </Link>
-          <Link
-            href={withTheme("/gallery", THEME)}
-            className="ml-3 inline-flex items-center gap-2 rounded-full bg-[#9fd40b] px-7 py-3.5 text-[13.5px] font-extrabold text-[#0a1f44] transition hover:bg-[#8fc00a]"
-          >
-            Open gallery
-          </Link>
-        </div>
+        {latestProjects?.button?.href && (
+          <div className="mt-8 flex justify-center">
+            <Link
+              href={withTheme(latestProjects.button.href, THEME)}
+              className="inline-flex items-center rounded-xl px-6 py-3 text-[13px] font-bold text-white transition hover:opacity-90"
+              style={{ backgroundColor: ACCENT }}
+            >
+              {latestProjects.button.label || "View all works"}
+            </Link>
+          </div>
+        )}
       </div>
-
-      <ImageLightbox
-        themeId={data.themeId}
-        items={lightboxItems}
-        index={index}
-        open={open}
-        onClose={() => setOpen(false)}
-        onPrev={() =>
-          setIndex((i) => (i - 1 + lightboxItems.length) % lightboxItems.length)
-        }
-        onNext={() => setIndex((i) => (i + 1) % lightboxItems.length)}
-      />
     </section>
   );
 }

@@ -41,7 +41,7 @@ export default function ProjectsPage({ data, theme }: Props) {
         breadcrumb={page?.breadcrumb}
       />
 
-      <section className="bg-white py-12 md:py-16">
+      <section className="bg-white py-12 md:py-14">
         <div className="mx-auto max-w-[1280px] px-4 md:px-6 lg:px-8">
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, i) => (

@@ -9,7 +9,7 @@ type Props = {
 /** Simple centered legal layout — title + points only */
 export default function LegalPage({ page }: Props) {
   return (
-    <section className="bg-white py-14 md:py-20">
+    <section className="bg-white py-12 md:py-14">
       <div className="mx-auto max-w-[720px] px-4 md:px-6 text-center">
         <h1 className="font-sans text-3xl md:text-[2.5rem] font-extrabold text-[#0a1f44] tracking-tight">
           {page.title}

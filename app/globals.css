@@ -53,3 +53,14 @@ html.lenis body {
     transition: none !important;
   }
 }
+
+/* Reduce spacing between stacked sections on template-1 */
+.theme-template-1 main > section + section {
+  margin-top: -10px;
+}
+
+@media (min-width: 768px) {
+  .theme-template-1 main > section + section {
+    margin-top: -14px;
+  }
+}

@@ -1,55 +1,55 @@
 "use client";
 
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaTint } from "react-icons/fa";
 import MediaImage from "@/components/MediaImage";
 import { withTheme } from "@/lib/theme";
 import type { ResolvedSiteData } from "@/lib/types";
 
 const THEME = "template-1" as const;
+const ACCENT = "#1052E0";
+const NAVY = "#0a1f44";
 
 export default function Blog({ data }: { data: ResolvedSiteData }) {
-  const gallery = data.gallery as any;
+  const gallery = data.gallery;
   const posts = (gallery?.galleryItems || []).slice(0, 4);
+  if (!posts.length) return null;
+
   const readMoreLabel =
-    gallery?.buttons?.find((b: any) => /read/i.test(b.label))?.label ||
-    "Read More";
+    gallery?.buttons?.find((b) => /read/i.test(b.label))?.label || "Read More";
 
   return (
-    <section className="relative bg-[#f8fafd] py-16 overflow-hidden border-b border-gray-100">
-      <div className="mx-auto max-w-[1280px] px-4 md:px-6 lg:px-8">
-        {/* Centered Header */}
-        <div className="text-center mb-12">
+    <section className="bg-white py-12 md:py-14">
+      <div className="mx-auto max-w-310 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
           <div className="flex items-center justify-center gap-2.5">
-            <span className="text-[#0a1f44]">
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2C9 7 5 11 5 16a7 7 0 0 0 14 0c0-5-4-9-7-14z" />
-              </svg>
-            </span>
-            <span className="text-[13px] sm:text-[14px] font-extrabold text-[#0a1f44] tracking-[0.18em] uppercase">
-              {gallery?.pretitle || "LATEST BLOGS"}
-            </span>
-            <span className="text-[#0a1f44]">
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2C9 7 5 11 5 16a7 7 0 0 0 14 0c0-5-4-9-7-14z" />
-              </svg>
-            </span>
+            <FaTint className="text-sm" style={{ color: ACCENT }} aria-hidden />
+            <p
+              className="text-[12px] font-bold uppercase tracking-[0.16em]"
+              style={{ color: ACCENT }}
+            >
+              {gallery?.pretitle || "Latest Blogs"}
+            </p>
+            <FaTint className="text-sm" style={{ color: ACCENT }} aria-hidden />
           </div>
-          <h2 className="mt-3 font-sans text-3xl md:text-[2.5rem] font-extrabold text-[#1b2440] tracking-tight">
+          <h2
+            className="mt-2 text-[1.65rem] font-extrabold tracking-tight sm:text-[2rem]"
+            style={{ color: NAVY }}
+          >
             {gallery?.title || "Plumbing Tips & Insights"}
           </h2>
         </div>
 
-        {/* 4 Blog Cards */}
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          {posts.map((post: any) => {
-            const href = post.href || (post.slug ? `/blog/${post.slug}` : "/blog");
+        <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {posts.map((post) => {
+            const href =
+              post.href || (post.slug ? `/blog/${post.slug}` : "/blog");
             return (
               <article
                 key={post.title}
-                className="group overflow-hidden rounded-2xl bg-white border border-gray-100/90 shadow-[0_10px_30px_rgba(0,27,61,0.05)] transition hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,27,61,0.08)]"
+                className="group overflow-hidden rounded-2xl border border-[#eef2f7] bg-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(10,31,68,0.07)]"
               >
-                <div className="relative h-[180px] w-full bg-[#eef3fa]">
+                <div className="relative h-44 w-full overflow-hidden bg-white">
                   <MediaImage
                     themeId={data.themeId}
                     src={post.image}
@@ -59,19 +59,20 @@ export default function Blog({ data }: { data: ResolvedSiteData }) {
                     sizes="(max-width: 768px) 100vw, 25vw"
                   />
                 </div>
-
-                <div className="px-5 py-5">
+                <div className="px-4 py-4">
                   {post.date && (
-                    <p className="text-[12px] font-medium text-gray-400">
-                      {post.date}
-                    </p>
+                    <p className="text-[12px] text-[#94a3b8]">{post.date}</p>
                   )}
-                  <h3 className="mt-2 text-[15px] font-extrabold text-[#1b2440] leading-snug min-h-[44px]">
+                  <h3
+                    className="mt-1.5 line-clamp-2 min-h-10 text-[14px] font-extrabold leading-snug"
+                    style={{ color: NAVY }}
+                  >
                     {post.title}
                   </h3>
                   <Link
                     href={withTheme(href, THEME)}
-                    className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-extrabold text-[#0a1f44] transition hover:gap-2.5"
+                    className="mt-3 inline-flex items-center gap-1.5 text-[12.5px] font-bold transition hover:gap-2.5"
+                    style={{ color: ACCENT }}
                   >
                     {readMoreLabel}
                     <FaArrowRight className="text-[10px]" aria-hidden />
