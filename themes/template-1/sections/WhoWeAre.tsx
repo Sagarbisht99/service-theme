@@ -13,7 +13,6 @@ import {
   FaClock,
   FaCog,
 } from "react-icons/fa";
-import type { ResolvedSiteData } from "@/lib/types";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -50,16 +49,44 @@ const stats = [
   },
 ];
 
-const featureIcons = [FaCheck, FaHeadset, FaClock, FaCog];
-const featureBgs = ["bg-[#1d6feb]", "bg-[#e6f7e2]", "bg-[#e8f0fe]", "bg-[#e6f7e2]"];
-const featureIconColors = ["text-white", "text-[#4caf50]", "text-[#1d6feb]", "text-[#4caf50]"];
+const features = [
+  {
+    icon: FaCheck,
+    title: "Quality Workmanship",
+    desc: "We deliver reliable and long-lasting solutions.",
+    bg: "bg-[#1d6feb]",
+    iconColor: "text-white",
+  },
+  {
+    icon: FaHeadset,
+    title: "Customer First",
+    desc: "Your satisfaction is our top priority.",
+    bg: "bg-[#e6f7e2]",
+    iconColor: "text-[#4caf50]",
+  },
+  {
+    icon: FaClock,
+    title: "On-Time Service",
+    desc: "We value your time and always deliver on schedule.",
+    bg: "bg-[#e8f0fe]",
+    iconColor: "text-[#1d6feb]",
+  },
+  {
+    icon: FaCog,
+    title: "Expert Team",
+    desc: "Skilled professionals with years of experience.",
+    bg: "bg-[#e6f7e2]",
+    iconColor: "text-[#4caf50]",
+  },
+];
 
-export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
-  const about = data.about;
-  const aboutFeatures = about.features ?? [];
+export default function WhoWeAre() {
   return (
-    <section className="relative bg-[#f8fafc] py-16 md:py-24">
+    <section className="relative overflow-hidden bg-[#f8fafc] py-16 md:py-24">
       {/* Background Soft Glow Texture */}
+
+ <h1>Sagar is here</h1>
+
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
@@ -68,7 +95,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
         }}
       />
 
-      <div className="relative mx-auto max-w-310 px-6 sm:px-10 lg:px-12">
+      <div className="relative mx-auto max-w-[1240px] px-4 md:px-6 lg:px-8">
         
         {/* Top Centered Header Section */}
         <motion.div
@@ -83,16 +110,16 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
         >
           <motion.div variants={fadeUp} className="inline-flex flex-col items-center">
             <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1d6feb]">
-              {about.pretitle || "About Us"}
+              Welcome to Aquafix
             </span>
-            <span className="mt-1 h-0.75 w-10 rounded-full bg-[#83c403]" />
+            <span className="mt-1 h-[3px] w-10 rounded-full bg-[#83c403]" />
           </motion.div>
 
           <motion.h2
             variants={fadeUp}
-            className="mx-auto mt-5 max-w-237.5 text-[26px] font-extrabold leading-[1.22] tracking-tight sm:text-[34px] md:text-[40px] text-[#0b1938]"
+            className="mx-auto mt-5 max-w-[950px] text-[26px] font-extrabold leading-[1.22] tracking-tight sm:text-[34px] md:text-[40px] text-[#0b1938]"
           >
-            {about.title || "Professional and Reliable Plumbing Services"}{" "}
+            With years of industry experience, our team of skilled professionals is dedicated to providing{" "}
             <span className="text-[#1d6feb]">top-notch solutions.</span>
           </motion.h2>
         </motion.div>
@@ -100,29 +127,26 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
         {/* Two Column Grid */}
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
           
-          {/* Left Column: Image Wrapper */}
+          {/* Left Column: Image with Custom Shapes */}
           <motion.div
-            className="relative lg:col-span-6 overflow-visible pl-4 pt-4"
+            className="relative lg:col-span-6"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease }}
           >
-            {/* 1. TOP-LEFT DOT GRID */}
-            <div className="absolute -left-2 -top-2 z-0 grid grid-cols-6 gap-2.5 pointer-events-none">
+            {/* Top Left Dot Grid */}
+            <div className="absolute -left-6 -top-6 -z-10 grid grid-cols-6 gap-2">
               {[...Array(24)].map((_, i) => (
-                <span key={i} className="h-1.5 w-1.5 rounded-full bg-[#1d6feb]" />
+                <span key={i} className="h-[5px] w-[5px] rounded-full bg-[#1d6feb]" />
               ))}
             </div>
 
-            {/* 2. BOTTOM-LEFT BLUE BASE ACCENT */}
-            <div className="absolute -bottom-6 -left-2 z-0 h-36 w-36 rounded-2xl rounded-bl-[2.5rem] bg-[#1d6feb]" />
-
-            {/* 3. MAIN IMAGE CONTAINER */}
-            <div className="relative z-10 aspect-4/3 w-full overflow-hidden rounded-tr-[2.5rem] rounded-br-[2.5rem] rounded-tl-[5rem] rounded-bl-none shadow-xl bg-slate-200">
+            {/* Main Image with Exact Custom Curves */}
+            <div className="relative z-10 aspect-[4/3] w-full overflow-hidden rounded-tr-[2.5rem] rounded-br-[2.5rem] rounded-tl-[5rem] rounded-bl-none shadow-lg">
               <Image
-                src={about.sideImage || "/about-technician.jpg"}
-                alt={about.sideImageTitle || "Aquafix professional consulting customer"}
+                src="/who-we-are.jpg"
+                alt="Aquafix professional consulting a customer"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -130,16 +154,19 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
               />
             </div>
 
-            {/* 4. FLOATING BADGE (Centered at bottom border of image) */}
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 flex w-[85%] max-w-75 items-center gap-3.5 rounded-2xl bg-[#1d6feb] p-4 text-white shadow-2xl border border-white/10">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#83c403] text-white shadow-sm">
-                <FaCheck className="text-base" />
+            {/* Bottom-Left Curved Blue Accent Shape */}
+            <div className="absolute -bottom-6 -left-6 -z-10 h-32 w-32 rounded-bl-[2.5rem] bg-[#1d6feb]" />
+
+            {/* Floating Badge */}
+            <div className="absolute -bottom-5 left-8 z-20 flex max-w-[270px] items-center gap-3.5 rounded-2xl bg-[#1d6feb] p-4 text-white shadow-xl">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#83c403] text-white">
+                <FaCheck className="text-lg" />
               </div>
               <div>
                 <h4 className="text-[14px] font-bold leading-tight">
                   Trusted by Thousands
                 </h4>
-                <p className="mt-1 text-[11px] leading-snug text-white/80">
+                <p className="mt-1 text-[11px] leading-tight text-white/80">
                   Delivering reliable service with complete satisfaction.
                 </p>
               </div>
@@ -148,7 +175,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
 
           {/* Right Column: Content + Stats */}
           <motion.div
-            className="lg:col-span-6 lg:pl-6"
+            className="lg:col-span-6 lg:pl-4"
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
@@ -160,9 +187,9 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
             {/* Sub-heading Tag */}
             <motion.div variants={fadeUp} className="flex items-center gap-2">
               <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1d6feb]">
-                {about.pretitle || "Who We Are"}
+                WHO WE ARE
               </span>
-              <span className="h-0.5 w-8 bg-[#83c403]" />
+              <span className="h-[2px] w-8 bg-[#83c403]" />
             </motion.div>
 
             {/* Title */}
@@ -170,21 +197,21 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
               variants={fadeUp}
               className="mt-3 text-[28px] font-extrabold leading-[1.2] tracking-tight sm:text-[34px] text-[#0b1938]"
             >
-              {about.subtitle || "We focus on customer satisfaction and quality"}
+              We focus on customer satisfaction and quality
             </motion.h3>
 
             {/* Paragraph Text */}
             <motion.p
               variants={fadeUp}
-              className="mt-4 text-[13.5px] leading-relaxed text-slate-500 max-w-130"
+              className="mt-4 text-[13.5px] leading-relaxed text-slate-500 max-w-[520px]"
             >
-              {about.desc || "Our team of skilled professionals is dedicated to providing top-notch solutions and exceptional customer service."}
+              Our team of skilled professionals is dedicated to providing top-notch solutions and exceptional customer service. Our commitment to quality workmanship, ensuring that every job is done right the first time.
             </motion.p>
 
             {/* Stats Card */}
             <motion.div
               variants={fadeUp}
-              className="mt-7 flex items-center justify-between rounded-2xl bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-slate-100"
+              className="mt-7 flex items-center justify-between rounded-2xl bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-slate-100/80"
             >
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
@@ -203,7 +230,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
                       </p>
                     </div>
                     {index < stats.length - 1 && (
-                      <div className="ml-2 h-10 w-px bg-slate-200/70" />
+                      <div className="ml-2 h-10 w-[1px] bg-slate-200/70" />
                     )}
                   </div>
                 );
@@ -233,12 +260,12 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
           transition={{ duration: 0.6 }}
         >
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {aboutFeatures.map((feature, i) => {
-              const Icon = featureIcons[i % featureIcons.length];
+            {features.map((feature, i) => {
+              const Icon = feature.icon;
               return (
-                <div key={feature.title} className="flex items-start gap-3.5">
-                  <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${featureBgs[i % featureBgs.length]}`}>
-                    <Icon className={`text-base ${featureIconColors[i % featureIconColors.length]}`} />
+                <div key={i} className="flex items-start gap-3.5">
+                  <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${feature.bg}`}>
+                    <Icon className={`text-base ${feature.iconColor}`} />
                   </div>
                   <div>
                     <h4 className="text-[14px] font-bold text-[#0b1938]">

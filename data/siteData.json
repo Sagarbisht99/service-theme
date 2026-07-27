@@ -1399,22 +1399,40 @@
           }
         },
         "About": {
-          "pretitle": "Who We Are",
-          "title": "Trusted Plumbing Experts Since 1996",
-          "desc": "For over two decades, we have been providing exceptional plumbing services to homes and businesses. Our commitment to quality workmanship and customer satisfaction sets us apart.",
+          "pretitle": "About Us",
+          "title": "Professional and Reliable Plumbing Services",
+          "subtitle": "We focus on customer satisfaction and quality",
+          "desc": "Our team of licensed plumbers is dedicated to providing top-notch solutions and exceptional customer service. From minor repairs to major installations, we handle every job with precision and care.",
+          "desc2": "We use quality parts, clear pricing, and tidy workmanship so every repair lasts and every customer feels confident recommending us.",
           "features": [
             {
-              "title": "Experienced Professionals",
-              "desc": "Our team consists of licensed, insured, and highly trained plumbers with years of experience."
+              "title": "Expert Technicians",
+              "desc": "Licensed, insured, and trained to fix it right the first time."
             },
             {
-              "title": "Comprehensive Solutions",
-              "desc": "From minor repairs to major installations, we handle all plumbing needs efficiently."
+              "title": "24/7 Support",
+              "desc": "Emergency plumbing support available around the clock."
+            },
+            {
+              "title": "Clear Pricing",
+              "desc": "Upfront quotes with no hidden fees before work begins."
+            },
+            {
+              "title": "Quality Parts",
+              "desc": "Durable fittings and fixtures that stand the test of time."
             }
           ],
-          "phone": "+1 (578)-365-379",
-          "mainImage": "https://i.pinimg.com/736x/ff/7d/6d/ff7d6d6a0ccb9e778e2b3b5aefaab723.jpg",
-          "subImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
+          "buttons": [
+            {
+              "label": "Read More",
+              "href": "/about",
+              "variant": "primary"
+            }
+          ],
+          "sideImage": "https://i.pinimg.com/736x/59/d4/c8/59d4c88b7c6ac2049456aad575c71f33.jpg",
+          "sideImageTitle": "Aquafix technician reviewing blueprints in a professional workspace",
+          "philosophyTitle": "Licensed technicians, clear quotes, reliable results.",
+          "philosophyDesc": "We diagnose properly, quote clearly, complete with quality parts, test everything, and leave your home tidy."
         },
         "WhyChooseUs": {
           "pretitle": "WHY CHOOSE US",
@@ -1521,17 +1539,22 @@
           ]
         },
         "FormDetail": {
-          "pretitle": "Book an appointment",
-          "title": "Tell us what needs fixing.",
-          "desc": "Share the issue, your location, and preferred time — a technician will confirm shortly.",
+          "pretitle": "Get a free quote",
+          "title": "Book a service visit today.",
+          "desc": "Fill in your details and our team will call you back to confirm your appointment and share a clear quote.",
           "backgroundImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
           "backgroundImageTitle": "Technician ready for a service call",
-          "formSubmitLabel": "Request a callback",
+          "formSubmitLabel": "Get A Free Quote",
           "formFields": [
             {
               "label": "Name",
               "type": "text",
-              "placeholder": "Your name"
+              "placeholder": "Your full name"
+            },
+            {
+              "label": "Email",
+              "type": "email",
+              "placeholder": "Your email address"
             },
             {
               "label": "Phone",
@@ -1539,9 +1562,14 @@
               "placeholder": "Your phone number"
             },
             {
-              "label": "Issue",
+              "label": "Service",
+              "type": "text",
+              "placeholder": "e.g. Leak repair, drain cleaning, water heater"
+            },
+            {
+              "label": "Message",
               "type": "textarea",
-              "placeholder": "e.g. Leaking kitchen tap, blocked drain, no hot water"
+              "placeholder": "Tell us more about the issue and your preferred time"
             }
           ],
           "successMessage": "Thank you — we received your request. A technician will call you back shortly."
@@ -1845,6 +1873,36 @@
               "label": "Customer rating",
               "desc": "From thousands of verified reviews."
             }
+          ]
+        },
+        "ServiceInfoBar": {
+          "title": "Comprehensive plumbing solutions for every space",
+          "items": [
+            { "icon": "FaKitchenSet", "label": "Kitchen", "href": "/services?type=Kitchen" },
+            { "icon": "FaBath", "label": "Bathroom", "href": "/services?type=Bathroom" },
+            { "icon": "FaBuilding", "label": "Commercial", "href": "/services?type=Commercial" },
+            { "icon": "FaHome", "label": "Residential", "href": "/services?type=Residential" },
+            { "icon": "FaWarehouse", "label": "Industrial", "href": "/services?type=Industrial" },
+            { "icon": "FaToolbox", "label": "Emergency", "href": "/services?type=Emergency" }
+          ]
+        },
+        "ServiceIconGrid": {
+          "pretitle": "All services",
+          "title": "Every plumbing fix under one roof",
+          "desc": "From drips and drains to full installations — tap any service to learn more or book online.",
+          "items": [
+            { "icon": "FaTint", "label": "Leak Repair", "href": "/services?type=Leak" },
+            { "icon": "FaSink", "label": "Faucet Fix", "href": "/services?type=Faucet" },
+            { "icon": "FaToilet", "label": "Toilet Repair", "href": "/services?type=Toilet" },
+            { "icon": "FaShower", "label": "Shower Install", "href": "/services?type=Shower" },
+            { "icon": "FaFireAlt", "label": "Water Heater", "href": "/services?type=Water%20Heater" },
+            { "icon": "FaWater", "label": "Drain Cleaning", "href": "/services?type=Drain" },
+            { "icon": "FaPipeLeak", "label": "Pipe Repair", "href": "/services?type=Pipe" },
+            { "icon": "FaPumpSoap", "label": "Sump Pump", "href": "/services?type=Sump" },
+            { "icon": "FaSoap", "label": "Disposal Unit", "href": "/services?type=Disposal" },
+            { "icon": "FaWrench", "label": "Fixture Install", "href": "/services?type=Fixture" },
+            { "icon": "FaClock", "label": "24/7 Emergency", "href": "/services?type=Emergency" },
+            { "icon": "FaClipboardCheck", "label": "Inspection", "href": "/services?type=Inspection" }
           ]
         },
         "ContactInfo": {

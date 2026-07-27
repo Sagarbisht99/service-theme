@@ -813,6 +813,31 @@ export type CompanyStatisticsData = {
   stats: CompanyStatItem[];
 };
 
+export type ServiceInfoBarItem = {
+  icon: string;
+  label: string;
+  href?: string;
+};
+
+export type ServiceInfoBarData = {
+  title: string;
+  items: ServiceInfoBarItem[];
+};
+
+export type ServiceIconGridItem = {
+  icon: string;
+  label: string;
+  href?: string;
+  color?: string;
+};
+
+export type ServiceIconGridData = {
+  pretitle: string;
+  title: string;
+  desc: string;
+  items: ServiceIconGridItem[];
+};
+
 export type ContactInfoItem = {
   label: string;
   value: string;
@@ -828,6 +853,12 @@ export type ContactInfoData = {
   button?: ButtonItem;
 };
 
+export type AboutFeature = {
+  title: string;
+  desc: string;
+  icon?: string;
+};
+
 export type AboutSection = {
   pretitle: string;
   title: string;
@@ -841,6 +872,10 @@ export type AboutSection = {
   philosophyTitle: string;
   philosophyDesc: string;
   buttons: ButtonItem[];
+  features?: AboutFeature[];
+  phone?: string;
+  subImage?: string;
+  mainImage?: string;
 };
 
 export type PropertiesSection = {
@@ -924,6 +959,8 @@ export type CategorySections = {
   PropertyProcess: PropertyProcessData;
   CompanyStatistics: CompanyStatisticsData;
   ContactInfo: ContactInfoData;
+  ServiceInfoBar: ServiceInfoBarData;
+  ServiceIconGrid: ServiceIconGridData;
 };
 
 export type CategoryId = "Service";
@@ -1118,6 +1155,9 @@ export type ResolvedSiteData = {
   propertyProcess: PropertyProcessData;
   companyStatistics: CompanyStatisticsData;
   contactInfo: ContactInfoData;
+  serviceInfoBar: ServiceInfoBarData;
+  serviceIconGrid: ServiceIconGridData;
+  formDetail: FormDetailSection;
   aboutPage: AboutPageData;
   customPage: CustomPageData;
   servicePage: ServicePageData;

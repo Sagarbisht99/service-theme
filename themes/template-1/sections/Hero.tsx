@@ -118,14 +118,14 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
           {/* Avatar and Clients Section */}
           <motion.div
             variants={fadeUp}
-            className="mt-9 flex items-center gap-4"
+            className="mt-12 flex items-center gap-6"
           >
             <div className="flex items-center">
               {avatars.map((person, i) => (
                 <div
                   key={person.name}
-                  className="relative h-11 w-11 overflow-hidden rounded-full border-[3px] border-white bg-[#0a1f44]"
-                  style={{ marginLeft: i === 0 ? 0 : -14, zIndex: 10 - i }}
+                  className="relative h-16 w-16 overflow-hidden rounded-full border-[4px] border-white bg-[#0a1f44]"
+                  style={{ marginLeft: i === 0 ? 0 : -22, zIndex: 10 - i }}
                 >
                   <MediaImage
                     themeId={data.themeId}
@@ -133,27 +133,27 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
                     alt={person.name}
                     fill
                     className="object-cover"
-                    sizes="44px"
+                    sizes="64px"
                   />
                 </div>
               ))}
               <div
-                className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full border-[3px] border-white text-[11px] font-extrabold text-white"
-                style={{ marginLeft: -14, backgroundColor: NAVY }}
+                className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full border-[4px] border-white text-[13px] font-extrabold text-white"
+                style={{ marginLeft: -22, backgroundColor: NAVY }}
               >
                 {clientsStat?.stat?.toLowerCase() || "4.3k+"}
               </div>
             </div>
 
-            <div className="h-8 w-[1.5px] bg-[#0a1f44]/15" />
+            <div className="h-12 w-[2px] bg-[#0a1f44]/15" />
 
             <div className="flex flex-col justify-center">
-              <p className="text-[20px] font-extrabold text-[#0a1f44] leading-none">
+              <p className="text-[24px] font-extrabold text-[#0a1f44] leading-none">
                 {clientsStat?.stat === "4.3k+"
                   ? "4,300+"
                   : clientsStat?.stat || "4,300+"}
               </p>
-              <p className="text-[12px] font-medium text-[#0a1f44]/55 leading-none mt-1">
+              <p className="text-[13px] font-medium text-[#0a1f44]/55 leading-none mt-1.5">
                 {clientsStat?.label || "Satisfied Clients"}
               </p>
             </div>
@@ -203,7 +203,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
 
           {/* Feature bar overlapping bottom */}
           {features.length > 0 && (
-            <div className="relative mt-8 lg:mt-0 lg:absolute lg:bottom-0 lg:-left-12 lg:right-0 lg:z-20 lg:translate-y-1/2 px-0">
+            <div className="relative -translate-y-20 lg:translate-y-12 lg:absolute lg:bottom-0 lg:-left-12 lg:right-0 lg:z-20 px-0">
               <motion.div
                 className="mx-auto w-full overflow-hidden rounded-[1.75rem] shadow-[0_20px_50px_rgba(10,31,68,0.28)]"
                 style={{ backgroundColor: NAVY }}
