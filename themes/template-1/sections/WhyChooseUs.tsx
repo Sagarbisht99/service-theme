@@ -1,7 +1,7 @@
 "use client";
 
 import MediaImage from "@/components/MediaImage";
-import type { ResolvedSiteData } from "@/lib/types";
+import type { ResolvedSiteData, WhyChooseUsItemData } from "@/lib/types";
 
 const WHY_ICONS = [
   // 1. EXPERIENCED PLUMBERS
@@ -36,15 +36,15 @@ const WHY_ICONS = [
 ];
 
 export default function WhyChooseUs({ data }: { data: ResolvedSiteData }) {
-  const whyChooseUs = (data?.whyChooseUs as any) || {};
+  const whyChooseUs = data?.whyChooseUs;
 
-  const pretitle = whyChooseUs.pretitle || "WHY CHOOSE US";
-  const title = whyChooseUs.title || "Reliable Plumbing Solutions You Can Count On";
+  const pretitle = whyChooseUs?.pretitle || "WHY CHOOSE US";
+  const title = whyChooseUs?.title || "Reliable Plumbing Solutions You Can Count On";
   const desc =
-    whyChooseUs.desc ||
+    whyChooseUs?.desc ||
     "We are committed to providing high-quality plumbing services with honesty, integrity, and unmatched professionalism.";
 
-  const items = whyChooseUs.whyChooseUsItems || [
+  const items: WhyChooseUsItemData[] = whyChooseUs?.whyChooseUsItems || [
     {
       title: "EXPERIENCED PLUMBERS",
       desc: "Our licensed plumbers bring years of experience to every job.",
@@ -76,7 +76,7 @@ export default function WhyChooseUs({ data }: { data: ResolvedSiteData }) {
 
   return (
     <section className="relative bg-[#f8fafc] py-10 md:py-16">
-      <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-310 px-4 sm:px-6 lg:px-8">
         
         {/* Main Card Wrapper */}
         <div className="relative overflow-hidden rounded-2xl bg-white border border-slate-200/80 shadow-[0_4px_25px_rgba(0,0,0,0.05)]">
@@ -103,10 +103,10 @@ export default function WhyChooseUs({ data }: { data: ResolvedSiteData }) {
           </div>
 
           {/* Inner Content Grid */}
-          <div className="relative z-10 grid grid-cols-12 items-center min-h-[520px]">
+          <div className="relative z-10 grid grid-cols-12 items-center min-h-130">
             
             {/* Mobile Fallback Image */}
-            <div className="lg:hidden col-span-12 relative w-full h-[280px] sm:h-[360px] bg-slate-100">
+            <div className="lg:hidden col-span-12 relative w-full h-70 sm:h-90 bg-slate-100">
               <MediaImage
                 themeId={data?.themeId}
                 src={plumberImage}
@@ -125,7 +125,7 @@ export default function WhyChooseUs({ data }: { data: ResolvedSiteData }) {
                 <span className="text-[13px] font-extrabold text-[#1d6feb] tracking-wider uppercase">
                   {pretitle}
                 </span>
-                <span className="w-6 h-[2px] bg-[#1d6feb] mt-1.5 rounded-full" />
+                <span className="w-6 h-0.5 bg-[#1d6feb] mt-1.5 rounded-full" />
               </div>
 
               {/* Main Heading */}
@@ -151,7 +151,7 @@ export default function WhyChooseUs({ data }: { data: ResolvedSiteData }) {
 
               {/* 2-Column Features Grid */}
               <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 mt-7">
-                {items.slice(0, 6).map((item: any, i: number) => {
+                {items.slice(0, 6).map((item, i) => {
                   const icon = WHY_ICONS[i % WHY_ICONS.length];
                   return (
                     <div key={item.title || i} className="flex gap-3.5 items-start">
@@ -164,7 +164,7 @@ export default function WhyChooseUs({ data }: { data: ResolvedSiteData }) {
                         <h4 className="text-[13px] font-bold text-[#0b1938] uppercase tracking-wide leading-tight">
                           {item.title}
                         </h4>
-                        <p className="mt-1 text-[11.5px] leading-relaxed text-slate-400 font-normal max-w-[210px]">
+                        <p className="mt-1 text-[11.5px] leading-relaxed text-slate-400 font-normal max-w-52.5">
                           {item.desc}
                         </p>
                       </div>

@@ -1157,7 +1157,6 @@ export type ResolvedSiteData = {
   contactInfo: ContactInfoData;
   serviceInfoBar: ServiceInfoBarData;
   serviceIconGrid: ServiceIconGridData;
-  formDetail: FormDetailSection;
   aboutPage: AboutPageData;
   customPage: CustomPageData;
   servicePage: ServicePageData;

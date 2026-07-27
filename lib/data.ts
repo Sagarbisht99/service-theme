@@ -65,7 +65,6 @@ export function resolveSiteData(
     contactInfo: sections.ContactInfo,
     serviceInfoBar: sections.ServiceInfoBar,
     serviceIconGrid: sections.ServiceIconGrid,
-    formDetail: sections.FormDetail,
     footer: common.Footer,
     testimonial: common.Testimonial,
     team: common.Team,
