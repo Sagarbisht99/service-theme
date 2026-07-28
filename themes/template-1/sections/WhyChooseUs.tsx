@@ -185,7 +185,7 @@ function WhyChooseContent({
         </span>
       </div>
 
-      <h2 className="mt-3 text-[1.65rem] font-extrabold leading-[1.22] tracking-tight text-[#0b1938] sm:text-[2rem] lg:text-[2.2rem] xl:text-[2.35rem]">
+      <h2 className="mt-3 text-[1.65rem] font-extrabold leading-[1.22] tracking-tight text-[#0a1f44] sm:text-[2rem] lg:text-[2.2rem] xl:text-[2.35rem]">
         {title}
       </h2>
 
@@ -203,7 +203,7 @@ function WhyChooseContent({
               {WHY_ICONS[i % WHY_ICONS.length]}
             </span>
             <div className="min-w-0 pt-0.5">
-              <h4 className="text-[12px] font-bold uppercase leading-snug tracking-[0.04em] text-[#0b1938] sm:text-[12.5px]">
+              <h4 className="text-[12px] font-bold uppercase leading-snug tracking-[0.04em] text-[#0a1f44] sm:text-[12.5px]">
                 {item.title}
               </h4>
               <p className="mt-1 text-[12px] leading-relaxed text-[#8b93a7] sm:text-[12.5px]">

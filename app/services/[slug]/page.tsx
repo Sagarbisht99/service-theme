@@ -3,7 +3,6 @@ import { resolveSiteData, resolveCategory } from "@/lib/data";
 import { resolveTheme } from "@/lib/theme";
 import { getThemePack } from "@/themes";
 import ServiceDetail from "@/themes/template-1/pages/ServiceDetail";
-import PropertyDetail from "@/themes/service/pages/PropertyDetail";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -22,15 +21,13 @@ export default async function Page({ params, searchParams }: Props) {
   if (!slug) notFound();
 
   const listing = data.properties?.listings?.find((item) => item.slug === slug);
-  if (!listing && theme === "template-1") notFound();
-
-  const Detail = theme === "template-1" ? ServiceDetail : PropertyDetail;
+  if (!listing) notFound();
 
   return (
     <div id="top" className={pack.shellClass}>
       <Header data={data} variant="solid" />
       <main>
-        <Detail data={data} theme={theme} slug={slug} />
+        <ServiceDetail data={data} theme={theme} slug={slug} />
       </main>
       <Footer data={data} />
     </div>

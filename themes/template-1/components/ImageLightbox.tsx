@@ -116,7 +116,7 @@ export default function ImageLightbox({
         </div>
         <div className="px-5 py-4 sm:px-7 sm:py-5 text-center">
           {item.meta && (
-            <p className="text-[11px] font-extrabold uppercase tracking-wider text-[#9fd40b]">
+            <p className="text-[11px] font-extrabold uppercase tracking-wider text-[#1052E0]">
               {item.meta}
             </p>
           )}

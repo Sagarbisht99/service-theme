@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaArrowRight, FaTint } from "react-icons/fa";
+import { FaArrowRight, FaCalendarAlt, FaTint } from "react-icons/fa";
 import MediaImage from "@/components/MediaImage";
 import { withTheme } from "@/lib/theme";
 import type { ResolvedSiteData } from "@/lib/types";
@@ -9,6 +9,7 @@ import type { ResolvedSiteData } from "@/lib/types";
 const THEME = "template-1" as const;
 const ACCENT = "#1052E0";
 const NAVY = "#0a1f44";
+const LIME = "#9fd40b";
 
 export default function Blog({ data }: { data: ResolvedSiteData }) {
   const gallery = data.gallery;
@@ -45,40 +46,56 @@ export default function Blog({ data }: { data: ResolvedSiteData }) {
             const href =
               post.href || (post.slug ? `/blog/${post.slug}` : "/blog");
             return (
-              <article
+              <Link
                 key={post.title}
-                className="group overflow-hidden rounded-2xl border border-[#eef2f7] bg-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(10,31,68,0.07)]"
+                href={withTheme(href, THEME)}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-[#eef2f7] bg-white shadow-[0_6px_22px_rgba(10,31,68,0.05)] transition duration-300 hover:-translate-y-1 hover:border-[#1052E0]/20 hover:shadow-[0_14px_32px_rgba(16,82,224,0.1)]"
               >
-                <div className="relative h-44 w-full overflow-hidden bg-white">
+                <div className="relative h-44 w-full overflow-hidden bg-[#eef2f7]">
                   <MediaImage
                     themeId={data.themeId}
                     src={post.image}
                     alt={post.alt || post.title}
                     fill
-                    className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                    className="object-cover transition duration-500 group-hover:scale-[1.04]"
                     sizes="(max-width: 768px) 100vw, 25vw"
                   />
-                </div>
-                <div className="px-4 py-4">
+                  <div
+                    className="pointer-events-none absolute inset-0 bg-linear-to-t from-[#0a1f44]/40 via-transparent to-transparent"
+                    aria-hidden
+                  />
                   {post.date && (
-                    <p className="text-[12px] text-[#94a3b8]">{post.date}</p>
+                    <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-[10.5px] font-bold text-[#0a1f44] shadow-sm backdrop-blur">
+                      <FaCalendarAlt
+                        className="text-[8px]"
+                        style={{ color: ACCENT }}
+                        aria-hidden
+                      />
+                      {post.date}
+                    </span>
                   )}
+                </div>
+                <div className="flex flex-1 flex-col px-4 py-4">
+                  <span
+                    className="mb-2.5 block h-0.75 w-8 rounded-full"
+                    style={{ backgroundColor: LIME }}
+                    aria-hidden
+                  />
                   <h3
-                    className="mt-1.5 line-clamp-2 min-h-10 text-[14px] font-extrabold leading-snug"
+                    className="line-clamp-2 min-h-10 text-[14px] font-extrabold leading-snug"
                     style={{ color: NAVY }}
                   >
                     {post.title}
                   </h3>
-                  <Link
-                    href={withTheme(href, THEME)}
-                    className="mt-3 inline-flex items-center gap-1.5 text-[12.5px] font-bold transition hover:gap-2.5"
+                  <span
+                    className="mt-3 inline-flex items-center gap-1.5 text-[12.5px] font-bold transition group-hover:gap-2.5"
                     style={{ color: ACCENT }}
                   >
                     {readMoreLabel}
                     <FaArrowRight className="text-[10px]" aria-hidden />
-                  </Link>
+                  </span>
                 </div>
-              </article>
+              </Link>
             );
           })}
         </div>

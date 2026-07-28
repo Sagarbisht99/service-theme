@@ -44,8 +44,8 @@ export default function Team({ data }: { data: ResolvedSiteData }) {
         aria-hidden="true"
       >
         {/* plant */}
-        <path d="M92 148c8-14 4-30 12-42" stroke="#1b2440" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M104 106c-8 4-10 14-8 20M104 106c6 2 12-2 14-8M96 128c-6 0-12 4-13 10" stroke="#1b2440" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M92 148c8-14 4-30 12-42" stroke="#0a1f44" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M104 106c-8 4-10 14-8 20M104 106c6 2 12-2 14-8M96 128c-6 0-12 4-13 10" stroke="#0a1f44" strokeWidth="1.5" strokeLinecap="round" />
         {/* plumber body */}
         <circle cx="38" cy="78" r="10" fill="#f4b183" />
         <path d="M32 72c2-6 12-6 14 0l-2-10h-10z" fill="#0a1f44" />
@@ -61,21 +61,21 @@ export default function Team({ data }: { data: ResolvedSiteData }) {
         {/* Centered Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2.5">
-            <span className="text-[#0a1f44]">
+            <span className="text-[#1052E0]">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2C9 7 5 11 5 16a7 7 0 0 0 14 0c0-5-4-9-7-14z" />
               </svg>
             </span>
-            <span className="text-[13px] sm:text-[14px] font-extrabold text-[#0a1f44] tracking-[0.2em] uppercase">
+            <span className="text-[13px] sm:text-[14px] font-extrabold text-[#1052E0] tracking-[0.2em] uppercase">
               {team?.pretitle || "OUR TEAM"}
             </span>
-            <span className="text-[#0a1f44]">
+            <span className="text-[#1052E0]">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2C9 7 5 11 5 16a7 7 0 0 0 14 0c0-5-4-9-7-14z" />
               </svg>
             </span>
           </div>
-          <h2 className="mt-3 font-sans text-3xl md:text-[2.5rem] font-extrabold text-[#1b2440] tracking-tight">
+          <h2 className="mt-3 font-sans text-3xl md:text-[2.5rem] font-extrabold text-[#0a1f44] tracking-tight">
             {team?.title || "Meet Our Skilled Plumbers"}
           </h2>
         </div>
@@ -101,7 +101,7 @@ export default function Team({ data }: { data: ResolvedSiteData }) {
 
               {/* Info */}
               <div className="px-5 py-5 text-center">
-                <h3 className="text-[16px] font-extrabold text-[#1b2440]">
+                <h3 className="text-[16px] font-extrabold text-[#0a1f44]">
                   {member.name}
                 </h3>
                 <p className="mt-1.5 text-[13px] font-semibold text-[#0a1f44]">

@@ -28,7 +28,7 @@ export default function FAQ({ data }: { data: ResolvedSiteData }) {
             <span className="text-[13px] sm:text-[14px] font-extrabold text-[#0a1f44] tracking-[0.18em] uppercase">
               {faq?.pretitle || "FAQS"}
             </span>
-            <h2 className="mt-3 font-sans text-3xl md:text-[2.4rem] font-extrabold text-[#1b2440] tracking-tight leading-tight">
+            <h2 className="mt-3 font-sans text-3xl md:text-[2.4rem] font-extrabold text-[#0a1f44] tracking-tight leading-tight">
               {faq?.title || "Frequently Asked Questions"}
             </h2>
             <Link
@@ -56,7 +56,7 @@ export default function FAQ({ data }: { data: ResolvedSiteData }) {
                     className="flex w-full items-start justify-between gap-4 text-left focus:outline-none"
                     aria-expanded={isOpen}
                   >
-                    <span className="text-[14px] sm:text-[15px] font-extrabold text-[#1b2440] leading-snug pr-2">
+                    <span className="text-[14px] sm:text-[15px] font-extrabold text-[#0a1f44] leading-snug pr-2">
                       {item.question}
                     </span>
                     <span
@@ -69,7 +69,7 @@ export default function FAQ({ data }: { data: ResolvedSiteData }) {
                     </span>
                   </button>
                   {isOpen && (
-                    <p className="mt-3 text-[13px] sm:text-[13.5px] leading-relaxed text-[#1b2440]/65 font-medium max-w-md">
+                    <p className="mt-3 text-[13px] sm:text-[13.5px] leading-relaxed text-[#0a1f44]/65 font-medium max-w-md">
                       {item.answer}
                     </p>
                   )}

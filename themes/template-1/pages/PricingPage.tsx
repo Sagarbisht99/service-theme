@@ -359,7 +359,7 @@ export default function PricingPage({ data, theme }: Props) {
                             "flex h-8 w-8 items-center justify-center rounded-full border text-[16px] leading-none transition",
                             isOpen
                               ? "border-[#1052E0] bg-[#1052E0] text-white"
-                              : "border-[#dbeafe] bg-white text-[#1052E0]",
+                              : "border-[#dbe7f6] bg-white text-[#1052E0]",
                           ].join(" ")}
                           aria-hidden
                         >

@@ -5,7 +5,7 @@ import { withTheme } from "@/lib/theme";
 import type { ResolvedSiteData } from "@/lib/types";
 
 const THEME = "template-1" as const;
-const ACCENT = "#9fd40b";
+const ACCENT = "#1052E0";
 
 const SOCIAL_ICONS: Record<string, ReactNode> = {
   facebook: (
@@ -31,17 +31,24 @@ const SOCIAL_ICONS: Record<string, ReactNode> = {
 };
 
 export default function Footer({ data }: { data: ResolvedSiteData }) {
-  const { footer } = data;
-  const brand = footer.logoImageTitle || "Aquafix";
+  const { footer, header, topbar } = data;
+  const brand = footer.logoImageTitle || header.logo || data.template.title;
   const columns = footer.footerColumns || [];
-  const contact = footer.footerContact;
+  const contact = {
+    location: footer.footerContact?.location || topbar.location || "",
+    email: footer.footerContact?.email || topbar.email || "",
+    phone: footer.footerContact?.phone || topbar.phone || "",
+  };
   const socials = footer.socialLinks || [];
-  const callLabel = footer.officeLabel || "Call + (1) 578-365-379";
-  const callHref = footer.callLink || "tel:+1578365379";
+  const callHref =
+    footer.callLink ||
+    (contact.phone ? `tel:${contact.phone.replace(/[^\d+]/g, "")}` : "#");
+  const callLabel =
+    footer.officeLabel || (contact.phone ? `Call ${contact.phone}` : "Call us");
 
   return (
-    <footer className="bg-[#0a0e27] text-white">
-      <div className="mx-auto max-w-[1280px] px-4 pt-14 pb-10 md:px-6 lg:px-8">
+    <footer className="bg-[#0a1f44] text-white">
+      <div className="mx-auto max-w-7xl px-4 pt-14 pb-10 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           {/* Brand column */}
           <div className="lg:col-span-3">
@@ -169,7 +176,7 @@ export default function Footer({ data }: { data: ResolvedSiteData }) {
 
       {/* Legal notes + bottom bar */}
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-[1280px] px-4 py-6 md:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-6 md:px-6 lg:px-8">
           <div className="flex flex-col gap-3 text-[12px] leading-relaxed text-white/40">
             {footer.disclaimerText && (
               <p>

@@ -9,10 +9,6 @@ import type { ResolvedSiteData, ThemeId } from "@/lib/types";
 import WhyChooseUs from "@/themes/template-1/sections/WhyChooseUs";
 import WorkingProcess from "@/themes/template-1/sections/WorkingProcess";
 import Stats from "@/themes/template-1/sections/Stats";
-import Testimonials from "@/themes/template-1/sections/Testimonials";
-import Team from "@/themes/template-1/sections/Team";
-import CTA from "@/themes/template-1/sections/CTA";
-import ContactSection from "@/themes/template-1/sections/ContactSection";
 
 type Props = {
   data: ResolvedSiteData;
@@ -52,7 +48,7 @@ export default function AboutPage({ data, theme }: Props) {
                 </span>
               </div>
 
-              <h2 className="mt-3 text-[1.65rem] font-extrabold leading-snug tracking-tight text-[#0b1938] sm:text-[2rem]">
+              <h2 className="mt-3 text-[1.65rem] font-extrabold leading-snug tracking-tight text-[#0a1f44] sm:text-[2rem]">
                 {about.philosophyTitle || about.missionTitle || "Licensed technicians, clear quotes"}
               </h2>
 
@@ -76,7 +72,7 @@ export default function AboutPage({ data, theme }: Props) {
                         aria-hidden
                       />
                       <div>
-                        <p className="text-[13.5px] font-extrabold text-[#0b1938]">{p.title}</p>
+                        <p className="text-[13.5px] font-extrabold text-[#0a1f44]">{p.title}</p>
                         <p className="mt-0.5 text-[12.5px] leading-relaxed text-[#8b93a7]">
                           {p.desc}
                         </p>
@@ -89,7 +85,7 @@ export default function AboutPage({ data, theme }: Props) {
               {ctaButton?.href && (
                 <Link
                   href={withTheme(ctaButton.href, theme)}
-                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#9fd40b] px-7 py-3 text-[13px] font-extrabold text-[#0a1f44] transition hover:brightness-95"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#1052E0] px-7 py-3 text-[13px] font-extrabold text-white transition hover:brightness-95"
                 >
                   {ctaButton.label || "Book an appointment"}
                   <FaArrowRight className="text-[11px]" aria-hidden />
@@ -99,7 +95,7 @@ export default function AboutPage({ data, theme }: Props) {
 
             {/* Right photo */}
             <div className="relative overflow-hidden rounded-2xl border border-[#eef2f7] bg-white shadow-[0_12px_32px_rgba(10,31,68,0.08)]">
-              <div className="relative aspect-4/3 w-full lg:aspect-auto lg:min-h-[420px]">
+              <div className="relative aspect-4/3 w-full lg:aspect-auto lg:min-h-105">
                 <MediaImage
                   themeId={data.themeId}
                   src={about.sideImage}
@@ -118,10 +114,6 @@ export default function AboutPage({ data, theme }: Props) {
       <WhyChooseUs data={data} />
       <WorkingProcess data={data} />
       <Stats data={data} />
-      <Testimonials data={data} />
-      <Team data={data} />
-      <CTA data={data} />
-      <ContactSection data={data} />
     </>
   );
 }

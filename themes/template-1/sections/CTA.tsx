@@ -4,21 +4,19 @@ import { FaPhoneAlt, FaHardHat } from "react-icons/fa";
 import type { ResolvedSiteData } from "@/lib/types";
 
 const NAVY = "#0a1f44";
+const BLUE = "#1052E0";
 const LIME = "#9fd40b";
 
 export default function CTA({ data }: { data: ResolvedSiteData }) {
-  const cta = (data.contactInfo as { cta?: {
-    title?: string;
-    desc?: string;
-    phone?: string;
-    phoneHref?: string;
-    buttonLabel?: string;
-  } })?.cta || {};
+  const cta = data.contactInfo?.cta || {};
 
-  const title = cta.title || "Need Emergency Plumbing Service?";
-  const desc = cta.desc || "We're available 24/7 to solve your plumbing problems.";
-  const phone = cta.phone || "+91 81785 43210";
-  const phoneHref = cta.phoneHref || `tel:${phone.replace(/\s/g, "")}`;
+  const title = cta.title || "";
+  const desc = cta.desc || "";
+  const phone = cta.phone || data.topbar.phone || data.footer.footerContact?.phone || "";
+  const phoneHref =
+    cta.phoneHref ||
+    data.footer.callLink ||
+    (phone ? `tel:${phone.replace(/[^\d+]/g, "")}` : "#");
   const buttonLabel = cta.buttonLabel || "Call Now";
 
   return (
@@ -29,7 +27,10 @@ export default function CTA({ data }: { data: ResolvedSiteData }) {
           style={{ backgroundColor: NAVY }}
         >
           <div className="flex items-center gap-4">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white" style={{ color: NAVY }}>
+            <span
+              className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full"
+              style={{ backgroundColor: LIME, color: NAVY }}
+            >
               <FaHardHat className="text-xl" aria-hidden />
             </span>
             <div>
@@ -44,8 +45,8 @@ export default function CTA({ data }: { data: ResolvedSiteData }) {
 
           <a
             href={phoneHref}
-            className="inline-flex shrink-0 items-center justify-center gap-2.5 self-start rounded-xl px-6 py-3.5 text-[13.5px] font-extrabold transition hover:brightness-95 md:self-auto"
-            style={{ backgroundColor: LIME, color: NAVY }}
+            className="inline-flex shrink-0 items-center justify-center gap-2.5 self-start rounded-xl px-6 py-3.5 text-[13.5px] font-extrabold text-white transition hover:brightness-95 md:self-auto"
+            style={{ backgroundColor: BLUE }}
           >
             <FaPhoneAlt className="text-xs" aria-hidden />
             {buttonLabel}: {phone}

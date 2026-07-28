@@ -22,32 +22,10 @@ type Props = { data: ResolvedSiteData; theme: ThemeId };
 
 const ICONS = [FaBullseye, FaUsers, FaGem, FaClock, FaHeadset];
 
-const DEFAULT_ITEMS = [
-  {
-    title: "Goal-Oriented Approach",
-    desc: "We focus on your service needs to deliver the right repair solution.",
-  },
-  {
-    title: "Expert Team",
-    desc: "Licensed technicians with years of plumbing experience.",
-  },
-  {
-    title: "High Quality",
-    desc: "Quality parts and careful workmanship on every job.",
-  },
-  {
-    title: "On-Time Delivery",
-    desc: "Clear arrival windows and jobs finished when promised.",
-  },
-  {
-    title: "Ongoing Support",
-    desc: "We're here after the visit if you need follow-up help.",
-  },
-];
-
 export default function WhyChooseUsPage({ data, theme }: Props) {
   const page = data.whyChooseUsPage;
-  const items = (page?.items?.length ? page.items : DEFAULT_ITEMS).slice(0, 5);
+  const sectionItems = data.whyChooseUs?.whyChooseUsItems ?? [];
+  const items = (page?.items?.length ? page.items : sectionItems).slice(0, 5);
   const ctaImage =
     page?.sideImage ||
     "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80";
@@ -147,7 +125,7 @@ export default function WhyChooseUsPage({ data, theme }: Props) {
           <Link
             href={withTheme(page?.ctaButton?.href || "/contact", theme)}
             className="inline-flex shrink-0 items-center gap-2 rounded-full px-7 py-3.5 text-[14px] font-extrabold shadow-md transition hover:brightness-95"
-            style={{ backgroundColor: LIME, color: NAVY }}
+            style={{ backgroundColor: BLUE, color: "#ffffff" }}
           >
             {page?.ctaButton?.label || "Start Your Project"}
             <FaArrowRight className="text-[12px]" aria-hidden />

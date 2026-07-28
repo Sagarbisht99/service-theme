@@ -1,12 +1,13 @@
 import type { ThemeId } from "@/lib/types";
-import { servicePack, type ThemePack } from "@/themes/service/registry";
 import { template1Pack } from "@/themes/template-1/registry";
+import type { ThemePack } from "@/themes/types";
+
+export type { ThemePack } from "@/themes/types";
 
 /**
- * Theme registry.
+ * Only template-1 is active. Legacy ?theme=service resolves here too.
  */
 export const themePacks: Record<ThemeId, ThemePack> = {
-  service: servicePack,
   "template-1": template1Pack,
 };
 
@@ -15,4 +16,3 @@ export function getThemePack(theme: ThemeId): ThemePack {
 }
 
 export { themeMap } from "@/themes/themeMap";
-export type { ThemePack };

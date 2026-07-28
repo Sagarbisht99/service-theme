@@ -17,6 +17,7 @@ import type { ResolvedSiteData } from "@/lib/types";
 
 const THEME = "template-1" as const;
 const NAVY = "#0a1f44";
+const BLUE = "#1052E0";
 const LIME = "#9fd40b";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -43,8 +44,8 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
     ) ?? companyStatistics.stats[0];
 
   return (
-    <section className="relative overflow-hidden border-b border-[#dbe7f6] bg-white py-8 md:py-10">
-      <div className="mx-auto grid max-w-[1280px] items-center gap-6 px-4 pb-8 pt-0 md:px-6 lg:grid-cols-12 lg:gap-6 lg:px-8 lg:pb-10">
+    <section className="relative overflow-hidden border-b border-[#dbe7f6] bg-white py-10 md:py-14 lg:py-16">
+      <div className="mx-auto grid max-w-7xl items-center gap-6 px-4 pb-10 pt-0 md:px-6 lg:grid-cols-12 lg:gap-6 lg:px-8 lg:pb-14">
         {/* Left column / content */}
         <motion.div
           className="relative z-10 max-w-2xl lg:col-span-6"
@@ -69,16 +70,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
             variants={fadeUp}
             className="mt-4 font-sans text-[2.1rem] sm:text-4xl md:text-[2.85rem] lg:text-[3.15rem] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#0a1f44]"
           >
-            {banner.title.includes("Top-Notch") || banner.title.includes("Quality") ? (
-              <>
-                Top-Notch Plumbing & Repair Solutions,
-                <span className="block mt-1.5 text-[#1052E0]">
-                  Quality Work.
-                </span>
-              </>
-            ) : (
-              banner.title
-            )}
+            {banner.title}
           </motion.h1>
 
           {banner.desc && (
@@ -98,7 +90,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
               <Link
                 href={withTheme(primary.href || "/contact", THEME)}
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-extrabold text-white shadow-[0_12px_28px_rgba(16,82,224,0.28)] transition hover:scale-[1.02] hover:brightness-95"
-                style={{ backgroundColor: "#1052E0" }}
+                style={{ backgroundColor: BLUE }}
               >
                 <FaFileAlt className="text-sm" aria-hidden />
                 {primary.label}
@@ -107,7 +99,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
             {secondary && (
               <Link
                 href={withTheme(secondary.href || "/services", THEME)}
-                className="inline-flex items-center gap-2 rounded-full border border-[#1052E0]/20 bg-white px-6 py-3 text-sm font-extrabold text-[#0a1f44] transition hover:border-[#1052E0]/40 hover:bg-[#1052E0]/[0.04]"
+                className="inline-flex items-center gap-2 rounded-full border border-[#1052E0]/20 bg-white px-6 py-3 text-sm font-extrabold text-[#0a1f44] transition hover:border-[#1052E0]/40 hover:bg-[#1052E0]/4"
               >
                 {secondary.label}
                 <FaArrowRight className="text-[11px]" aria-hidden />
@@ -141,20 +133,18 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
                 className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border-[3px] border-white text-[11px] font-extrabold text-white"
                 style={{ marginLeft: -16, backgroundColor: NAVY }}
               >
-                {clientsStat?.stat?.toLowerCase() || "4.3k+"}
+                {clientsStat?.stat}
               </div>
             </div>
 
-            <div className="h-10 w-[2px] bg-[#0a1f44]/15" />
+            <div className="h-10 w-0.5 bg-[#0a1f44]/15" />
 
             <div className="flex flex-col justify-center">
               <p className="text-[20px] font-extrabold text-[#0a1f44] leading-none">
-                {clientsStat?.stat === "4.3k+"
-                  ? "4,300+"
-                  : clientsStat?.stat || "4,300+"}
+                {clientsStat?.stat}
               </p>
               <p className="text-[12px] font-medium text-[#0a1f44]/55 leading-none mt-1">
-                {clientsStat?.label || "Satisfied Clients"}
+                {clientsStat?.label}
               </p>
             </div>
           </motion.div>
@@ -163,7 +153,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
         {/* Right side — curved (non-square) image + feature bar */}
         <div className="relative lg:col-span-6 w-full flex flex-col justify-between">
           <motion.div
-            className="relative z-1 w-full h-[240px] md:h-[320px] lg:h-[380px]"
+            className="relative z-1 w-full h-75 md:h-100 lg:h-125"
             initial={{ opacity: 0, scale: 1.03 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease }}
@@ -205,7 +195,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
           {features.length > 0 && (
             <div className="relative -translate-y-14 lg:translate-y-8 lg:absolute lg:bottom-0 lg:-left-10 lg:right-0 lg:z-20 px-0">
               <motion.div
-                className="mx-auto w-full overflow-hidden rounded-[1.5rem] shadow-[0_20px_50px_rgba(10,31,68,0.28)]"
+                className="mx-auto w-full overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(10,31,68,0.28)]"
                 style={{ backgroundColor: NAVY }}
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -236,7 +226,7 @@ export default function Hero({ data }: { data: ResolvedSiteData }) {
                           <h3 className="text-[13px] font-extrabold text-white leading-tight">
                             {item.title}
                           </h3>
-                          <p className="mt-1 text-[11px] leading-snug text-white/50 max-w-[130px] mx-auto">
+                          <p className="mt-1 text-[11px] leading-snug text-white/50 max-w-32.5 mx-auto">
                             {item.desc}
                           </p>
                         </div>

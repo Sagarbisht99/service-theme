@@ -31,27 +31,27 @@ const stats = [
     icon: FaCalendarAlt, 
     value: "18", 
     label: "Year\nExperience", 
-    iconBg: "bg-[#e8f0fe]", 
+    iconBg: "bg-[#eef5ff]", 
     iconColor: "text-[#1052E0]" 
   },
   { 
     icon: FaUsers, 
     value: "4.3K", 
     label: "Happy\nClients", 
-    iconBg: "bg-[#eaf8e6]", 
-    iconColor: "text-[#4caf50]" 
+    iconBg: "bg-[#eef5ff]", 
+    iconColor: "text-[#1052E0]" 
   },
   { 
     icon: FaAward, 
     value: "25", 
     label: "Qualified\nExperts", 
-    iconBg: "bg-[#e8f0fe]", 
+    iconBg: "bg-[#eef5ff]", 
     iconColor: "text-[#1052E0]" 
   },
 ];
 
 const featureIcons = [FaCheck, FaHeadset, FaClock, FaCog];
-const featureBgs = ["bg-[#1052E0]", "bg-[#e8f0fe]", "bg-[#e8f0fe]", "bg-[#e8f0fe]"];
+const featureBgs = ["bg-[#1052E0]", "bg-[#eef5ff]", "bg-[#eef5ff]", "bg-[#eef5ff]"];
 const featureIconColors = ["text-white", "text-[#1052E0]", "text-[#1052E0]", "text-[#1052E0]"];
 
 export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
@@ -85,12 +85,12 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
             <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1052E0]">
               {about.pretitle || "About Us"}
             </span>
-            <span className="mt-1 h-0.75 w-10 rounded-full bg-[#83c403]" />
+            <span className="mt-1 h-0.75 w-10 rounded-full bg-[#9fd40b]" />
           </motion.div>
 
           <motion.h2
             variants={fadeUp}
-            className="mx-auto mt-5 max-w-237.5 text-[26px] font-extrabold leading-[1.22] tracking-tight sm:text-[34px] md:text-[40px] text-[#0b1938]"
+            className="mx-auto mt-5 max-w-237.5 text-[26px] font-extrabold leading-[1.22] tracking-tight sm:text-[34px] md:text-[40px] text-[#0a1f44]"
           >
             {about.title || "Professional and Reliable Plumbing Services"}{" "}
             <span className="text-[#1052E0]">top-notch solutions.</span>
@@ -132,7 +132,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
 
             {/* 4. FLOATING BADGE (Centered at bottom border of image) */}
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 flex w-[85%] max-w-75 items-center gap-3.5 rounded-2xl bg-[#1052E0] p-4 text-white shadow-2xl border border-white/10">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#83c403] text-white shadow-sm">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#9fd40b] text-white shadow-sm">
                 <FaCheck className="text-base" />
               </div>
               <div>
@@ -162,13 +162,13 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
               <span className="text-[13px] font-extrabold uppercase tracking-wide text-[#1052E0]">
                 {about.pretitle || "Who We Are"}
               </span>
-              <span className="h-0.5 w-8 bg-[#83c403]" />
+              <span className="h-0.5 w-8 bg-[#9fd40b]" />
             </motion.div>
 
             {/* Title */}
             <motion.h3
               variants={fadeUp}
-              className="mt-3 text-[28px] font-extrabold leading-[1.2] tracking-tight sm:text-[34px] text-[#0b1938]"
+              className="mt-3 text-[28px] font-extrabold leading-[1.2] tracking-tight sm:text-[34px] text-[#0a1f44]"
             >
               {about.subtitle || "We focus on customer satisfaction and quality"}
             </motion.h3>
@@ -196,7 +196,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
                     <div>
                       <div className="flex items-baseline text-[22px] font-black text-[#1052E0] leading-none">
                         {stat.value}
-                        <span className="text-[#83c403] font-bold text-[18px] ml-0.5">+</span>
+                        <span className="text-[#9fd40b] font-bold text-[18px] ml-0.5">+</span>
                       </div>
                       <p className="mt-1 whitespace-pre-line text-[11px] font-medium text-slate-500 leading-tight">
                         {stat.label}
@@ -241,7 +241,7 @@ export default function WhoWeAre({ data }: { data: ResolvedSiteData }) {
                     <Icon className={`text-base ${featureIconColors[i % featureIconColors.length]}`} />
                   </div>
                   <div>
-                    <h4 className="text-[14px] font-bold text-[#0b1938]">
+                    <h4 className="text-[14px] font-bold text-[#0a1f44]">
                       {feature.title}
                     </h4>
                     <p className="mt-1 text-[11.5px] leading-snug text-slate-500">

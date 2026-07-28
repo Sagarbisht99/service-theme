@@ -1,8 +1,12 @@
 import { ACTIVE_THEME, type ThemeId } from "@/lib/types";
 
-const VALID: ThemeId[] = ["service", "template-1"];
+const VALID: ThemeId[] = ["template-1"];
 
+/** Legacy ?theme=service still resolves to template-1 */
 export function resolveTheme(themeParam?: string | null): ThemeId {
+  if (themeParam === "service" || themeParam === "template-1") {
+    return "template-1";
+  }
   if (themeParam && VALID.includes(themeParam as ThemeId)) {
     return themeParam as ThemeId;
   }
@@ -24,8 +28,6 @@ export function withTheme(href: string, theme: ThemeId): string {
 }
 
 export const themeShellClass: Record<ThemeId, string> = {
-  service:
-    "theme-service min-h-screen overflow-x-hidden bg-[#f4f7fb] text-[#0b1f3a]",
   "template-1":
     "theme-template-1 min-h-screen overflow-x-clip bg-white text-[#0a1f44]",
 };

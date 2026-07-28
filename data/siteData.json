@@ -1,44 +1,29 @@
 {
   "templates": [
     {
-      "id": "service",
+      "id": "template-1",
       "title": "AquaFix",
       "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
       "variables": {
-        "--header-bg": "#0b1f3a",
-        "--header-text": "#ffffff",
-        "--hero-bg": "#f4f7fb",
-        "--hero-title": "#0b1f3a",
-        "--primary-link-bg": "#9fd40b",
-        "--primary-link-color": "#0b1f3a",
-        "--service-navy": "#0b1f3a",
+        "--header-bg": "#ffffff",
+        "--header-text": "#0a1f44",
+        "--hero-bg": "#ffffff",
+        "--hero-title": "#0a1f44",
+        "--primary-link-bg": "#1052E0",
+        "--primary-link-color": "#ffffff",
+        "--service-navy": "#0a1f44",
+        "--service-blue": "#1052E0",
         "--service-lime": "#9fd40b",
-        "--service-page": "#f4f7fb"
-      }
-    },
-    {
-      "id": "template-1",
-      "title": "AquaFix Template 1",
-      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
-      "variables": {
-        "--header-bg": "#0b1f3a",
-        "--header-text": "#ffffff",
-        "--hero-bg": "#f4f7fb",
-        "--hero-title": "#0b1f3a",
-        "--primary-link-bg": "#9fd40b",
-        "--primary-link-color": "#0b1f3a",
-        "--service-navy": "#0b1f3a",
-        "--service-lime": "#9fd40b",
-        "--service-page": "#f4f7fb"
+        "--service-page": "#f8fafc"
       }
     }
   ],
   "common": {
     "Topbar": {
       "text": [
-        "24/7 emergency service · Licensed & insured technicians · Upfront pricing"
+        "24/7 emergency service \u00b7 Licensed & insured technicians \u00b7 Upfront pricing"
       ],
-      "phone": "(111) 222-333-444",
+      "phone": "+91 98110 22345",
       "email": "hello@aquafix.in",
       "location": "Gurugram, Haryana",
       "socialLinks": [
@@ -58,7 +43,7 @@
     },
     "Footer": {
       "logoImage": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
-      "logoImageTitle": "Aquafix",
+      "logoImageTitle": "AquaFix",
       "desc": "Professional plumbing services you can trust. Available 24/7 for all your plumbing needs.",
       "footerColumns": [
         {
@@ -134,9 +119,9 @@
         }
       ],
       "footerContact": {
-        "location": "123 Main Street, New York, NY 10001",
-        "email": "info@aquafix.com",
-        "phone": "(111) 222-333-444"
+        "location": "Unit 7, Service Hub, Sector 44, Gurugram, Haryana 122003",
+        "email": "hello@aquafix.in",
+        "phone": "+91 98110 22345"
       },
       "footerLegalLinks": [
         {
@@ -166,17 +151,17 @@
           "href": "https://linkedin.com"
         }
       ],
-      "whatsappLink": "https://api.whatsapp.com/send?phone=1578365379",
-      "callLink": "tel:+1578365379",
-      "copyrightText": "© 2024 Aquafix. All rights reserved. Designed by Instow",
-      "officeLabel": "Call + (1) 578-365-379",
+      "whatsappLink": "https://api.whatsapp.com/send?phone=919811022345",
+      "callLink": "tel:+919811022345",
+      "copyrightText": "\u00a9 2024 AquaFix. All rights reserved. Designed by Instow",
+      "officeLabel": "Call +91 98110 22345",
       "contactLabel": "Contact",
       "legalTitle": "Legal",
       "newsletterTitle": "Stay informed",
       "newsletterPlaceholder": "Enter email address",
       "newsletterButtonLabel": "Subscribe",
       "newsletterConsentPrefix": "By subscribing you agree to our",
-      "newsletterDesc": "Seasonal maintenance tips, offers, and service updates — straight to your inbox.",
+      "newsletterDesc": "Seasonal maintenance tips, offers, and service updates \u2014 straight to your inbox.",
       "disclaimerTitle": "Disclaimer",
       "disclaimerText": "Service details, pricing, and availability on this website are for general information only and may change without notice. Final pricing is confirmed after an on-site diagnosis. Aquafix provides licensed, insured workmanship and quotes are shared for approval before work begins.",
       "cookieText": "We use essential cookies to run the site and optional analytics cookies to improve your experience. By continuing to browse, you agree to our use of cookies.",
@@ -185,7 +170,7 @@
     "AboutPage": {
       "pretitle": "About us",
       "title": "Repairs done with skill, care, and honest pricing.",
-      "desc": "Repairo helps homeowners and businesses fix leaks, clogs, and breakdowns with licensed technicians, upfront quotes, and workmanship that lasts — from your first call to a spotless finish.",
+      "desc": "Repairo helps homeowners and businesses fix leaks, clogs, and breakdowns with licensed technicians, upfront quotes, and workmanship that lasts \u2014 from your first call to a spotless finish.",
       "desc2": "Whether it's an emergency or a planned upgrade, our technicians keep visits on time, quotes honest, and clean-up part of every job.",
       "subtitle": "Our approach",
       "sideImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
@@ -195,7 +180,7 @@
       "storyLabel": "Our story",
       "missionPretitle": "Our mission",
       "missionTitle": "Make home repairs simple and stress-free.",
-      "missionDesc": "We exist to take the worry out of repairs — with fast response, honest pricing, and technicians who stand behind their work.",
+      "missionDesc": "We exist to take the worry out of repairs \u2014 with fast response, honest pricing, and technicians who stand behind their work.",
       "missionPoints": [
         {
           "title": "Honesty first",
@@ -207,17 +192,17 @@
         },
         {
           "title": "Tidy finish",
-          "desc": "We test the work and clean up before we leave — every time."
+          "desc": "We test the work and clean up before we leave \u2014 every time."
         }
       ],
       "missionButton": {
         "label": "Learn more",
-        "href": "/mission",
+        "href": "/about",
         "variant": "secondary"
       },
       "ctaPretitle": "Next step",
       "ctaTitle": "Need a repair or an installation?",
-      "ctaDesc": "Tell us the issue, your location, and a preferred time — our team will confirm your appointment and share a clear quote.",
+      "ctaDesc": "Tell us the issue, your location, and a preferred time \u2014 our team will confirm your appointment and share a clear quote.",
       "ctaButton": {
         "label": "Book an appointment",
         "href": "/contact",
@@ -237,7 +222,7 @@
     "CustomPage": {
       "pretitle": "Blog",
       "title": "Guides, tips, and market notes for your next move.",
-      "desc": "Practical articles on buying, renting, packing, and what buyers look for — written to help you decide with more clarity.",
+      "desc": "Practical articles on buying, renting, packing, and what buyers look for \u2014 written to help you decide with more clarity.",
       "desc2": "Browse the latest notes from our advisors, then reach out when you are ready to shortlist homes.",
       "sideImage": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80",
       "sideImageTitle": "Blog feature image",
@@ -248,7 +233,7 @@
       "readMoreLabel": "Read more",
       "ctaPretitle": "Need advice?",
       "ctaTitle": "Talk to an advisor about your next home.",
-      "ctaDesc": "Prefer a guided shortlist over browsing alone? Share your budget and areas — we will prepare clear options.",
+      "ctaDesc": "Prefer a guided shortlist over browsing alone? Share your budget and areas \u2014 we will prepare clear options.",
       "ctaButton": {
         "label": "Contact us",
         "href": "/contact",
@@ -299,7 +284,7 @@
               "price": "02"
             }
           ],
-          "productTotalPrice": "From ₹599",
+          "productTotalPrice": "From \u20b9599",
           "productShippingText": "Free quote"
         },
         {
@@ -319,7 +304,7 @@
               "price": "02"
             }
           ],
-          "productTotalPrice": "From ₹499",
+          "productTotalPrice": "From \u20b9499",
           "productShippingText": "Free quote"
         },
         {
@@ -339,7 +324,7 @@
               "price": "02"
             }
           ],
-          "productTotalPrice": "From ₹899",
+          "productTotalPrice": "From \u20b9899",
           "productShippingText": "Free quote"
         },
         {
@@ -359,7 +344,7 @@
               "price": "02"
             }
           ],
-          "productTotalPrice": "From ₹999",
+          "productTotalPrice": "From \u20b9999",
           "productShippingText": "Available now"
         }
       ],
@@ -413,7 +398,7 @@
       "sideImageTitle": "Technician on a service call",
       "footerContact": {
         "location": "Unit 7, Service Hub, Sector 44, Gurugram, Haryana 122003",
-        "email": "hello@aquafix.com",
+        "email": "hello@aquafix.in",
         "phone": "+91 98110 22345"
       },
       "formSubmitLabel": "Request a callback",
@@ -436,17 +421,17 @@
         {
           "label": "Message",
           "type": "textarea",
-          "placeholder": "e.g. Leaking kitchen tap — need a technician today"
+          "placeholder": "e.g. Leaking kitchen tap \u2014 need a technician today"
         }
       ],
       "reachPretitle": "Reach us",
       "reachTitle": "Aquafix office",
-      "reachDesc": "Prefer a call, WhatsApp, or email? We're available 24/7 for emergencies — or send a message and we'll reply shortly.",
+      "reachDesc": "Prefer a call, WhatsApp, or email? We're available 24/7 for emergencies \u2014 or send a message and we'll reply shortly.",
       "formPretitle": "Write us",
       "formTitle": "Book a service",
       "formDesc": "Tell us the issue, your area, and a preferred time.",
       "successTitle": "Request received",
-      "successDesc": "Thank you — your request reached Aquafix. A technician will contact you shortly to confirm.",
+      "successDesc": "Thank you \u2014 your request reached Aquafix. A technician will contact you shortly to confirm.",
       "consentPrefix": "By checking this box, you agree to our",
       "officeLabel": "Office",
       "phoneLabel": "Phone",
@@ -566,7 +551,7 @@
         {
           "name": "Aarav Mehta",
           "role": "Homeowner, South Delhi",
-          "quote": "Booked a technician in the morning and my leaking tap was fixed by afternoon — clear price, clean work.",
+          "quote": "Booked a technician in the morning and my leaking tap was fixed by afternoon \u2014 clear price, clean work.",
           "image": "https://i.pinimg.com/1200x/44/4e/8e/444e8ee62b093f4e48312a627b91486b.jpg",
           "rating": "5.0"
         },
@@ -587,14 +572,14 @@
         {
           "name": "Isha Malhotra",
           "role": "Cafe owner",
-          "quote": "They handle maintenance for our cafe now. Priority response and one simple invoice — exactly what we needed.",
+          "quote": "They handle maintenance for our cafe now. Priority response and one simple invoice \u2014 exactly what we needed.",
           "image": "https://i.pinimg.com/1200x/c1/c2/51/c1c2516462d7050a0db5ee42e9ea6ef5.jpg",
           "rating": "4.8"
         },
         {
           "name": "Kabir Anand",
           "role": "Emergency callout",
-          "quote": "A burst pipe at midnight — the crew arrived fast, stopped the flooding, and saved us from real damage.",
+          "quote": "A burst pipe at midnight \u2014 the crew arrived fast, stopped the flooding, and saved us from real damage.",
           "image": "https://i.pinimg.com/1200x/af/e7/23/afe723e9b040978dd864edcd02c5b641.jpg",
           "rating": "4.7"
         },
@@ -886,7 +871,7 @@
       "programs": [
         {
           "title": "Safe Homes Fund",
-          "desc": "Helps families with urgent repairs — railings, lighting, and accessibility basics.",
+          "desc": "Helps families with urgent repairs \u2014 railings, lighting, and accessibility basics.",
           "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1000&q=80",
           "amount": "Part of every project fee"
         },
@@ -898,7 +883,7 @@
         },
         {
           "title": "Neighborhood Refresh",
-          "desc": "Volunteer days for shared spaces — parks, entryways, and community rooms.",
+          "desc": "Volunteer days for shared spaces \u2014 parks, entryways, and community rooms.",
           "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1000&q=80",
           "amount": "Quarterly build days"
         }
@@ -923,7 +908,7 @@
     "MissionPage": {
       "pretitle": "Our mission",
       "title": "Help every family move with confidence.",
-      "desc": "We exist to make buying, renting, and listing simpler — with verified options, honest numbers, and advisors who stay present from first call to keys in hand.",
+      "desc": "We exist to make buying, renting, and listing simpler \u2014 with verified options, honest numbers, and advisors who stay present from first call to keys in hand.",
       "desc2": "Mission is not a slogan for us. It is how we shortlist homes, explain trade-offs, and stay available when paperwork and handover feel overwhelming.",
       "sideImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
       "sideImageTitle": "Repairo advisors reviewing a residence",
@@ -932,7 +917,7 @@
       "pillars": [
         {
           "title": "Clarity first",
-          "desc": "Budgets, timelines, and trade-offs explained without pressure — so every decision feels informed."
+          "desc": "Budgets, timelines, and trade-offs explained without pressure \u2014 so every decision feels informed."
         },
         {
           "title": "Local judgment",
@@ -948,7 +933,7 @@
       "values": [
         {
           "title": "Honest numbers",
-          "desc": "Pricing context and availability stay transparent — no inflated claims, no hidden surprises."
+          "desc": "Pricing context and availability stay transparent \u2014 no inflated claims, no hidden surprises."
         },
         {
           "title": "Verified options",
@@ -960,12 +945,12 @@
         },
         {
           "title": "Family-first pace",
-          "desc": "We match your timeline — whether you need a quick rental or a careful purchase."
+          "desc": "We match your timeline \u2014 whether you need a quick rental or a careful purchase."
         }
       ],
       "ctaPretitle": "Next step",
       "ctaTitle": "Ready to shortlist with confidence?",
-      "ctaDesc": "Share your budget, preferred areas, and timeline — our advisors will prepare a clear shortlist.",
+      "ctaDesc": "Share your budget, preferred areas, and timeline \u2014 our advisors will prepare a clear shortlist.",
       "ctaButton": {
         "label": "Contact our team",
         "href": "/contact",
@@ -994,7 +979,7 @@
       "sections": [
         {
           "title": "General information only",
-          "desc": "Content on this website — including listings, prices, availability, project details, calculators, and articles — is for general information. It is not a formal offer, valuation, or guarantee."
+          "desc": "Content on this website \u2014 including listings, prices, availability, project details, calculators, and articles \u2014 is for general information. It is not a formal offer, valuation, or guarantee."
         },
         {
           "title": "Accuracy and updates",
@@ -1075,28 +1060,24 @@
               "href": "/"
             },
             {
-              "label": "Buy Properties",
-              "href": "/properties?intent=buy"
-            },
-            {
-              "label": "Rent Properties",
-              "href": "/properties?intent=rent"
-            },
-            {
-              "label": "All Properties",
-              "href": "/properties"
-            },
-            {
-              "label": "New Projects",
-              "href": "/projects"
-            },
-            {
-              "label": "Book with Repairo",
-              "href": "/sell"
+              "label": "About",
+              "href": "/about"
             },
             {
               "label": "Services",
               "href": "/services"
+            },
+            {
+              "label": "Pricing",
+              "href": "/pricing"
+            },
+            {
+              "label": "Portfolio",
+              "href": "/projects"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog"
             },
             {
               "label": "Contact",
@@ -1108,10 +1089,6 @@
           "title": "Company",
           "links": [
             {
-              "label": "About Us",
-              "href": "/about"
-            },
-            {
               "label": "Our Team",
               "href": "/team"
             },
@@ -1120,49 +1097,16 @@
               "href": "/why-choose-us"
             },
             {
-              "label": "Mission & Vision",
-              "href": "/mission"
-            },
-            {
               "label": "Awards",
               "href": "/awards"
-            },
-            {
-              "label": "CSR Initiatives",
-              "href": "/csr"
             },
             {
               "label": "Careers",
               "href": "/careers"
             },
             {
-              "label": "Community",
-              "href": "/community"
-            }
-          ]
-        },
-        {
-          "title": "Explore & Tools",
-          "links": [
-            {
-              "label": "Blog & Insights",
-              "href": "/blog"
-            },
-            {
-              "label": "Investment Tips",
-              "href": "/investment-tips"
-            },
-            {
-              "label": "EMI Calculator",
-              "href": "/emi-calculator"
-            },
-            {
-              "label": "Area Converter",
-              "href": "/area-converter"
-            },
-            {
-              "label": "Portfolio",
-              "href": "/projects"
+              "label": "Gallery",
+              "href": "/gallery"
             }
           ]
         },
@@ -1176,6 +1120,18 @@
             {
               "label": "Terms & Conditions",
               "href": "/terms"
+            },
+            {
+              "label": "Disclaimer",
+              "href": "/disclaimer"
+            },
+            {
+              "label": "Cookie Policy",
+              "href": "/cookie-policy"
+            },
+            {
+              "label": "Refund Policy",
+              "href": "/refund-policy"
             },
             {
               "label": "Sitemap",
@@ -1254,7 +1210,7 @@
       "sections": [
         {
           "title": "Overview",
-          "desc": "Repairo is a real estate advisory service. Property purchase amounts are paid to sellers, developers, or owners — not to Repairo — and are governed by those contracts."
+          "desc": "Repairo is a real estate advisory service. Property purchase amounts are paid to sellers, developers, or owners \u2014 not to Repairo \u2014 and are governed by those contracts."
         },
         {
           "title": "Advisory and visit fees",
@@ -1266,7 +1222,7 @@
         },
         {
           "title": "How to request a refund",
-          "desc": "Email hello@repairo.in or call +91 98100 45210 with your booking details. Eligible refunds are processed within 7–10 business days to the original payment method."
+          "desc": "Email hello@repairo.in or call +91 98100 45210 with your booking details. Eligible refunds are processed within 7\u201310 business days to the original payment method."
         },
         {
           "title": "Contact",
@@ -1304,29 +1260,33 @@
               "href": "/services",
               "children": [
                 {
-                  "label": "All services",
+                  "label": "All Services",
                   "href": "/services"
                 },
                 {
-                  "label": "Plumbing repair",
-                  "href": "/properties?type=Plumbing"
+                  "label": "Leak Detection & Repair",
+                  "href": "/services/leak-detection-repair"
                 },
                 {
-                  "label": "Drain cleaning",
-                  "href": "/properties?type=Drain"
+                  "label": "Drain Cleaning",
+                  "href": "/services/drain-cleaning-services"
                 },
                 {
-                  "label": "Water heater",
-                  "href": "/properties?type=Water%20Heater"
+                  "label": "Water Heater",
+                  "href": "/services/water-heater-services"
                 },
                 {
-                  "label": "Emergency repair",
-                  "href": "/properties?type=Emergency"
+                  "label": "Pipe Installation",
+                  "href": "/services/pipe-installation-replacement"
+                },
+                {
+                  "label": "Emergency Repair",
+                  "href": "/services/general-plumbing-services"
                 }
               ]
             },
             {
-              "label": "Work",
+              "label": "Projects",
               "href": "/projects"
             },
             {
@@ -1334,24 +1294,32 @@
               "href": "/pricing"
             },
             {
-              "label": "Blogs",
+              "label": "Blog",
               "href": "/blog"
             },
             {
-              "label": "Pages",
-              "href": "/about",
+              "label": "Others",
+              "href": "/sitemap",
               "children": [
                 {
-                  "label": "Our team",
+                  "label": "Our Team",
                   "href": "/team"
                 },
                 {
-                  "label": "Portfolio",
-                  "href": "/projects"
+                  "label": "Why Choose Us",
+                  "href": "/why-choose-us"
                 },
                 {
-                  "label": "Why choose us",
-                  "href": "/why-choose-us"
+                  "label": "Gallery",
+                  "href": "/gallery"
+                },
+                {
+                  "label": "Awards",
+                  "href": "/awards"
+                },
+                {
+                  "label": "Careers",
+                  "href": "/careers"
                 },
                 {
                   "label": "Contact",
@@ -1362,7 +1330,7 @@
           ],
           "buttons": [
             {
-              "label": "Contact Us",
+              "label": "Book Appointment",
               "href": "/contact",
               "variant": "primary"
             }
@@ -1391,7 +1359,7 @@
               "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
               "video": "",
               "alt": "Plumber repairing a sink",
-              "title": "Fast, reliable repairs — done right the first time",
+              "title": "Fast, reliable repairs \u2014 done right the first time",
               "desc": "Same-day service for leaks, clogs, and breakdowns with verified, background-checked technicians.",
               "button": {
                 "label": "Book a visit",
@@ -1555,7 +1523,7 @@
               "date": "May 02, 2024",
               "href": "/blog/low-water-pressure-what-to-check",
               "slug": "low-water-pressure-what-to-check",
-              "body": "Clean the faucet aerator, check the shut-off valves are fully open, and look for leaks. If pressure is low across the whole house, the issue may be the main line or pressure regulator — that's a job for a pro."
+              "body": "Clean the faucet aerator, check the shut-off valves are fully open, and look for leaks. If pressure is low across the whole house, the issue may be the main line or pressure regulator \u2014 that's a job for a pro."
             },
             {
               "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
@@ -1602,7 +1570,7 @@
               "placeholder": "Tell us more about the issue and your preferred time"
             }
           ],
-          "successMessage": "Thank you — we received your request. A technician will call you back shortly."
+          "successMessage": "Thank you \u2014 we received your request. A technician will call you back shortly."
         },
         "FAQ": {
           "pretitle": "FAQS",
@@ -1618,7 +1586,7 @@
             },
             {
               "question": "How much do your plumbing services cost?",
-              "answer": "We share a clear, upfront quote after diagnosing the issue — no hidden charges. Pricing depends on the job type and parts required."
+              "answer": "We share a clear, upfront quote after diagnosing the issue \u2014 no hidden charges. Pricing depends on the job type and parts required."
             },
             {
               "question": "Do you offer free estimates?",
@@ -1626,7 +1594,7 @@
             },
             {
               "question": "How quickly can a technician reach my home?",
-              "answer": "For emergencies we aim to arrive within 60–90 minutes. For scheduled jobs, same-day or next-day slots are usually available across Delhi NCR."
+              "answer": "For emergencies we aim to arrive within 60\u201390 minutes. For scheduled jobs, same-day or next-day slots are usually available across Delhi NCR."
             }
           ],
           "sideImage": "https://ik.imagekit.io/0qbkwaf3x/image-removebg-preview_Smi4TfObl.png",
@@ -1707,66 +1675,66 @@
               "desc": "Replaced corroded pipes and fixtures for a leak-free bathroom in DLF Phase 4.",
               "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
               "alt": "Renovated bathroom after re-pipe",
-              "location": "Gurugram · DLF Phase 4",
+              "location": "Gurugram \u00b7 DLF Phase 4",
               "status": "Completed",
               "href": "/projects/full-bathroom-re-pipe",
               "slug": "full-bathroom-re-pipe",
-              "body": "A full re-pipe for a home with recurring leaks and low pressure. We replaced aging supply lines, upgraded fixtures, and pressure-tested the system. The map below shows the approximate service area — book a visit for similar work."
+              "body": "A full re-pipe for a home with recurring leaks and low pressure. We replaced aging supply lines, upgraded fixtures, and pressure-tested the system. The map below shows the approximate service area \u2014 book a visit for similar work."
             },
             {
               "title": "Kitchen sink & drain overhaul",
               "desc": "New faucet, trap, and cleared main drain line for a busy family kitchen.",
               "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
               "alt": "Modern kitchen sink after overhaul",
-              "location": "Noida · Sector 78",
+              "location": "Noida \u00b7 Sector 78",
               "status": "Completed",
               "href": "/projects/kitchen-sink-drain-overhaul",
               "slug": "kitchen-sink-drain-overhaul",
-              "body": "Replaced a leaking faucet and P-trap, then cleared a slow main drain with a power auger. The map below shows the approximate service area — book a visit for similar work."
+              "body": "Replaced a leaking faucet and P-trap, then cleared a slow main drain with a power auger. The map below shows the approximate service area \u2014 book a visit for similar work."
             },
             {
               "title": "Water heater replacement",
               "desc": "Removed an aging unit and installed a new energy-efficient water heater.",
               "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
               "alt": "New water heater installation",
-              "location": "Delhi · Vasant Kunj",
+              "location": "Delhi \u00b7 Vasant Kunj",
               "status": "Completed",
               "href": "/projects/water-heater-replacement",
               "slug": "water-heater-replacement",
-              "body": "Swapped a failing 10-year-old heater for a new efficient model, installed to code with a fresh pressure valve. The map below shows the approximate service area — book a visit for similar work."
+              "body": "Swapped a failing 10-year-old heater for a new efficient model, installed to code with a fresh pressure valve. The map below shows the approximate service area \u2014 book a visit for similar work."
             },
             {
               "title": "Emergency burst pipe repair",
               "desc": "Late-night response to stop a burst supply line and prevent water damage.",
               "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80",
               "alt": "Repaired burst pipe",
-              "location": "Faridabad · Sector 15",
+              "location": "Faridabad \u00b7 Sector 15",
               "status": "Completed",
               "href": "/projects/emergency-burst-pipe-repair",
               "slug": "emergency-burst-pipe-repair",
-              "body": "Our 24/7 crew stopped a burst line, dried the area, and replaced the damaged section the same night. The map below shows the approximate service area — book a visit for similar work."
+              "body": "Our 24/7 crew stopped a burst line, dried the area, and replaced the damaged section the same night. The map below shows the approximate service area \u2014 book a visit for similar work."
             },
             {
               "title": "Whole-home fixture upgrade",
               "desc": "Replaced taps, showers, and valves across a three-bedroom apartment.",
               "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
               "alt": "Upgraded bathroom fixtures",
-              "location": "Gurugram · Sector 65",
+              "location": "Gurugram \u00b7 Sector 65",
               "status": "Completed",
               "href": "/projects/whole-home-fixture-upgrade",
               "slug": "whole-home-fixture-upgrade",
-              "body": "Modernized every tap, shower, and valve in the home for better flow and a clean look. The map below shows the approximate service area — book a visit for similar work."
+              "body": "Modernized every tap, shower, and valve in the home for better flow and a clean look. The map below shows the approximate service area \u2014 book a visit for similar work."
             },
             {
               "title": "Office washroom maintenance",
               "desc": "Scheduled maintenance and leak fixes for a commercial office floor.",
               "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
               "alt": "Serviced office washroom",
-              "location": "Noida · Sector 62",
+              "location": "Noida \u00b7 Sector 62",
               "status": "Completed",
               "href": "/projects/office-washroom-maintenance",
               "slug": "office-washroom-maintenance",
-              "body": "A maintenance visit for a commercial client — fixed leaks, cleared drains, and serviced flush systems across the floor. The map below shows the approximate service area — book a visit for similar work."
+              "body": "A maintenance visit for a commercial client \u2014 fixed leaks, cleared drains, and serviced flush systems across the floor. The map below shows the approximate service area \u2014 book a visit for similar work."
             }
           ],
           "button": {
@@ -1845,7 +1813,7 @@
         "PropertyProcess": {
           "pretitle": "WHO TO WORK",
           "title": "Standard Working Process",
-          "desc": "From your first call to a spotless finish — every job follows the same clear steps.",
+          "desc": "From your first call to a spotless finish \u2014 every job follows the same clear steps.",
           "steps": [
             {
               "step": "01",
@@ -1908,37 +1876,109 @@
         "ServiceInfoBar": {
           "title": "Comprehensive plumbing solutions for every space",
           "items": [
-            { "icon": "FaKitchenSet", "label": "Kitchen", "href": "/services?type=Kitchen" },
-            { "icon": "FaBath", "label": "Bathroom", "href": "/services?type=Bathroom" },
-            { "icon": "FaBuilding", "label": "Commercial", "href": "/services?type=Commercial" },
-            { "icon": "FaHome", "label": "Residential", "href": "/services?type=Residential" },
-            { "icon": "FaWarehouse", "label": "Industrial", "href": "/services?type=Industrial" },
-            { "icon": "FaToolbox", "label": "Emergency", "href": "/services?type=Emergency" }
+            {
+              "icon": "FaKitchenSet",
+              "label": "Kitchen",
+              "href": "/services?type=Kitchen"
+            },
+            {
+              "icon": "FaBath",
+              "label": "Bathroom",
+              "href": "/services?type=Bathroom"
+            },
+            {
+              "icon": "FaBuilding",
+              "label": "Commercial",
+              "href": "/services?type=Commercial"
+            },
+            {
+              "icon": "FaHome",
+              "label": "Residential",
+              "href": "/services?type=Residential"
+            },
+            {
+              "icon": "FaWarehouse",
+              "label": "Industrial",
+              "href": "/services?type=Industrial"
+            },
+            {
+              "icon": "FaToolbox",
+              "label": "Emergency",
+              "href": "/services?type=Emergency"
+            }
           ]
         },
         "ServiceIconGrid": {
           "pretitle": "All services",
           "title": "Every plumbing fix under one roof",
-          "desc": "From drips and drains to full installations — tap any service to learn more or book online.",
+          "desc": "From drips and drains to full installations \u2014 tap any service to learn more or book online.",
           "items": [
-            { "icon": "FaTint", "label": "Leak Repair", "href": "/services?type=Leak" },
-            { "icon": "FaSink", "label": "Faucet Fix", "href": "/services?type=Faucet" },
-            { "icon": "FaToilet", "label": "Toilet Repair", "href": "/services?type=Toilet" },
-            { "icon": "FaShower", "label": "Shower Install", "href": "/services?type=Shower" },
-            { "icon": "FaFireAlt", "label": "Water Heater", "href": "/services?type=Water%20Heater" },
-            { "icon": "FaWater", "label": "Drain Cleaning", "href": "/services?type=Drain" },
-            { "icon": "FaPipeLeak", "label": "Pipe Repair", "href": "/services?type=Pipe" },
-            { "icon": "FaPumpSoap", "label": "Sump Pump", "href": "/services?type=Sump" },
-            { "icon": "FaSoap", "label": "Disposal Unit", "href": "/services?type=Disposal" },
-            { "icon": "FaWrench", "label": "Fixture Install", "href": "/services?type=Fixture" },
-            { "icon": "FaClock", "label": "24/7 Emergency", "href": "/services?type=Emergency" },
-            { "icon": "FaClipboardCheck", "label": "Inspection", "href": "/services?type=Inspection" }
+            {
+              "icon": "FaTint",
+              "label": "Leak Repair",
+              "href": "/services?type=Leak"
+            },
+            {
+              "icon": "FaSink",
+              "label": "Faucet Fix",
+              "href": "/services?type=Faucet"
+            },
+            {
+              "icon": "FaToilet",
+              "label": "Toilet Repair",
+              "href": "/services?type=Toilet"
+            },
+            {
+              "icon": "FaShower",
+              "label": "Shower Install",
+              "href": "/services?type=Shower"
+            },
+            {
+              "icon": "FaFireAlt",
+              "label": "Water Heater",
+              "href": "/services?type=Water%20Heater"
+            },
+            {
+              "icon": "FaWater",
+              "label": "Drain Cleaning",
+              "href": "/services?type=Drain"
+            },
+            {
+              "icon": "FaPipeLeak",
+              "label": "Pipe Repair",
+              "href": "/services?type=Pipe"
+            },
+            {
+              "icon": "FaPumpSoap",
+              "label": "Sump Pump",
+              "href": "/services?type=Sump"
+            },
+            {
+              "icon": "FaSoap",
+              "label": "Disposal Unit",
+              "href": "/services?type=Disposal"
+            },
+            {
+              "icon": "FaWrench",
+              "label": "Fixture Install",
+              "href": "/services?type=Fixture"
+            },
+            {
+              "icon": "FaClock",
+              "label": "24/7 Emergency",
+              "href": "/services?type=Emergency"
+            },
+            {
+              "icon": "FaClipboardCheck",
+              "label": "Inspection",
+              "href": "/services?type=Inspection"
+            }
           ]
         },
         "ContactInfo": {
           "pretitle": "Book & talk",
-          "title": "Contact information",
-          "desc": "Call, WhatsApp, or book online for repairs, installations, or emergencies — we respond fast.",
+          "title": "Get in touch",
+          "desc": "Call, WhatsApp, or book online for repairs, installations, or emergencies \u2014 we respond fast.",
           "items": [
             {
               "label": "Visit us",
@@ -1952,12 +1992,12 @@
             },
             {
               "label": "Email",
-              "value": "hello@repairo.in",
-              "href": "mailto:hello@repairo.in"
+              "value": "hello@aquafix.in",
+              "href": "mailto:hello@aquafix.in"
             },
             {
               "label": "Hours",
-              "value": "Open 24/7 · Emergency service available"
+              "value": "Open 24/7 \u00b7 Emergency service available"
             }
           ],
           "button": {
@@ -1969,13 +2009,13 @@
           "cta": {
             "title": "Need Emergency Plumbing Service?",
             "desc": "We're available 24/7 to solve your plumbing problems.",
-            "phone": "+91 98765 432210",
-            "phoneHref": "tel:+9198765432210",
+            "phone": "+91 98110 22345",
+            "phoneHref": "tel:+919811022345",
             "buttonLabel": "Call Now"
           }
         },
         "Properties": {
-          "sectionTitle": "Featured Services",
+          "sectionTitle": "OUR SERVICES",
           "title": "Professional Plumbing Services You Can Trust",
           "subtitle": "Reliable Plumbing Solutions",
           "infoTitle": "Popular Home Services",
@@ -1998,7 +2038,7 @@
               "value": ""
             }
           ],
-          "startingPrice": "From ₹499",
+          "startingPrice": "From \u20b9499",
           "statusText": "Same-day appointments available",
           "listings": [
             {
@@ -2022,7 +2062,7 @@
                   "value": "Free quote"
                 }
               ],
-              "price": "From ₹599",
+              "price": "From \u20b9599",
               "statusText": "Same-day available",
               "category": "Plumbing",
               "propertyType": "Plumbing",
@@ -2055,7 +2095,7 @@
                   "value": "Free quote"
                 }
               ],
-              "price": "From ₹499",
+              "price": "From \u20b9499",
               "statusText": "Same-day available",
               "category": "Drainage",
               "propertyType": "Drain",
@@ -2088,7 +2128,7 @@
                   "value": "Free quote"
                 }
               ],
-              "price": "From ₹899",
+              "price": "From \u20b9899",
               "statusText": "Booking this week",
               "category": "Water Heating",
               "propertyType": "Water Heater",
@@ -2121,7 +2161,7 @@
                   "value": "On request"
                 }
               ],
-              "price": "From ₹999",
+              "price": "From \u20b9999",
               "statusText": "Available now",
               "category": "Emergency",
               "propertyType": "Emergency",
@@ -2154,7 +2194,7 @@
                   "value": "Free quote"
                 }
               ],
-              "price": "From ₹699",
+              "price": "From \u20b9699",
               "statusText": "Booking this week",
               "category": "Fixtures",
               "propertyType": "Fixtures",
@@ -2197,7 +2237,7 @@
                 "variant": "primary"
               },
               "slug": "general-plumbing-services",
-              "body": "Planning a bathroom refresh? We handle re-pipes, fixture upgrades, and all plumbing for renovations — coordinated cleanly and finished to code."
+              "body": "Planning a bathroom refresh? We handle re-pipes, fixture upgrades, and all plumbing for renovations \u2014 coordinated cleanly and finished to code."
             },
             {
               "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
@@ -2205,7 +2245,7 @@
               "title": "Toilet Repair & Installation",
               "subtitle": "Plumbing",
               "infoTitle": "Fix or replace",
-              "description": "Running, leaking, or blocked toilets repaired — plus clean installs of new units.",
+              "description": "Running, leaking, or blocked toilets repaired \u2014 plus clean installs of new units.",
               "features": [
                 {
                   "label": "Service",
@@ -2220,7 +2260,7 @@
                   "value": "Free quote"
                 }
               ],
-              "price": "From ₹549",
+              "price": "From \u20b9549",
               "statusText": "Same-day available",
               "category": "Plumbing",
               "propertyType": "Plumbing",
@@ -2415,7 +2455,7 @@
               "desc": "Annual inspection, priority booking, and 10% off all repairs for one home.",
               "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
               "alt": "Home care basic plan",
-              "yieldLabel": "From ₹2,999 / yr",
+              "yieldLabel": "From \u20b92,999 / yr",
               "location": "Single home",
               "href": "/contact"
             },
@@ -2424,7 +2464,7 @@
               "desc": "Two check-ups a year, free minor fixes, and 15% off all major repairs.",
               "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
               "alt": "Home care plus plan",
-              "yieldLabel": "From ₹4,999 / yr",
+              "yieldLabel": "From \u20b94,999 / yr",
               "location": "Single home",
               "href": "/contact"
             },
@@ -2442,7 +2482,7 @@
               "desc": "Multi-property coverage with tenant-friendly scheduling and single billing.",
               "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
               "alt": "Landlord maintenance plan",
-              "yieldLabel": "From ₹9,999 / yr",
+              "yieldLabel": "From \u20b99,999 / yr",
               "location": "Multiple homes",
               "href": "/contact"
             }
@@ -2462,7 +2502,7 @@
           "tips": [
             {
               "title": "Fix small leaks early",
-              "desc": "A drip today can become a ceiling repair tomorrow — call before damage spreads.",
+              "desc": "A drip today can become a ceiling repair tomorrow \u2014 call before damage spreads.",
               "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200&q=80",
               "alt": "Leaking pipe",
               "tag": "Prevention"
@@ -2512,7 +2552,7 @@
           "defaultAmount": 5000000,
           "defaultRate": 8.5,
           "defaultTenureYears": 20,
-          "amountLabel": "Loan amount (₹)",
+          "amountLabel": "Loan amount (\u20b9)",
           "rateLabel": "Interest rate (% p.a.)",
           "tenureLabel": "Tenure (years)",
           "resultLabel": "Estimated EMI",
@@ -2584,7 +2624,7 @@
         "SellPage": {
           "pretitle": "Book with AquaFix",
           "title": "Book a repair or installation with confidence.",
-          "desc": "Tell us what needs fixing — licensed technicians, upfront quotes, and tidy workmanship.",
+          "desc": "Tell us what needs fixing \u2014 licensed technicians, upfront quotes, and tidy workmanship.",
           "benefits": [
             {
               "title": "Market-ready pricing",
@@ -2619,7 +2659,7 @@
             {
               "label": "Property type",
               "type": "text",
-              "placeholder": "Apartment, villa, commercial…"
+              "placeholder": "Apartment, villa, commercial\u2026"
             },
             {
               "label": "Location",
@@ -2629,7 +2669,7 @@
             {
               "label": "Message",
               "type": "textarea",
-              "placeholder": "Size, asking price, timeline…"
+              "placeholder": "Size, asking price, timeline\u2026"
             }
           ],
           "sideImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=80",
@@ -2645,7 +2685,7 @@
             }
           ],
           "formTitle": "Request a valuation",
-          "successMessage": "Thanks — an advisor will contact you shortly about your listing."
+          "successMessage": "Thanks \u2014 an advisor will contact you shortly about your listing."
         },
         "ProjectsPage": {
           "pretitle": "Completed works",

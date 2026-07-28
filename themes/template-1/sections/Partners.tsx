@@ -36,7 +36,7 @@ export default function Partners({ data }: { data: ResolvedSiteData }) {
             <span className="h-0.5 w-12 rounded-full bg-[#9fd40b]" />
           </div>
 
-          <h2 className="mt-3.5 font-sans text-3xl font-extrabold tracking-tight text-[#001b3d] md:text-[2.25rem]">
+          <h2 className="mt-3.5 font-sans text-3xl font-extrabold tracking-tight text-[#0a1f44] md:text-[2.25rem]">
             {section?.title || "Trusted by Our Partners"}
           </h2>
 

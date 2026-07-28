@@ -1,5 +1,4 @@
-import type { ComponentType } from "react";
-import type { LinkItem, ResolvedSiteData, ThemeId } from "@/lib/types";
+import type { ResolvedSiteData, ThemeId } from "@/lib/types";
 import { themeShellClass } from "@/lib/theme";
 import Home from "@/themes/template-1";
 import Header from "@/themes/template-1/Header";
@@ -18,20 +17,15 @@ import {
   Team,
   Awards,
   Career,
-  Csr,
-  Mission,
   WhyChooseUs,
-  EmiCalculator,
-  AreaConverter,
-  InvestmentTips,
-  Sell,
   Projects,
   Disclaimer,
   CookiePolicy,
   RefundPolicy,
   Sitemap,
+  Pricing,
 } from "@/themes/template-1/pages";
-import type { ThemePack } from "@/themes/index";
+import type { ThemePack } from "@/themes/types";
 
 export const template1Pack: ThemePack = {
   id: "template-1",
@@ -53,17 +47,12 @@ export const template1Pack: ThemePack = {
     Team,
     Awards,
     Career,
-    Csr,
-    Mission,
     WhyChooseUs,
-    EmiCalculator,
-    AreaConverter,
-    InvestmentTips,
-    Sell,
     Projects,
     Disclaimer,
     CookiePolicy,
     RefundPolicy,
     Sitemap,
+    Pricing,
   },
 };

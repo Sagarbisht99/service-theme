@@ -47,21 +47,21 @@ export default function Testimonials({ data }: { data: ResolvedSiteData }) {
         {/* Centered Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2.5">
-            <span className="text-[#0a1f44]">
+            <span className="text-[#1052E0]">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2C9 7 5 11 5 16a7 7 0 0 0 14 0c0-5-4-9-7-14z" />
               </svg>
             </span>
-            <span className="text-[13px] sm:text-[14px] font-extrabold text-[#0a1f44] tracking-[0.2em] uppercase">
+            <span className="text-[13px] sm:text-[14px] font-extrabold text-[#1052E0] tracking-[0.2em] uppercase">
               {testimonial.pretitle || "TESTIMONIALS"}
             </span>
-            <span className="text-[#0a1f44]">
+            <span className="text-[#1052E0]">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2C9 7 5 11 5 16a7 7 0 0 0 14 0c0-5-4-9-7-14z" />
               </svg>
             </span>
           </div>
-          <h2 className="mt-3 font-sans text-3xl md:text-[2.5rem] font-extrabold text-[#1b2440] tracking-tight">
+          <h2 className="mt-3 font-sans text-3xl md:text-[2.5rem] font-extrabold text-[#0a1f44] tracking-tight">
             {testimonial.title || "What Our Clients Say"}
           </h2>
         </div>
@@ -112,7 +112,7 @@ export default function Testimonials({ data }: { data: ResolvedSiteData }) {
             </svg>
 
             {/* Quote text */}
-            <p className="mt-6 text-[14px] sm:text-[15.5px] leading-relaxed text-[#1b2440] font-medium max-w-3xl mx-auto">
+            <p className="mt-6 text-[14px] sm:text-[15.5px] leading-relaxed text-[#0a1f44] font-medium max-w-3xl mx-auto">
               {active.quote}
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function Testimonials({ data }: { data: ResolvedSiteData }) {
                 <MediaImage themeId={data.themeId} src={active.image} alt={active.name} fill className="object-cover" sizes="80px" />
               </div>
             </div>
-            <h4 className="mt-3 text-[16px] font-extrabold text-[#1b2440]">
+            <h4 className="mt-3 text-[16px] font-extrabold text-[#0a1f44]">
               {active.name}
             </h4>
             <p className="mt-1 text-[12px] text-gray-400 font-medium">
@@ -137,7 +137,7 @@ export default function Testimonials({ data }: { data: ResolvedSiteData }) {
                 type="button"
                 onClick={prev}
                 aria-label="Previous testimonial"
-                className="text-[#1b2440]/70 hover:text-[#0a1f44] transition"
+                className="text-[#0a1f44]/70 hover:text-[#0a1f44] transition"
               >
                 <FaArrowLeft className="text-base" />
               </button>
@@ -145,7 +145,7 @@ export default function Testimonials({ data }: { data: ResolvedSiteData }) {
                 type="button"
                 onClick={next}
                 aria-label="Next testimonial"
-                className="text-[#1b2440]/70 hover:text-[#0a1f44] transition"
+                className="text-[#0a1f44]/70 hover:text-[#0a1f44] transition"
               >
                 <FaArrowRight className="text-base" />
               </button>

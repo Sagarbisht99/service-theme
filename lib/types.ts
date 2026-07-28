@@ -438,7 +438,7 @@ export type AboutPageData = {
   missionTitle?: string;
   missionDesc?: string;
   missionPoints?: { title: string; desc: string }[];
-  /** "Learn more" style button → dedicated /mission page (not in header) */
+  /** Optional CTA — typically links to /about or /contact */
   missionButton?: ButtonItem;
   ctaPretitle?: string;
   ctaTitle?: string;
@@ -853,6 +853,13 @@ export type ContactInfoData = {
   items: ContactInfoItem[];
   mapEmbedUrl?: string;
   button?: ButtonItem;
+  cta?: {
+    title?: string;
+    desc?: string;
+    phone?: string;
+    phoneHref?: string;
+    buttonLabel?: string;
+  };
 };
 
 export type AboutFeature = {
@@ -1177,18 +1184,13 @@ export type ResolvedSiteData = {
   projectsPage: ProjectsPageData;
 };
 
-export type ThemeId = "service" | "template-1";
+export type ThemeId = "template-1";
 
 export const THEMES: { id: ThemeId; name: string; description: string }[] = [
   {
-    id: "service",
-    name: "AquaFix",
-    description: "Navy + lime · plumbing & home repair service template",
-  },
-  {
     id: "template-1",
-    name: "Template 1",
-    description: "Sleek plumbing & repair template with modular sections",
+    name: "AquaFix",
+    description: "Navy + blue · plumbing & home repair service template",
   },
 ];
 

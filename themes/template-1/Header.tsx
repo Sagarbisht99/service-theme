@@ -6,7 +6,6 @@ import { usePathname, useSearchParams } from "next/navigation";
 import {
   FaBars,
   FaChevronDown,
-  FaPhoneAlt,
   FaTimes,
   FaUser,
 } from "react-icons/fa";
@@ -104,7 +103,7 @@ function NavDropdown({
         aria-haspopup="menu"
         className={[
           "flex items-center gap-1.5 text-[14px] font-bold tracking-tight transition focus:outline-none",
-          active || open ? "text-[#9fd40b]" : "text-white hover:text-[#9fd40b]",
+          active || open ? "text-[#1052E0]" : "text-[#0a1f44] hover:text-[#1052E0]",
         ]
           .filter(Boolean)
           .join(" ")}
@@ -149,7 +148,7 @@ function NavDropdown({
                   className={[
                     "group flex items-center justify-between gap-2 rounded-xl px-3.5 py-2.5 text-[13px] font-bold transition",
                     childActive
-                      ? "bg-[#9fd40b]/15 text-[#0a1f44]"
+                      ? "bg-[#1052E0]/15 text-[#1052E0]"
                       : "text-[#0a1f44]/80 hover:bg-[#f3f6fb] hover:text-[#0a1f44]",
                   ].join(" ")}
                 >
@@ -158,8 +157,8 @@ function NavDropdown({
                     className={[
                       "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[10px] transition",
                       childActive
-                        ? "bg-[#9fd40b] text-[#0a1f44]"
-                        : "bg-transparent text-[#94a3b8] group-hover:bg-[#9fd40b]/25 group-hover:text-[#0a1f44]",
+                        ? "bg-[#1052E0] text-white"
+                        : "bg-transparent text-[#94a3b8] group-hover:bg-[#1052E0]/25 group-hover:text-white",
                     ].join(" ")}
                     aria-hidden
                   >
@@ -175,59 +174,58 @@ function NavDropdown({
   );
 }
 
+function BrandLogo({ name }: { name: string }) {
+  const match = name.match(/^(.*)(Fix)$/i);
+  if (!match) return <>{name}</>;
+  return (
+    <>
+      {match[1]}
+      <span className="text-[#1052E0]">{match[2]}</span>
+    </>
+  );
+}
+
 function HeaderContent({ data }: { data: ResolvedSiteData }) {
-  const { header } = data;
+  const { header, footer, template } = data;
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menu = header.menu || [];
-  const primaryNav = menu.slice(0, 5);
-  const overflowNav = menu.slice(5);
-  const overflowItem: LinkItem | null = overflowNav.length
-    ? {
-        label: "Pages",
-        href: overflowNav[0]?.href || "/sitemap",
-        children: overflowNav.flatMap((item) => {
-          const base = [{ label: item.label, href: item.href }];
-          return item.children?.length ? [...base, ...item.children] : base;
-        }),
-      }
-    : null;
   const primaryButton = header.buttons?.[0];
+  const brand = header.logo || footer.logoImageTitle || template.title;
 
   return (
     <header className="fixed top-0 left-0 z-40 w-full pt-0">
-      <div className="flex h-[66px] w-full items-center justify-between bg-[#0a1f44] px-4 sm:px-6 lg:px-8 shadow-[0_10px_30px_rgba(10,31,68,0.25)]">
-        
-        {/* Brand Logo (green leaf/drop emblem) */}
+      <div className="flex h-[66px] w-full items-center justify-between border-b border-[#e8edf4] bg-white px-4 sm:px-6 lg:px-8 shadow-[0_8px_24px_rgba(10,31,68,0.06)]">
+        {/* Brand Logo */}
         <Link
           href={withTheme("/", THEME)}
           className="flex items-center gap-2 focus:outline-none"
         >
-          <span className="text-[#9fd40b]">
+          <span className="text-[#1052E0]">
             <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current" aria-hidden>
               <path d="M12 2C7 8 4 12 4 16a8 8 0 0 0 16 0c0-4-3-8-8-14z" />
             </svg>
           </span>
-          <span className="font-sans text-xl sm:text-2xl font-black tracking-tight text-white">
-            Aqua<span className="text-[#9fd40b]">fix</span>
+          <span className="font-sans text-xl sm:text-2xl font-black tracking-tight text-[#0a1f44]">
+            <BrandLogo name={brand} />
           </span>
         </Link>
 
-        {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-7">
-          {primaryNav.map((item) => {
+        {/* Desktop Navigation — full menu from siteData.json */}
+        <nav className="hidden md:flex items-center gap-4 lg:gap-6">
+          {menu.map((item) => {
             const active = isItemActive(item, pathname, searchParams);
             return item.children && item.children.length > 0 ? (
               <NavDropdown key={item.label} item={item} active={active} />
             ) : (
               <Link
-                key={item.href}
+                key={item.href + item.label}
                 href={withTheme(item.href, THEME)}
                 className={[
-                  "text-[14px] font-bold tracking-tight transition",
-                  active ? "text-[#9fd40b]" : "text-white hover:text-[#9fd40b]",
+                  "text-[13.5px] lg:text-[14px] font-bold tracking-tight transition",
+                  active ? "text-[#1052E0]" : "text-[#0a1f44] hover:text-[#1052E0]",
                 ]
                   .filter(Boolean)
                   .join(" ")}
@@ -236,39 +234,14 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
               </Link>
             );
           })}
-          {overflowItem && (
-            <NavDropdown
-              item={overflowItem}
-              active={isItemActive(overflowItem, pathname, searchParams)}
-            />
-          )}
         </nav>
 
         {/* Right CTA Actions */}
         <div className="hidden sm:flex items-center gap-5">
-          {/* Phone CTA */}
-          <a
-            href="tel:+911222333444"
-            className="group flex items-center gap-2.5 focus:outline-none"
-          >
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-[#9fd40b] group-hover:bg-white/15 transition">
-              <FaPhoneAlt className="text-xs" />
-            </span>
-            <div className="leading-tight text-left">
-              <span className="block text-[9px] font-semibold text-white/60 uppercase tracking-wider">
-                Call us
-              </span>
-              <span className="block text-[13px] sm:text-[14px] font-extrabold text-[#9fd40b]">
-                +91 98766 54321
-              </span>
-            </div>
-          </a>
-
-          {/* SignIn Pill Button (lime green) */}
           {primaryButton && (
             <Link
               href={withTheme(primaryButton.href || "/contact", THEME)}
-              className="inline-flex h-10 items-center justify-center gap-1.5 rounded-full bg-[#9fd40b] px-6 text-[13px] sm:text-[14px] font-extrabold text-[#0a1f44] shadow-md hover:bg-[#8fc00a] transition"
+              className="inline-flex h-10 items-center justify-center gap-1.5 rounded-full bg-[#1052E0] px-6 text-[13px] sm:text-[14px] font-extrabold text-white shadow-md shadow-[#1052E0]/20 hover:bg-[#0d46c2] transition"
             >
               <FaUser className="text-[10px]" />
               {primaryButton.label}
@@ -281,13 +254,12 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/15 transition focus:outline-none"
+            className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef5ff] text-[#0a1f44] hover:bg-[#dbe7f6] transition focus:outline-none"
             aria-label="Open menu"
           >
             <FaBars className="text-base" />
           </button>
         </div>
-
       </div>
 
       {/* Slide-out Mobile Panel Drawer */}
@@ -295,33 +267,31 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
         <div className="fixed inset-0 z-50 bg-black/60 md:hidden backdrop-blur-sm">
           <div className="absolute right-0 top-0 bottom-0 w-4/5 max-w-[320px] bg-white p-6 shadow-2xl flex flex-col justify-between">
             <div>
-              {/* Header inside Mobile Drawer */}
               <div className="flex items-center justify-between border-b border-gray-100 pb-5">
                 <Link
                   href={withTheme("/", THEME)}
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center gap-2"
                 >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#9fd40b] text-[#0a1f44]">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1052E0] text-white">
                     <svg viewBox="0 0 24 24" className="h-5 w-5 text-[#0a1f44] fill-current">
                       <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
                     </svg>
                   </span>
-                  <span className="font-sans text-lg font-black text-[#001b3d]">
-                    Aqua<span className="text-[#9fd40b]">Fix</span>
+                  <span className="font-sans text-lg font-black text-[#0a1f44]">
+                    <BrandLogo name={brand} />
                   </span>
                 </Link>
                 <button
                   type="button"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex h-9 w-9 items-center justify-center rounded-xl bg-gray-50 border border-gray-100 text-[#001b3d]"
+                  className="flex h-9 w-9 items-center justify-center rounded-xl bg-gray-50 border border-gray-100 text-[#0a1f44]"
                   aria-label="Close menu"
                 >
                   <FaTimes className="text-base" />
                 </button>
               </div>
 
-              {/* Mobile Drawer Menu Links */}
               <nav className="mt-8 flex flex-col gap-2">
                 {menu.map((item) => {
                   const active = isItemActive(item, pathname, searchParams);
@@ -334,8 +304,8 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
                         className={[
                           "rounded-xl px-4 py-3 text-[14.5px] font-extrabold transition",
                           active
-                            ? "bg-[#9fd40b]/10 text-[#9fd40b]"
-                            : "text-[#001b3d] hover:bg-gray-50",
+                            ? "bg-[#1052E0]/10 text-[#1052E0]"
+                            : "text-[#0a1f44] hover:bg-gray-50",
                         ]
                           .filter(Boolean)
                           .join(" ")}
@@ -358,8 +328,8 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
                                 className={[
                                   "block rounded-lg px-3 py-2 text-[13px] font-bold transition",
                                   childActive
-                                    ? "bg-[#9fd40b]/15 text-[#0a1f44]"
-                                    : "text-[#001b3d]/70 hover:bg-gray-50 hover:text-[#0a1f44]",
+                                    ? "bg-[#1052E0]/15 text-[#1052E0]"
+                                    : "text-[#0a1f44]/70 hover:bg-gray-50 hover:text-[#0a1f44]",
                                 ].join(" ")}
                               >
                                 {child.label}
@@ -374,37 +344,18 @@ function HeaderContent({ data }: { data: ResolvedSiteData }) {
               </nav>
             </div>
 
-            {/* Mobile Contact & CTA Footer area inside drawer */}
             <div className="border-t border-gray-100 pt-5 mt-5">
-              <a
-                href="tel:+919876654321"
-                className="flex items-center gap-3.5 rounded-2xl bg-[#9fd40b]/10 border border-[#9fd40b]/15 p-4 mb-4"
-              >
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#9fd40b] text-[#0a1f44]">
-                  <FaPhoneAlt className="text-xs" />
-                </span>
-                <div className="text-left">
-                  <span className="block text-[9px] font-extrabold text-[#9fd40b] uppercase tracking-wider">
-                    Call Expert
-                  </span>
-                  <span className="block text-[14px] font-black text-[#001b3d]">
-                    +91 98766 54321
-                  </span>
-                </div>
-              </a>
-
               {primaryButton && (
                 <Link
                   href={withTheme(primaryButton.href || "/contact", THEME)}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#9fd40b] text-[14px] font-extrabold text-[#0a1f44] shadow-md shadow-[#9fd40b]/25"
+                  className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#1052E0] text-[14px] font-extrabold text-white shadow-md shadow-[#1052E0]/25"
                 >
                   <FaUser className="text-[10px]" />
                   {primaryButton.label}
                 </Link>
               )}
             </div>
-
           </div>
         </div>
       )}

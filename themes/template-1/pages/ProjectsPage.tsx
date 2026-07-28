@@ -63,7 +63,7 @@ export default function ProjectsPage({ data, theme }: Props) {
                 </div>
                 <div className="px-5 py-5">
                   {project.status && (
-                    <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#9fd40b]">
+                    <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#1052E0]">
                       {project.status}
                     </span>
                   )}

@@ -12,8 +12,8 @@ import {
 import MediaImage from "@/components/MediaImage";
 import type { ResolvedSiteData, ThemeId } from "@/lib/types";
 
-const ACCENT = "#E53935";
-const NAVY = "#111111";
+const ACCENT = "#1052E0";
+const NAVY = "#0a1f44";
 
 type Props = { data: ResolvedSiteData; theme: ThemeId };
 
@@ -159,7 +159,7 @@ export default function AwardsPage({ data }: Props) {
       {/* Trust + stats bar */}
       <section className="border-t border-[#eef2f7] bg-white py-10 md:py-12">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-8 rounded-2xl bg-[#fdf6f6] px-5 py-7 sm:px-8 lg:grid-cols-12 lg:gap-6 lg:py-8">
+          <div className="grid items-center gap-8 rounded-2xl bg-[#eef5ff] px-5 py-7 sm:px-8 lg:grid-cols-12 lg:gap-6 lg:py-8">
             <div className="flex items-start gap-4 lg:col-span-4">
               <span
                 className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-md"

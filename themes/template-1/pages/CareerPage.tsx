@@ -242,7 +242,7 @@ export default function CareerPage({ data, theme }: Props) {
               </h2>
 
               {submitted ? (
-                <div className="mt-6 rounded-2xl border border-[#dbeafe] bg-[#eff6ff] px-6 py-10 text-center">
+                <div className="mt-6 rounded-2xl border border-[#dbe7f6] bg-[#eef5ff] px-6 py-10 text-center">
                   <FaCheckCircle
                     className="mx-auto text-3xl"
                     style={{ color: ACCENT }}
@@ -513,7 +513,7 @@ function UploadBox({
         {label}
         {required && <span style={{ color: ACCENT }}> *</span>}
       </span>
-      <span className="flex min-h-[120px] flex-col items-center justify-center rounded-xl border border-dashed border-[#93c5fd] bg-[#eff6ff] px-4 py-5 text-center transition hover:bg-[#dbeafe]/60">
+      <span className="flex min-h-[120px] flex-col items-center justify-center rounded-xl border border-dashed border-[#dbe7f6] bg-[#eef5ff] px-4 py-5 text-center transition hover:bg-[#dbe7f6]/60">
         <FaCloudUploadAlt
           className="text-2xl"
           style={{ color: ACCENT }}

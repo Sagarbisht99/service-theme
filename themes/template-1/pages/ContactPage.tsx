@@ -28,36 +28,25 @@ export default function ContactPage({ data, theme }: Props) {
   const phone =
     footerContact?.phone ||
     contact?.items?.find((i) => /phone|call|whatsapp/i.test(i.label))?.value ||
-    "+91 98110 22345";
+    data.topbar.phone ||
+    "";
   const email =
     footerContact?.email ||
     contact?.items?.find((i) => /email|mail/i.test(i.label))?.value ||
-    "hello@aquafix.com";
+    data.topbar.email ||
+    "";
   const address =
     footerContact?.location ||
     contact?.items?.find((i) => /visit|address|location/i.test(i.label))
       ?.value ||
-    "Unit 7, Service Hub, Sector 44, Gurugram";
+    data.topbar.location ||
+    "";
   const hours =
-    contact?.items?.find((i) => /hour/i.test(i.label))?.value ||
-    "Open 24/7 · Emergency service available";
+    contact?.items?.find((i) => /hour/i.test(i.label))?.value || "";
 
-  const mapUrl =
-    contact?.mapEmbedUrl ||
-    "https://www.google.com/maps?q=Sector+44+Gurugram&output=embed";
+  const mapUrl = contact?.mapEmbedUrl || "";
 
-  const fields = page?.formFields?.length
-    ? page.formFields
-    : [
-        { label: "Name", type: "text", placeholder: "Your full name" },
-        { label: "Email", type: "email", placeholder: "you@email.com" },
-        { label: "Phone", type: "tel", placeholder: "+91 …" },
-        {
-          label: "Message",
-          type: "textarea",
-          placeholder: "Tell us about the issue…",
-        },
-      ];
+  const fields = page?.formFields || [];
 
   const [submitted, setSubmitted] = useState(false);
   const [agreed, setAgreed] = useState(false);
@@ -257,7 +246,7 @@ export default function ContactPage({ data, theme }: Props) {
                 </p>
 
                 {submitted ? (
-                  <div className="mt-6 rounded-2xl border border-[#dbeafe] bg-[#eff6ff] px-6 py-10 text-center">
+                  <div className="mt-6 rounded-2xl border border-[#dbe7f6] bg-[#eef5ff] px-6 py-10 text-center">
                     <FaCheckCircle
                       className="mx-auto text-3xl"
                       style={{ color: ACCENT }}
